@@ -1,0 +1,111 @@
+.product {
+	display: block;
+	position: relative;
+	max-width: 550px;
+
+	&::before, &::after {
+		content: '';
+		display: none;
+		font-family: "Bebas Neue", sans-serif;
+		font-size: 20px;
+		line-height: 20px;
+		font-weight: 700;
+		padding: 12px 7px;
+		border: @grey-border;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+	}
+
+	&--new {
+		&::before {
+			content: 'NEW';
+			display: inline-block;
+			color: @blue;
+		}
+	}
+
+	&--hit {
+		&::after {
+			content: 'HIT';
+			display: inline-block;
+			color: @red;
+		}
+	}
+
+	&--new.product--hit {
+		&::after {
+			left: 43px;
+		}
+	}
+
+	&__head {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: @white;
+		border: @grey-border;
+		position: relative;
+		min-height: 350px;
+
+		.lg-block({
+			min-height: 300px;
+		});
+
+		.sm-block({
+			min-height: 225px;
+		});
+
+		.xs-block({
+			min-height: 175px;
+		});
+	}
+
+	&__info {
+		display: block;
+	}
+
+	&__img {
+		max-width: 208px;
+		max-height: 208px;
+
+		.sm-block({
+			max-width: 100px;
+			max-height: 100px;
+		});
+	}
+
+	&__add {
+		padding: 20px;
+		background-color: @lime;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: 10;
+
+		.sm-block({
+			padding: 8px;
+		});
+	}
+
+	&__props {
+		padding-top: 14px;
+
+		.sm-block({
+			padding-top: 6px;
+		});
+
+		span:first-child {
+			margin-right: 20px;
+		}
+	}
+
+	&__title {
+		margin: 20px 0;
+
+		.sm-block({
+			margin: 10px 0;
+		});
+	}
+}

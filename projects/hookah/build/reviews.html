@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Отзывы</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<div class="popup popup--reviews">
+		<div class="popup__wrapper">
+			<button class="popup__close closePopup">
+				<img src="img/icon-close.svg" width="25" height="25" alt="">
+			</button>
+			<div class="popup__body">
+				<div class="popup__info">
+					<h2 class="title title--medium popup__title">Напишите отзыв о нашей работе или о товаре, который вы приобрели у нас</h2>
+				</div>
+				<div class="popup__content">
+					<form class="form">
+						<label class="form__label">
+							<input type="text" name="reviews-name" maxlength="150" placeholder="Имя и Фамилия *" class="form__input">
+						</label>
+						<label class="form__label">
+							<input type="tel"  name="feedback-phone" maxlength="20" placeholder="Телефон *" class="form__input">
+						</label>
+						<label class="form__label">
+							<input type="email" name="feedback-email" maxlength="50" placeholder="Email *" class="form__input">
+						</label>
+						<label class="form__label">
+							<textarea name="feedback-message" placeholder="Сообщение" maxlength="1000" class="form__input form__textarea"></textarea>
+						</label>
+						<div class="form__bottom">
+							<button class="button button--green form__button">Отправить</button>
+							<p class="form__caption">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.png" alt="Логотип интернет-магазина кальянов hookahset.ru">
+				</a>
+				<div class="nav header__nav">
+					<div class="nav__main">
+						<button class="nav__bar"><span></span></button>
+						<div class="nav__body">
+							<div class="nav__bodyWrapper">
+								<nav class="nav__list">
+									<a href="catalog.html" class="link nav__link">Каталог</a>
+									<a href="blog.html" class="link nav__link">Блог</a>
+									<a href="opt.html" class="link nav__link">Опт и сотрудничество</a>
+									<a href="contacts.html" class="link nav__link">Контакты</a>
+								</nav>
+								<div class="nav__contact">
+									<div class="nav__social">
+										<a href="#" class="link link--social">Telegram</a>
+										<a href="#" class="link link--social">Вконтакте</a>
+									</div>
+									<div class="nav__bottom">
+										<a href="tel:+79857292237" class="title title--medium nav__phone">+7 (985) 729-22-37</a>
+										<p class="title title--medium">
+											Пишите в 
+											<a href="#">WhatsApp</a> или <a href="#">Telegram</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="nav__controls">
+						<button class="nav__control nav__cart">
+							<img src="img/icon-cart.svg" alt="Корзина">
+						</button>
+						<button class="nav__control nav__search">
+							<img src="img/icon-search.svg" alt="Поиск">
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="reviews">
+		<div class="container">
+			<h1 class="title title--large reviews__title">Отзывы</h1>
+			<div class="reviews__wrapper">
+				<div class="reviews__list">
+					<div class="reviews__item review">
+						<p class="caption review__caption">г. Москва</p>
+						<h3 class="title title--small review__title">Сергей Кошелев</h3>
+						<div class="text review__content">
+							<div class=" review__text">
+								<p class="review__preview">«Спасибо за то, что выручили в условиях самоизоляции. Домашние запасы заканчивались, а ближайшие магазины с табаком все давно закрыты.</p>
+								<p class="review__detail">Отдельное спасибо менеджеру Кириллу! Не смотря на то, что мы сделали совсем небольшой заказ - он отнёсся к нему со всей серьезностью. Проконсультировал по наличию продукции и оперативно внёс в заказ все изменения. Уже на следующий день после того, как мы обо всём договорились - заказ был у нас. Теперь снова можем коротать время дома с кальяном :)»</p>
+								<button class="review__show">Читать дальше</button>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item review">
+						<p class="caption review__caption">г. Москва</p>
+						<h3 class="title title--small review__title">Дмитрий Юрьевич</h3>
+						<div class="review__content">
+							<div class="text review__text">
+								<p>«Выражаю огромную благодарность всему персоналу, всем рекомендую! все четко быстро и по делу, большой ассортимент качество на высоте. Всем дымного.»</p>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item review">
+						<p class="caption review__caption">г. Москва</p>
+						<h3 class="title title--small review__title">Карина</h3>
+						<div class="review__content">
+							<div class="text review__text">
+								<p>«Спасибо большое за оперативные ответы (даже в час ночи) и внимательное отношение. Забыли про один табак, привезли почти сразу с подарком. Рекомендую!»</p>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item review">
+						<p class="caption review__caption">г. Москва</p>
+						<h3 class="title title--small review__title">Сергей валерьевич</h3>
+						<div class="review__content">
+							<div class="review__img">
+								<img src="img/review-img.jpg" alt="">
+							</div>
+							<div class="text review__text">
+								<p>«Выражаю огромную благодарность всему персоналу, всем рекомендую! <br>
+									Все четко быстро и по делу, большой ассортимент качество на высоте. <br>
+								Всем дымного.»</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__banner">
+					<h2 class="title title--medium reviews__bannerTitle">
+						Пользовались нашими товарами?
+						<span>Напишите отзыв!</span>
+					</h2>
+					<button class="button button--green openPopup">Написать</button>
+				</div>
+				<div class="reviews__list">
+					<div class="reviews__item review">
+						<p class="caption review__caption">г. Москва</p>
+						<h3 class="title title--small review__title">Сергей Кошелев</h3>
+						<div class="text review__content">
+							<div class=" review__text">
+								<p class="review__preview">«Спасибо за то, что выручили в условиях самоизоляции. Домашние запасы заканчивались, а ближайшие магазины с табаком все давно закрыты.</p>
+								<p class="review__detail">Отдельное спасибо менеджеру Кириллу! Не смотря на то, что мы сделали совсем небольшой заказ - он отнёсся к нему со всей серьезностью. Проконсультировал по наличию продукции и оперативно внёс в заказ все изменения. Уже на следующий день после того, как мы обо всём договорились - заказ был у нас. Теперь снова можем коротать время дома с кальяном :)»</p>
+								<button class="review__show">Читать дальше</button>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item review">
+						<p class="caption review__caption">г. Москва</p>
+						<h3 class="title title--small review__title">Дмитрий Юрьевич</h3>
+						<div class="review__content">
+							<div class="text review__text">
+								<p>«Выражаю огромную благодарность всему персоналу, всем рекомендую! все четко быстро и по делу, большой ассортимент качество на высоте. Всем дымного.»</p>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item review">
+						<p class="caption review__caption">г. Москва</p>
+						<h3 class="title title--small review__title">Карина</h3>
+						<div class="review__content">
+							<div class="text review__text">
+								<p>«Спасибо большое за оперативные ответы (даже в час ночи) и внимательное отношение. Забыли про один табак, привезли почти сразу с подарком. Рекомендую!»</p>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item review">
+						<p class="caption review__caption">г. Москва</p>
+						<h3 class="title title--small review__title">Сергей валерьевич</h3>
+						<div class="review__content">
+							<div class="review__img">
+								<img src="img/review-img.jpg" alt="">
+							</div>
+							<div class="text review__text">
+								<p>«Выражаю огромную благодарность всему персоналу, всем рекомендую! <br>
+									Все четко быстро и по делу, большой ассортимент качество на высоте. <br>
+								Всем дымного.»</p>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item review">
+						<p class="caption review__caption">г. Москва</p>
+						<h3 class="title title--small review__title">Сергей Кошелев</h3>
+						<div class="text review__content">
+							<div class=" review__text">
+								<p class="review__preview">«Спасибо за то, что выручили в условиях самоизоляции. Домашние запасы заканчивались, а ближайшие магазины с табаком все давно закрыты.</p>
+								<p class="review__detail">Отдельное спасибо менеджеру Кириллу! Не смотря на то, что мы сделали совсем небольшой заказ - он отнёсся к нему со всей серьезностью. Проконсультировал по наличию продукции и оперативно внёс в заказ все изменения. Уже на следующий день после того, как мы обо всём договорились - заказ был у нас. Теперь снова можем коротать время дома с кальяном :)»</p>
+								<button class="review__show">Читать дальше</button>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item review">
+						<p class="caption review__caption">г. Москва</p>
+						<h3 class="title title--small review__title">Дмитрий Юрьевич</h3>
+						<div class="review__content">
+							<div class="text review__text">
+								<p>«Выражаю огромную благодарность всему персоналу, всем рекомендую! все четко быстро и по делу, большой ассортимент качество на высоте. Всем дымного.»</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__left">
+					<a href="index.html" class="footer__logo">
+						<img src="img/logo-white.png" alt="Логотип интернет-магазина кальянов hookahset.ru">
+					</a>
+					<div class="footer__social footer__social--mobile">
+						<a href="#" class="link link--social footer__link">Telegram</a>
+						<a href="#" class="link link--social footer__link">Вконтакте</a>
+					</div>
+				</div>
+				<div class="footer__body">
+					<div class="footer__social footer__social--desktop">
+						<a href="#" class="link link--social footer__link">Telegram</a>
+						<a href="#" class="link link--social footer__link">Вконтакте</a>
+					</div>
+					<div class="footer__content">
+						<a href="mailto:hello@hookahset.store" class="title title--medium">hello@hookahset.store</a>
+						<a href="tel:+79857292237" class="title title--medium footer__phone">+7 (985) 729-22-37</a>
+						<p class="title title--medium">
+							Пишите в 
+							<a href="#">WhatsApp</a> или <a href="#">Telegram</a>
+						</p>
+					</div>
+				</div>
+				<div class="footer__info">
+					<nav class="footer__nav">
+						<a href="catalog.html" class="link footer__navLink">Каталог</a>
+						<a href="blog.html" class="link footer__navLink">Блог</a>
+						<a href="opt.html" class="link footer__navLink">Опт и сотрудничество</a>
+						<a href="contacts.html" class="link footer__navLink">Контакты</a>
+						<a href="#" class="link footer__navLink footer__navLink--policy">Политика конфиденциальности</a>
+					</nav>
+					<div class="footer__bottom">
+						<p>2013-2022 © «Hookah-set.ru  Магазин кальянов»</p>
+						<p>ОГРН: 314503223900060</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/all.js"></script>
+</body>
+</html>

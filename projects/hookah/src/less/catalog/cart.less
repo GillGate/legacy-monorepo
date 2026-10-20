@@ -1,0 +1,381 @@
+.cart {
+	&__wrapper {
+		max-width: 1050px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		.sm-block({
+			padding: 0 16px;
+		});
+	}
+
+	&__list {
+		width: 100%;
+		margin-top: 50px;
+
+		.md-block({
+			display: block;
+		});
+
+		.sm-block({
+			padding: 0 16px;
+		});
+
+		tr {
+			border-bottom: 1px solid #CAD3DE;
+
+			td {
+				padding: 30px 10px;
+
+				.md-block({
+					padding: 0;
+				});
+			}
+		}
+
+		thead {
+			.md-block({
+				display: none;
+			});
+		}
+
+		thead tr > td{
+			padding: 20px 0;
+		}
+
+		tbody {
+			.md-block({
+				display: block;
+			});
+		}
+	}
+
+	&__caption {
+		font-size: 20px;
+		line-height: 16px;
+		font-family: "Bebas Neue", sans-serif;
+		font-weight: 700;
+		color: @grey;
+	}
+
+	&__total {
+		border: none !important;
+
+		.md-block({
+			display: block;
+			max-width: 100px;
+			margin-top: 20px;
+			margin-left: auto;
+		});
+
+		&Caption {
+			.sm-block({
+				font-size: 16px;
+				line-height: 18px;
+			});
+		}
+
+		&Text {
+			margin-top: 8px;
+
+			.sm-block({
+				font-size: 40px;
+				line-height: 42px;
+			});
+		}
+
+		td {
+			&:first-child {
+				.md-block({
+					display: none;
+				});
+			}
+
+			&:last-child {
+				width: 100%;
+
+				.md-block({
+					// display: inline-flex;
+					// flex-direction: column;
+					// align-content: flex-end;
+				});
+			}
+		}
+	}
+
+	&__order {
+		margin-top: 44px;
+		padding: 60px;
+		background-color: @black;
+		border-radius: 20px;
+
+		.sm-block({
+			padding: 30px 20px;
+			border-radius: 0;
+		});
+
+		&Title {
+			max-width: 430px;
+			color: @white;
+
+			.mmd-block({
+				max-width: 340px;
+			});
+
+			.sm-block({
+				font-size: 30px;
+				line-height: 32px;
+				text-align: center;
+				margin: 0 auto;
+				max-width: 420px;
+			});
+
+			span {
+				color: @lime;
+			}
+		}
+	}
+
+	&__form {
+		margin-top: 40px;
+		width: 100%;
+		max-width: initial;
+
+		.sm-block({
+			max-width: 450px;
+			margin: 30px auto 0;
+		});
+
+		&Body {
+			display: flex;
+
+			.sm-block({
+				display: block;
+			});
+		}
+
+		&Required {
+			flex-grow: 1;
+			margin-right: 30px;
+
+			.sm-block({
+				margin-right: 0;
+			});
+		}
+
+		.form__label {
+			flex-grow: 1;
+		}
+
+		.form__input {
+			background-color: @black;
+			color: @white;
+			border-bottom: 2px solid @white;
+		}
+
+		.form__textarea {
+			height: 160px;
+
+			.sm-block({
+				height: 100px;
+			});
+		}
+
+		.form__caption {
+			max-width: 270px;
+		}
+	}
+}
+
+.cartItem {
+	.md-block({
+		padding: 20px 0 30px;
+		display: grid; 
+		grid-auto-flow: column dense; 
+		grid-auto-columns: 1fr; 
+		grid-auto-rows: 1fr; 
+		grid-template-columns: 1fr 1fr; 
+  		grid-template-rows: max-content max-content max-content; 
+		gap: 20px 20px; 
+		grid-template-areas: 
+	    "info info"
+	    "img price"
+	    "img count"; 
+	    position: relative;
+
+	    .sm-block({
+	    	gap: 10px 10px;
+	    });
+	});
+
+	&__area {
+		&--img {
+			// display: table-cell;
+
+			.md-block({
+				grid-area: img;
+			});
+		}
+
+		&--info {
+			width: 50%;
+			// display: table-cell;
+
+			.md-block({
+				width: auto;
+				grid-area: info;
+			});
+		}
+
+		&--count {
+			width: 30%;
+			// display: table-cell;
+
+
+			.md-block({
+				width: auto;
+				grid-area: count;
+			});
+		}
+
+		&--price {	
+			width: 20%;
+			// display: table-cell;
+
+
+			.md-block({
+				width: auto;
+				grid-area: price;
+			});
+		}
+
+		&--delete {
+			// display: table-cell;
+
+			.md-block({
+				position: absolute;
+				top: 30px;
+				right: 0;
+			});
+
+			.sm-block({
+				top: 10px;
+			});
+		}
+	}
+
+	&__img {
+		width: 105px;
+		height: 105px;
+		margin-right: 42px;
+
+		.mmd-block({
+			margin-right: 20px;
+		});
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__info {
+		max-width: 364px;
+
+		.mmd-block({
+			max-width: 250px;
+		});
+
+		.md-block({
+			max-width: initial;
+		});
+	}
+
+	&__props {
+		display: flex;
+		margin-bottom: 20px;
+	}
+
+	&__prop {
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__btn {
+		width: 35px;
+		height: 35px;
+		font-size: 20px;
+		line-height: 22px;
+		background-color: @grey-bg;
+		color: @grey;
+		border: 1px solid #CAD3DE;
+		border-radius: 5px;
+		transition: background-color .5s ease, border .5s ease;
+	}
+
+	&__count {
+		display: flex;
+
+		.md-block({
+			justify-content: flex-end;
+		});
+
+		&Input {
+			width: 35px;
+			height: 35px;
+			font-size: 16px;
+			line-height: 22px;
+			border: 1px solid #CAD3DE;
+			text-align: center;
+			box-sizing: border-box;
+			margin: 0 -1px;
+		}
+
+		&Btn {
+			&:hover {
+				background-color: #F1F1F6;
+			}
+
+			&--less {
+				border-radius: 5px 0 0 5px;
+			}
+
+			&--more {
+				border-radius: 0 5px 5px 0;
+			}
+		}
+	}
+
+	&__price {
+		.md-block({
+			text-align: right;
+		});
+
+		.sm-block({
+			font-size: 30px;
+			line-height: 32px;
+		});
+	}
+
+	&__removeBtn {
+		&:hover {
+			background-color: @lime;
+			border-color: @black;
+		}
+
+		.md-block({
+			background: none !important;
+			border: none !important;
+		});
+
+		img {
+			width: 16px;
+			height: 16px;
+		}
+	}
+}

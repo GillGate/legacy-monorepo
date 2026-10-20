@@ -1,0 +1,148 @@
+.filter {
+	display: block;
+	max-width: 240px;
+	position: sticky;
+	top: 50px;
+
+	.md-block({
+		display: none;
+		padding: 30px 20px;
+		background-color: @white;
+		border: 2px solid @black;
+		border-radius: 20px;
+		position: absolute;
+		top: 120px;
+		left: 0;
+		z-index: 100;
+	});
+
+	.sm-block({
+		top: 92px;
+	});
+
+	.xs-block({
+		max-width: 100%;
+	});
+
+	&__section {
+		margin-bottom: 60px;
+
+		.sm-block({
+			margin-bottom: 30px;
+		});
+
+		&:last-child {
+			margin-bottom: 0!important;
+		}
+	}
+
+	&__body {
+		margin-top: 20px;
+		padding-top: 30px;
+		border-top: 2px solid #CAD3DE;
+
+		.sm-block({
+			margin-top: 14px;
+			padding-top: 14px;
+		});
+	}
+
+	&__checkbox {
+		margin-bottom: 14px;
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		line-height: 16px;
+
+		input[name=maker]:checked + label {
+			&::before {
+				background-color: @black;
+				background-image: url(../img/icon-check.svg);
+			}
+		}
+
+		&Label {
+			display: flex;
+			align-items: center;
+			position: relative;
+			cursor: pointer;
+
+			&::before {
+				content: '';
+				width: 16px;
+				height: 16px;
+				display: block;
+				margin-right: 10px;
+				background: transparent no-repeat center / 10px 8px;
+				border: 2px solid #000;
+				border-radius: 3px;
+				transition: background .5s ease;
+			}
+		}
+
+		&Count {
+			margin-left: 10px;
+			color: @grey;
+		}
+
+		&More {
+			display: flex;
+			align-items: center;
+			margin-top: 24px;
+			font-family: Inter, sans-serif;
+			font-size: 13px;
+			line-height: 16px;
+			font-weight: 700;
+			text-transform: uppercase;
+
+			&::after {
+				content: '';
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				padding-left: 16px;
+				background: url(../img/icon-arrow-up.svg) no-repeat center / contain;
+			}
+		}
+	}
+
+	&__rangeBody {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		span {
+			margin: 0 12px;
+			font-size: 14px;
+		}
+
+		&Input {
+			width: 100%;
+			max-width: 100px;
+			padding: 6px 10px;
+			font-size: 14px;
+			line-height: 16px;
+			border: 1px solid #CAD3DE;
+		}
+	}
+
+	&__rangeSlider {
+		max-width: 234px;
+		height: 2px;
+		margin: 24px auto 0;
+		background-color: #CAD3DE;
+
+		.ui-slider-range {
+			background-color: @black;
+		}
+
+		.ui-slider-handle {
+			width: 15px;
+			height: 15px;
+			background-color: @lime;
+			border: 2px solid @black;
+			border-radius: 50%;
+			transform: translateY(-20%);
+		}
+	}
+}

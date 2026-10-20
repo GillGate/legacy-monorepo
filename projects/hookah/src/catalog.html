@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Каталог</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.png" alt="Логотип интернет-магазина кальянов hookahset.ru">
+				</a>
+				<div class="nav header__nav">
+					<div class="nav__main">
+						<button class="nav__bar"><span></span></button>
+						<div class="nav__body">
+							<div class="nav__bodyWrapper">
+								<nav class="nav__list">
+									<a href="catalog.html" class="link nav__link">Каталог</a>
+									<a href="blog.html" class="link nav__link">Блог</a>
+									<a href="opt.html" class="link nav__link">Опт и сотрудничество</a>
+									<a href="contacts.html" class="link nav__link">Контакты</a>
+								</nav>
+								<div class="nav__contact">
+									<div class="nav__social">
+										<a href="#" class="link link--social">Telegram</a>
+										<a href="#" class="link link--social">Вконтакте</a>
+									</div>
+									<div class="nav__bottom">
+										<a href="tel:+79857292237" class="title title--medium nav__phone">+7 (985) 729-22-37</a>
+										<p class="title title--medium">
+											Пишите в 
+											<a href="#">WhatsApp</a> или <a href="#">Telegram</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="nav__controls">
+						<button class="nav__control nav__cart">
+							<img src="img/icon-cart.svg" alt="Корзина">
+						</button>
+						<button class="nav__control nav__search">
+							<img src="img/icon-search.svg" alt="Поиск">
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="catalog">
+		<div class="container">
+			<h1 class="title title--large catalog__title">Каталог</h1>
+			<form class="catalog__search">
+				<div class="catalog__searchBody">
+					<input type="text" name="search" placeholder="Введите ваш запрос" class="catalog__searchInput">
+					<div class="catalog__searchOptions">
+						<div class="catalog__searchTypes">
+							<input type="radio" name="type" value="tabak" id="tabak" class="vh">
+							<label for="tabak" class="catalog__option catalog__searchType" id="tabak-label">Табак</label>
+
+							<input type="radio" name="type" value="ecig" id="ecig" class="vh">
+							<label for="ecig" class="catalog__option catalog__searchType">Электронные сигареты</label>
+
+							<input type="radio" name="type" value="hookah" id="hookah" class="vh">
+							<label for="hookah" class="catalog__option catalog__searchType">Кальяны</label>
+
+							<input type="radio" name="type" value="charcoal" id="charcoal" class="vh">
+							<label for="charcoal" class="catalog__option catalog__searchType">Уголь для кальяна</label>
+
+							<input type="radio" name="type" value="accessories" id="accessories" class="vh">
+							<label for="accessories" class="catalog__option catalog__searchType">Аксессуары для кальяна</label>
+						</div>
+						<div class="catalog__searchResults">
+							<a href="product.html" class="link link--arrow catalog__searchResult">Brusko</a>
+							<a href="product.html" class="link link--arrow catalog__searchResult">Brusko - Ананас с Помело и Личи, Ананас с Помело и Личи</a>
+							<a href="product.html" class="link link--arrow catalog__searchResult">Brusko - Ананас с Помело и Личи</a>
+							<a href="product.html" class="link link--arrow catalog__searchResult">Brusko - Ананас с Помело и Личи </a>
+							<a href="product.html" class="link link--arrow catalog__searchResult">Brusko - Ананас с Помело и Личи</a>
+						</div>
+					</div>
+				</div>
+				<button class="catalog__searchBtn">
+					<img src="img/icon-search.svg" alt="Найти">
+				</button>
+			</form>
+			<div class="catalog__wrapper">
+				<aside class="catalog__aside">
+					<div class="filter catalog__filter">
+						<div class="filter__section">
+							<h2 class="title title--small filter__title">Производитель</h2>
+							<div class="filter__body">
+								<div class="filter__group">
+									<div class="filter__checkbox">
+										<input type="checkbox" name="maker" value="shisha_box" id="shisha_box" class="vh">
+										<label for="shisha_box" class="filter__checkboxLabel">Shisha Box</label>
+										<span class="filter__checkboxCount">45</span>
+									</div>
+									<div class="filter__checkbox">
+										<input type="checkbox" name="maker" value="dark_side" id="dark_side" class="vh">
+										<label for="dark_side" class="filter__checkboxLabel">Dark Side</label>
+										<span class="filter__checkboxCount">455</span>
+									</div>
+									<div class="filter__checkbox">
+										<input type="checkbox" name="maker" value="daily_hookah" id="daily_hookah" class="vh">
+										<label for="daily_hookah" class="filter__checkboxLabel">Daily Hookah</label>
+										<span class="filter__checkboxCount">455</span>
+									</div>
+									<div class="filter__checkbox">
+										<input type="checkbox" name="maker" value="shisha_box1" id="shisha_box1" class="vh">
+										<label for="shisha_box1" class="filter__checkboxLabel">Shisha Box</label>
+										<span class="filter__checkboxCount">45</span>
+									</div>
+									<div class="filter__checkbox">
+										<input type="checkbox" name="maker" value="dark_side1" id="dark_side1" class="vh">
+										<label for="dark_side1" class="filter__checkboxLabel">Dark Side</label>
+										<span class="filter__checkboxCount">455</span>
+									</div>
+									<div class="filter__checkbox">
+										<input type="checkbox" name="maker" value="daily_hookah1" id="daily_hookah1" class="vh">
+										<label for="daily_hookah1" class="filter__checkboxLabel">Daily Hookah</label>
+										<span class="filter__checkboxCount">455</span>
+									</div>
+								</div>
+								<button class="filter__checkboxMore">Показать больше</button>
+							</div>
+						</div>
+						<div class="filter__section">
+							<h2 class="title title--small filter__title">Цена</h2>
+							<div class="filter__body">
+								<div class="filter__rangeBody">
+									<input type="text" class="filter__rangeBodyInput filter__rangeBodyMin" readonly value="150">
+									<span>—</span>
+									<input type="text" class="filter__rangeBodyInput filter__rangeBodyMax" readonly value="1650">
+								</div>
+								<div class="filter__rangeSlider"></div>
+							</div>
+						</div>
+					</div>
+				</aside>
+				<main class="catalog__main">
+					<div class="catalog__mainHead">
+						<h3 class="title title--medium catalog__mainTitle">Табак</h3>
+						<p class="caption catalog__mainCount">
+							<span>268</span> товаров
+						</p>
+					</div>
+					<div class="catalog__options">
+						<div class="catalog__slider">
+							<button type="button" class="catalog__sliderControl catalog__sliderControl--prev">
+								<img src="img/icon-arrow-left.svg" width="16" height="16" alt="Назад">
+							</button>
+							<div class="catalog__sliderBody">
+								<div>
+									<button class="catalog__sliderItem">
+										<img src="img/catalog-slider-1.png" alt="">
+									</button>
+								</div>
+								<div>
+									<button class="catalog__sliderItem">
+										<img src="img/catalog-slider-2.png" alt="">
+									</button>
+								</div>
+								<div>
+									<button class="catalog__sliderItem">
+										<img src="img/catalog-slider-3.png" alt="">
+									</button>
+								</div>
+								<div>
+									<button class="catalog__sliderItem">
+										<img src="img/catalog-slider-1.png" alt="">
+									</button>
+								</div>
+								<div>
+									<button class="catalog__sliderItem">
+										<img src="img/catalog-slider-2.png" alt="">
+									</button>
+								</div>
+								<div>
+									<button class="catalog__sliderItem">
+										<img src="img/catalog-slider-3.png" alt="">
+									</button>
+								</div>
+								<div>
+									<button class="catalog__sliderItem">
+										<img src="img/catalog-slider-1.png" alt="">
+									</button>
+								</div>
+								<div>
+									<button class="catalog__sliderItem">
+										<img src="img/catalog-slider-2.png" alt="">
+									</button>
+								</div>
+							</div>
+							<button type="button" class="catalog__sliderControl catalog__sliderControl--next">
+								<img src="img/icon-arrow-right.svg" width="16" height="16" alt="Вперёд">
+							</button>
+						</div>
+						<button class="catalog__actionBtn catalog__filterBtn">
+							Фильтры
+						</button>
+						<div class="catalog__sort">
+							<button type="button" class="catalog__actionBtn catalog__sortBtn">
+								Сортировать
+							</button>
+							<div class="catalog__sortBody">
+								<button class="catalog__option catalog__sortOption catalog__sortOption--active">Популярные первыми</button>
+								<button class="catalog__option catalog__sortOption">Сначала дешевые</button>
+								<button class="catalog__option catalog__sortOption">Сначала дорогие</button>
+								<button class="catalog__option catalog__sortOption">Сначала Хиты продаж</button>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__list">
+						<div class="catalog__item">
+							<article class="product product--hit">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-1.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Bonche – Barberry</h3>
+									<p class="title title--small product__price">650 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product product--new">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-1.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Bonche – Barberry</h3>
+									<p class="title title--small product__price">650 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product product--new product--hit">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-2.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Brusko - Ананас с Помело и Личи</h3>
+									<p class="title title--small product__price">150 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-1.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Bonche – Barberry</h3>
+									<p class="title title--small product__price">650 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product product--hit">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-1.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Bonche – Barberry</h3>
+									<p class="title title--small product__price">650 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product product--new">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-1.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Bonche – Barberry</h3>
+									<p class="title title--small product__price">650 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product product--new product--hit">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-2.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Brusko - Ананас с Помело и Личи</h3>
+									<p class="title title--small product__price">150 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-1.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Bonche – Barberry</h3>
+									<p class="title title--small product__price">650 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__alert">
+							<div class="catalog__alertControl catalog__alertControl--prev"></div>
+							<div class="catalog__alertSlider">
+								<div>
+									<div class="catalog__alertItem">
+										<div class="catalog__alertInfo">
+											<p class="title title--medium catalog__alertTitle">
+												<span>Табак Duft</span> - нашумевшая новинка на российском рынке
+											</p>
+											<a href="product.html" class="button button--green catalog__alertBtn">Подробнее</a>
+										</div>
+										<div class="catalog__alertImg">
+											<img src="img/sections-img-1.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="catalog__alertItem">
+										<div class="catalog__alertInfo">
+											<p class="title title--medium catalog__alertTitle">
+												<span>Электронные сигареты</span> - нашумевшая новинка на российском рынке
+											</p>
+											<a href="product.html" class="button button--green catalog__alertBtn">Подробнее</a>
+										</div>
+										<div class="catalog__alertImg">
+											<img src="img/sections-img-2.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="catalog__alertItem">
+										<div class="catalog__alertInfo">
+											<p class="title title--medium catalog__alertTitle">
+												<span>Кальян</span> - нашумевшая новинка на российском рынке
+											</p>
+											<a href="product.html" class="button button--green catalog__alertBtn">Подробнее</a>
+										</div>
+										<div class="catalog__alertImg">
+											<img src="img/sections-img-3.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dots catalog__alertDots"></div>
+							<div class="catalog__alertControl catalog__alertControl--next"></div>
+						</div>
+						<div class="catalog__item">
+							<article class="product product--hit">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-1.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Bonche – Barberry</h3>
+									<p class="title title--small product__price">650 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product product--new">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-1.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Bonche – Barberry</h3>
+									<p class="title title--small product__price">650 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product product--new product--hit">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-2.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Brusko - Ананас с Помело и Личи</h3>
+									<p class="title title--small product__price">150 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-1.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Bonche – Barberry</h3>
+									<p class="title title--small product__price">650 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product product--hit">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-1.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Bonche – Barberry</h3>
+									<p class="title title--small product__price">650 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product product--new">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-1.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Bonche – Barberry</h3>
+									<p class="title title--small product__price">650 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product product--new product--hit">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-2.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Brusko - Ананас с Помело и Личи</h3>
+									<p class="title title--small product__price">150 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-1.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Bonche – Barberry</h3>
+									<p class="title title--small product__price">650 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product product--hit">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-1.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Bonche – Barberry</h3>
+									<p class="title title--small product__price">650 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product product--new">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-1.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Bonche – Barberry</h3>
+									<p class="title title--small product__price">650 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product product--new product--hit">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-2.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Brusko - Ананас с Помело и Личи</h3>
+									<p class="title title--small product__price">150 ₽</p>
+								</a>
+							</article>
+						</div>
+						<div class="catalog__item">
+							<article class="product">
+								<div class="product__head">
+									<div class="product__img">
+										<img src="img/product-img-1.jpg" alt="">
+									</div>
+									<button class="product__add">
+										<img src="img/icon-cart.svg" alt="Добавить в корзину">
+									</button>
+								</div>
+								<a href="product.html" class="product__info">
+									<p class="product__props">
+										<span class="caption">
+											Табак
+										</span>
+										<span class="caption">
+											200 г
+										</span>
+									</p>
+									<h3 class="title title--tiny product__title">Bonche – Barberry</h3>
+									<p class="title title--small product__price">650 ₽</p>
+								</a>
+							</article>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__left">
+					<a href="index.html" class="footer__logo">
+						<img src="img/logo-white.png" alt="Логотип интернет-магазина кальянов hookahset.ru">
+					</a>
+					<div class="footer__social footer__social--mobile">
+						<a href="#" class="link link--social footer__link">Telegram</a>
+						<a href="#" class="link link--social footer__link">Вконтакте</a>
+					</div>
+				</div>
+				<div class="footer__body">
+					<div class="footer__social footer__social--desktop">
+						<a href="#" class="link link--social footer__link">Telegram</a>
+						<a href="#" class="link link--social footer__link">Вконтакте</a>
+					</div>
+					<div class="footer__content">
+						<a href="mailto:hello@hookahset.store" class="title title--medium">hello@hookahset.store</a>
+						<a href="tel:+79857292237" class="title title--medium footer__phone">+7 (985) 729-22-37</a>
+						<p class="title title--medium">
+							Пишите в 
+							<a href="#">WhatsApp</a> или <a href="#">Telegram</a>
+						</p>
+					</div>
+				</div>
+				<div class="footer__info">
+					<nav class="footer__nav">
+						<a href="catalog.html" class="link footer__navLink">Каталог</a>
+						<a href="blog.html" class="link footer__navLink">Блог</a>
+						<a href="opt.html" class="link footer__navLink">Опт и сотрудничество</a>
+						<a href="contacts.html" class="link footer__navLink">Контакты</a>
+						<a href="#" class="link footer__navLink footer__navLink--policy">Политика конфиденциальности</a>
+					</nav>
+					<div class="footer__bottom">
+						<p>2013-2022 © «Hookah-set.ru  Магазин кальянов»</p>
+						<p>ОГРН: 314503223900060</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/all.js"></script>
+</body>
+</html>
