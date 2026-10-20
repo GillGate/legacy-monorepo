@@ -1,0 +1,491 @@
+.food {
+	background-color: @cream;
+	padding-top: 104px;
+
+	&__wrapper {
+		background-image: url(../img/food-bg.jpg);
+		background-position-x: center;
+		background-position-y: top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: @white;
+		min-height: 750px;
+		padding-top: 50px;
+		padding-bottom: 110px;
+
+		.smd-block({
+			background-image: url(../img/food-bg-mobile.jpg);
+		});
+	}
+
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1395px;
+		margin: 0 auto;
+
+		.smd-block({
+			flex-wrap: wrap;
+			margin-bottom: -24px;
+		});
+
+		.lsm-block({
+			justify-content: center;
+		});
+
+		.sm-block({
+			max-width: 250px;
+			justify-content: space-between;
+		});
+	}
+
+	.button--active {
+		border: 2px solid @gold-title;
+	}
+
+	&__button {
+		border: 2px solid transparent;
+
+		.slg-block({
+			font-size: 18px;
+			line-height: 22px;
+		});
+
+		.smd-block({
+			flex-basis: 30%;
+			min-width: 220px;
+			height: 50px;
+			margin-bottom: 24px;
+		});
+
+		.lsm-block({
+			margin: 0px 10px 24px;
+		});
+
+		.sm-block({
+			min-width: 120px;
+			margin: 0;
+			padding: 0;
+			margin-bottom: 12px;
+
+			&[data-list="soups"] {
+				order: 1;
+			}
+
+			&[data-list="specialities"] {
+				order: 2;
+			}
+
+			&[data-list="main"] {
+				order: 3;
+				min-width: 250px;
+			}
+
+			&[data-list="salads"] {
+				order: 4;
+				min-width: 250px;
+			}
+
+			&[data-list="dishes"] {
+				order: 5;
+			}
+
+			&[data-list="deserts"] {
+				order: 6;
+			}
+		});
+	}
+
+	&__menu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 78px;
+		font-family: Georgia;
+		position: relative;
+
+		.smd-block({
+			margin-top: 48px;
+			max-width: 640px;
+			border: 6px solid @gold-headerSlider;
+			margin: 78px auto 0;
+			padding: 50px;
+			box-sizing: border-box;
+			background: rgba(76, 76, 78, 0.5);
+		});
+
+		.sm-block({
+			padding: 0;
+			padding-bottom: 16px;
+			min-height: 340px;
+		});
+
+		.msm-block({
+			max-width: 386px;
+		});
+	}
+
+	&__list {
+		opacity: 0;
+		display: flex;
+		max-width: 1300px;
+		background: rgba(76, 76, 78, 0.5);
+		transition: opacity .3s ease;
+		position: absolute;
+
+		&::-webkit-scrollbar {
+		    width: 8px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+		    background-color: #fff;
+		    border-radius: 8px;
+		}
+
+		&::-webkit-scrollbar-track {
+		    background-color: rgba(255, 255, 255, 0.4);
+		    border-radius: 10px;
+		}
+
+		.smd-block({
+			flex-wrap: wrap;
+			width: auto;
+			max-width: 466px;
+			max-height: 770px;
+			background-color: transparent;
+		});
+
+		.sm-block({
+			overflow: hidden;
+			max-height: 570px;
+			max-width: 100%;
+			padding: 16px;
+			box-sizing: border-box;
+
+			&::after {
+				display: none !important;
+			}
+		});
+
+		.xs-block({
+			overflow: hidden;
+		});
+
+		&--active {
+			opacity: 1 !important;
+			position: relative;
+			z-index: 1;
+		}
+
+		&--salads {
+			height: 900px;
+
+			.foodMenu {
+				width: 1300px;
+				height: 100%;
+
+				li:first-child {
+					margin-right: 16%;
+				}
+
+				&::before {
+					content: '';
+					display: block;
+					width: 6px;
+					height: 100%;
+					background-color: @gold-headerSlider;
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+
+				&::after {
+					content: '';
+					display: block;
+					width: 322px;
+					height: 114px;
+					background:  url(../img/food-pepper.png) center no-repeat;
+					position: absolute;
+					bottom: 50px;
+					right: 0;
+					transform: translateX(-50%);
+				}
+			}
+
+			.slg-block({
+				width: 1200px;
+
+				.foodMenu {
+					&::after {
+						right: -50px;
+					}
+				}
+			});
+
+			.emd-block({
+				width: 1050px;
+
+				.foodMenu {
+					li {
+						width: 450px;
+						
+						&:first-child {
+							margin-right: 4%;
+						}
+					}
+				}
+			});
+
+			.smd-block({
+				padding-right: 40px;
+				overflow-y: scroll;
+
+				.foodMenu {
+					display: block;
+
+					&::before {
+						display: none;
+					}
+
+					&::after {
+						position: static;
+						margin: 20px auto;
+						transform: none;
+					}
+				}
+			});
+
+			.sm-block({
+				.foodMenu {
+					li {
+						height: 112px !important;
+					}
+
+					&::after {
+						display: none;
+					}
+				}
+			});
+		}
+
+		&--main {
+			.foodMenu {
+				width: 1300px;
+				height: 1430px;
+				border-color: transparent;
+				margin-top: -6px;
+    			margin-bottom: -6px;
+				border: 6px solid @gold-headerSlider;
+
+				.smd-block({
+					border: none;
+					height: auto;
+				});
+
+				li:first-child {
+					margin-right: 16%;
+				}
+
+				&::before {
+					content: '';
+					display: block;
+					width: 6px;
+					height: 100%;
+					background-color: @gold-headerSlider;
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+
+				&::after {
+					content: '';
+					display: block;
+					width: 140px;
+					height: 70px;
+					background: url(../img/food-main.png) center no-repeat;
+					position: absolute;
+					bottom: 30px;
+					left: 25%;
+					transform: translateX(-50%);
+				}
+			}
+
+			.slg-block({
+				width: 1200px;
+			});
+
+			.emd-block({
+				width: 1050px;
+
+				.foodMenu {
+					li {
+						width: 450px;
+						
+						&:first-child {
+							margin-right: 4%;
+						}
+					}
+				}
+			});
+
+			.smd-block({
+				.foodMenu {
+					display: block;
+					margin: 0;
+
+					&::before {
+						display: none;
+					}
+
+					&::after {
+						position: static;
+						margin: 20px auto;
+						transform: none;
+					}
+				}
+			});
+
+
+			.smd-block({
+				padding-right: 40px;
+				overflow-y: scroll;
+			});
+
+			.sm-block({
+				.foodMenu {
+					li {
+						height: 112px !important;
+					}
+
+					&::after {
+						display: none;
+					}
+				}
+			});
+		}
+
+		&--dishes {
+			.foodMenu {
+				&::after {
+					content: '';
+					display: block;
+					width: 134px;
+					height: 102px;
+					margin: 30px auto 0;
+					background: url(../img/food-dishes.png) center no-repeat;
+				}
+			}
+
+			.sm-block({
+				width: 75%;
+
+				.foodMenu {
+					width: 100%;
+				}
+			});
+
+			.msm-block({
+				width: 100%;
+			});
+		}
+
+		&--deserts {
+			.foodMenu {
+				&::after {
+					content: '';
+					display: block;
+					width: 148px;
+					height: 138px;
+					margin: 30px auto 0;
+					background: url(../img/food-mushrooms.png) center no-repeat;
+				}
+			}
+
+			.sm-block({
+				width: 75%;
+
+				.foodMenu {
+					width: 100%;
+				}
+			});
+
+			.msm-block({
+				width: 100%;
+			});
+		}
+
+	}
+
+	&__controls {
+		display: none;
+
+		.sm-block({
+			display: block;
+			margin-top: 30px;
+		});
+
+		.food__button {
+		    background: none;
+		    border: none;
+		    cursor: pointer;
+		    min-width: auto;
+		    height: 50px;
+
+		    &--prev {
+		    	transform: rotate(-90deg);
+    			margin-right: 20px;
+		    }
+
+		    &--next {
+		    	transform: rotate(90deg);
+    			margin-left: 20px;
+		    }
+		}
+	}
+
+	&__buttons {
+		display: flex;
+	 	align-items: center;
+
+		.xs-block({
+			text-align: center;
+
+			button {
+				margin: 0;
+			}
+		});
+	}
+
+	&__dots {
+		.sm-block({
+			display: flex;
+			justify-content: center;
+
+			li {
+				margin: 0px 7px;
+				cursor: pointer;
+			}
+
+			.slick-active {
+				button {
+					background-color: @gold;
+				}
+			}
+
+			button {
+				font-size: 0;
+				background-color: #767574;
+				width: 24px;
+				height: 2px;
+				border: none;
+			}
+		});
+			
+	}
+
+	&__sliderNav {
+		margin-bottom: 16px;
+	}
+}
