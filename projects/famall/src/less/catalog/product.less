@@ -1,0 +1,180 @@
+.product {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 24px 15px;
+	text-align: left;
+	border-radius: 10px;
+	box-sizing: border-box;
+	transition: box-shadow .5s ease;
+	position: relative;
+
+	.sm-block({
+		padding: 18px 10px;
+	});
+
+	.sm-block({
+		box-shadow: 0 0 4px 4px rgba(@grey, 0.3);
+	});
+
+	&:hover {
+		box-shadow: 7px 7px 7px 7px rgba(@grey, 0.3);
+
+		.sm-block({
+			box-shadow: 0 0 4px 4px rgba(@grey, 0.6);
+		});
+
+		.product__more {
+			color: @red;
+		}
+	}
+
+	&__head {
+	    display: flex;
+	    align-items: center;
+		flex-grow: 1;
+		position: relative;
+	}
+
+	&__marks {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+
+		.xs-block({
+			top: 4px;
+			left: 4px;
+		});
+	}
+
+	&__mark {
+		background-color: #17AF2C;
+		color: @white;
+		margin-bottom: 3px;
+		padding: 3px 6px;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 14px;
+
+		.sm-block({
+			padding: 2px 4px;
+			font-size: 12px;
+		});
+
+		&--hit {
+			background-color: #FF8400;
+		}
+
+		&--discount {
+			background-color: @red;
+		}
+	}
+
+	&__body {
+		min-height: 124px;
+		color: @grey;
+		padding-top: 16px;
+
+		.xs-block({
+			min-height: 104px;
+		});
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		font-size: 14px;
+
+		.sm-block({
+			font-size: 12px;
+		});
+	}
+
+	&__company {
+		text-transform: uppercase;
+	}
+
+	&__title {
+		color: @black;
+		font-size: 16px;
+		font-weight: 500;
+		margin: 6px 0 12px;
+
+		.xs-block({
+			font-size: 15px;
+		});
+	}
+
+	&__bottom {
+		display: flex;
+		align-items: flex-end;
+		min-height: 30px;
+	}
+
+	&__coupon {
+		margin-right: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+
+	&__price {
+		font-size: 24px;
+		color: @black;
+		font-weight: 500;
+		margin-right: 20px;
+
+		.xs-block({
+			display: flex;
+			flex-direction: column-reverse;
+			font-size: 17px;
+		});
+
+		span {
+			display: block;
+		}
+	}
+
+	&__priceDiscount {
+		font-size: 14px;
+		color: #A9A9A9;
+		text-decoration: line-through;
+
+		.lg-block({
+			font-size: 13px;
+		});
+
+		.xs-block({
+			font-size: 12px;
+		});
+
+		+span {
+			font-size: 20px;
+
+			.lg-block({
+				font-size: 18px;
+			});
+
+			.xs-block({
+				font-size: 16px;
+			});
+		}
+	}
+
+	&__more {
+		margin-left: auto;
+		text-transform: uppercase;
+		transition: color .5s ease;
+		font-size: 14px;
+
+		.md-block({
+			display: none;
+		});
+	}
+}

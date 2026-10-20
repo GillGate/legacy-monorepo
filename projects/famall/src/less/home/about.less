@@ -1,0 +1,155 @@
+.about {
+	margin: 140px 0 100px;
+
+	.md-block({
+		margin: 80px 0 60px;
+	});
+
+	&--product {
+		margin-top: 0 !important;
+		margin-bottom: 60px !important;
+
+		.md-block({
+			margin-bottom: 30px !important;
+		});
+
+		.sm-block({
+			margin-top: 50px !important; 
+		});
+	}
+
+	&--company {
+		margin: 0 0 100px;
+
+		.md-block({
+			margin: 0 0 60px;
+		});
+
+		.about__wrapper {
+			margin-top: 0px;
+		}
+
+		.about__info {
+			min-width: 430px;
+			max-width: 430px;
+		}
+
+		.about__logo {
+			position: relative;
+
+			&::before {
+				content: '';
+				display: block;
+				width: 140px;
+				height: 140px;
+				background: url(../img/icon-play.png) no-repeat center / contain;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+
+	&__wrapper {
+		margin-top: 56px;
+		margin-bottom: 60px;
+		display: flex;
+		justify-content: space-between;
+
+		.md-block({
+			justify-content: center;
+			flex-wrap: wrap;
+		});
+	}
+
+	&__info {
+		min-width: 340px;
+		max-width: 340px;
+		flex-shrink: 1;
+		margin-right: 60px;
+		color: @grey;
+
+		.md-block({
+			text-align: center;
+			margin-right: 0;
+			margin-bottom: 30px;
+		});
+
+		.sm-block({
+			min-width: initial;
+		});
+	}
+
+	&__name {
+		margin-top: 44px;
+		text-transform: uppercase;
+		font-size: 22px;
+		font-weight: 500;
+		color: #555;
+	}
+
+	&__text {
+		margin-top: 40px;
+		text-align: justify;
+
+		.sm-block({
+			margin-top: 20px;
+		});
+
+		p {
+			margin-bottom: 16px;
+
+			&:first-child {
+				font-size: 18px;
+			}
+		}
+	}
+
+	&__content {
+		text-align: right;
+
+		p {
+			line-height: 28px;
+			// text-align: left;
+			text-align: justify;
+
+			.sm-block({
+				font-size: 14px;
+				line-height: 24px;
+			});
+		}
+	}
+
+	&__more {
+		margin-top: 32px;
+
+		.sm-block({
+			margin-top: 26px;
+		});
+	}
+
+	&__footer {
+		text-align: center;
+	}
+
+	&__social {
+		margin-top: 30px;
+
+		&List {
+			margin-top: 20px;
+		}
+
+		&Item {
+			margin: 0 10px;
+
+			.sm-block({
+				max-width: 60px;
+			});
+		}
+
+		&Text {
+			color: @grey;
+		}
+	}
+}

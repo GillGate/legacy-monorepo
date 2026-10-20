@@ -1,0 +1,186 @@
+.prodCert {
+	&__title {
+		font-size: 24px;
+		line-height: 32px;
+		font-weight: 700;
+	}
+
+	&__form {
+		margin-top: 30px;
+		display: block;
+		width: 100%;
+		position: relative;
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		height: 46px;
+		padding: 0 24px;
+		border-radius: 24px;
+		border: 1px solid @grey;
+		box-sizing: border-box;
+	}
+
+	&__close {
+		display: none;
+		width: 36px;
+		height: 36px;
+		padding: 4px;
+		border-radius: 50%;
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		right: 6px;
+		transform: translateY(-50%);
+
+		&--active {
+			display: block;
+		}
+	}
+
+	&__list {
+		.row-flex();
+
+		margin-top: 46px;
+		justify-content: space-between;
+
+		.md-block({
+			justify-content: center;
+		});
+
+		.sm-block({
+			margin-top: 28px;
+		});
+	}
+
+	&__notFound {
+		text-align: center;
+		padding: 46px 0;
+		display: none;
+
+		&--active {
+			display: block;
+		}
+	}
+
+	&__item {
+		.col();
+		.size(5.5);
+		.size-mmd(5.8);
+		.size-md(9);
+		.size-sm(12);
+
+		display: flex;
+		align-items: center;
+		margin-bottom: 60px;
+
+		.sm-block({
+			margin-bottom: 30px;
+		});
+
+		.xs-block({
+			align-items: flex-start;
+		});
+
+		&::before {
+			content: '';
+			display: block;
+			min-width: 32px;
+			width: 32px;
+			height: 32px;
+			background: url(../img/icon-pdf.png) no-repeat center / contain;
+			margin-right: 14px;
+		}
+	}
+
+	&__info {
+		margin-right: 14px;
+
+		&Title {
+			font-weight: 700;
+
+			.xs-block({
+				font-size: 14px;
+			});
+		}
+
+		&Caption {
+			font-size: 14px;
+			line-height: 19px;
+			color: @grey;
+
+			.xs-block({
+				font-size: 12px;
+			});
+		}
+	}
+
+	&__controls {
+		display: flex;
+		margin-left: auto;
+		min-width: 181px;
+
+		.xs-block({
+			min-width: initial;
+		});
+	}
+
+	&__control {
+		min-width: 32px;
+		padding: 0 8px;
+		box-sizing: border-box;
+		border-radius: 4px;
+		transition: background-color .3s ease;
+	}
+
+	&__watch {
+		width: 32px;
+		height: 32px;
+		background: #C0C0C0 url(../img/icon-watch.png) no-repeat center / 70%;
+		margin-right: 10px;
+
+		&:hover {
+			background-color: darken(#C0C0C0, 10%);
+		}
+	}
+
+	&__download {
+		background-color: @red;
+		color: @white;
+		display: flex;
+		align-items: center;
+
+		.xs-block({
+			font-size: 0;
+			background: @red url(../img/icon-download.png) no-repeat center / 54%;
+		});	
+
+		&:hover {
+			background-color: darken(@red, 8%);
+		}
+
+		span {
+			display: flex;
+			margin-left: 5px;
+			font-weight: 700;
+
+			.xs-block({
+				margin-left: 0;
+			});	
+
+			&::after {
+				content: '';
+				display: inline-block;
+				width: 17px;
+				height: 17px;
+				background: url(../img/icon-download.png) no-repeat center / contain;
+				margin-left: 8px;
+
+				.xs-block({
+					display: none;
+				});
+			}
+		}
+	}
+}

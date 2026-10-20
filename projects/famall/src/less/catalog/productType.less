@@ -1,0 +1,89 @@
+.productType {
+	&__wrapper {
+		.row-flex();
+
+		padding-bottom: 100px;
+
+		.md-block({
+			justify-content: center;
+			padding-bottom: 70px;
+		});
+
+		.xs-block({
+			padding-bottom: 0;
+		});
+	}
+
+	&__item {
+		.col();
+		.size(6);
+		.size-md(8);
+		.size-sm(10);
+		.size-xs(12);
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background: no-repeat right bottom / cover;
+		margin-bottom: 15px;
+		min-height: 330px;
+		padding: 32px 40px 36px;
+		color: @white;
+		box-sizing: border-box;
+		border-radius: 14px;
+		transition: transform .1s ease-in;
+
+		.md-block({
+			margin-bottom: 15px;
+			min-height: 275px;
+		});
+
+		.xs-block({
+			min-height: 220px;
+			padding: 16px 24px;
+		});
+
+		&:hover {
+			transform: scale(1.02);
+		}
+
+		&--ball {
+			background-image: url(../img/product-type-ball.png);
+		}
+
+		&--coupon {
+			background-image: url(../img/product-type-coupon.png);
+		}
+
+		&--start {
+			.size(12);
+
+			min-height: 290px;
+			background-size: cover;
+			background-image: url(../img/product-type-start.jpg);
+
+			.md-block({
+				background-image: url(../img/product-type-start-md.jpg);
+			});
+		}
+	}
+
+	&__title {
+		font-size: 32px;
+		line-height: 44px;
+		font-weight: 700;
+
+		.sm-block({
+			font-size: 26px;
+		});
+	}
+
+	&__text {
+		font-size: 20px;
+		line-height: 28px;
+
+		.sm-block({
+			display: none;
+		});
+	}
+}

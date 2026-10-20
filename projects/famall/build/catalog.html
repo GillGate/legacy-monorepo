@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Каталог продукции</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container header__wrapper">
+			<div class="header__head">
+				<div class="header__logo">
+					<picture>
+						<source srcset="img/logo-mobile.png" media="(max-width: 1024px)">
+						<img src="img/logo.png" width="345" alt="">
+					</picture>
+				</div>
+			</div>
+			<div class="header__nav">
+				<button class="header__bar">
+					Меню
+				</button>
+				<nav class="header__navBody">
+					<a href="about.html" class="header__navLink">О компании</a>
+					<a href="catalog.html" class="header__navLink">Каталог продукции</a>
+					<a href="#" class="header__navLink">Акции</a>
+					<a href="archive.html" class="header__navLink">Новости</a>
+					<a href="#" class="header__navLink">Видеогалерея</a>
+					<a href="index.html#start" class="header__navLink">Как начать свой бизнес</a>
+					<a href="contacts.html" class="header__navLink">Контакты</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="breadcrumbrs">
+		<div class="container">
+			<div class="breadcrumbrs__wrapper">
+				<a href="index.html">Главная</a>
+				<a>Каталог продукции</a>
+			</div>
+		</div>
+	</div>
+	<section class="catalog">
+		<div class="container">
+			<div class="catalog__wrapper">
+				<div class="filter catalog__filter">
+					<form class="filter__form" method="GET">
+						<div class="filter__body">
+							<div class="filter__option filter__option--category">
+								<p class="filter__optionTitle">
+									Категория товара
+								</p>
+								<div class="filter__optionList">
+									<label class="filter__label">
+										<input 
+											type="checkbox" 
+											name="filter[category][]" 
+											value="<?php echo $category->term_id; ?>"
+										>
+										<span>Уходовая косметика</span>
+									</label>
+									<label class="filter__label">
+										<input 
+											type="checkbox" 
+											name="filter[category][]" 
+											value="<?php echo $category->term_id; ?>"
+										>
+										<span>Декоративная косметика</span>
+									</label>
+									<label class="filter__label">
+										<input 
+											type="checkbox" 
+											name="filter[category][]" 
+											value="<?php echo $category->term_id; ?>"
+										>
+										<span>Парфюм</span>
+									</label>
+								</div>
+							</div>
+							<div class="filter__option filter__option--brand">
+								<p class="filter__optionTitle">
+									Бренд
+								</p>
+								<div class="filter__optionList">
+									<label class="filter__label">
+										<input 
+											type="checkbox" 
+											name="filter[brand][]" 
+											value="<?php echo $brand->term_id; ?>"
+										>
+										<span>BERCLEAN</span>
+									</label>
+									<label class="filter__label">
+										<input 
+											type="checkbox" 
+											name="filter[brand][]" 
+											value="<?php echo $brand->term_id; ?>"
+										>
+										<span>LIMANCY</span>
+									</label>
+									<label class="filter__label">
+										<input 
+											type="checkbox" 
+											name="filter[brand][]" 
+											value="<?php echo $brand->term_id; ?>"
+										>
+										<span>MEOWEQLO</span>
+									</label>
+								</div>
+							</div>	
+						</div>
+						<input type="hidden" class="filter__hiddenSort" name="filter[sort]" value="price-asc">
+						<button type="submit" class="button filter__submit">
+							Показать
+						</button>
+					</form>
+				</div>
+				<div class="catalog__sort">
+					<label class="filter__sort">
+						<span class="vh">Сортировка</span>
+						<select name="for_sort">
+							<option value="0" disabled>Сортировать</option>
+							<option value="price-asc">Цена по возрастанию</option>
+							<option value="price-desc">Цена по убыванию</option>
+							<option value="date-asc">Сначала новые</option>
+							<option value="date-desc">Сначала старые</option>
+						</select>
+					</label>
+				</div>
+				<div class="catalog__list">
+					<div class="catalog__item">
+						<a href="product.html" class="product">
+							<div class="product__head">
+								<div class="product__marks">
+									<span class="product__mark product__mark--hit">Хит</span>
+									<span class="product__mark product__mark--discount">-20%</span>
+									<span class="product__mark">New</span>
+								</div>
+								<div class="product__img">
+									<img src="img/product-img.jpg" alt="">
+								</div>
+							</div>
+							<div class="product__body">
+								<div class="product__info">
+									<span class="product__company">Sealuxe</span>
+									<span class="product__number">Арт: 232232322</span>
+								</div>
+								<h3 class="product__title">Ночной крем Hydro Genesis</h3>
+								<div class="product__bottom">
+									<div class="product__coupon">
+										<img src="img/pv.svg" width="35" height="35" alt="">
+									</div>
+									<div class="product__price">
+										<span class="product__priceDiscount">2400 Р</span>
+										<span>2000 Р</span>
+									</div>
+									<p href="#" class="product__more">Подробнее</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="catalog__empty">
+					Товаров не найдено. <br>
+					Попробуйте поискать по другим параметрам.
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="about about--catalog">
+		<div class="container">
+			<div class="about__footer">
+				<a href="index.html" class="button navLink about__back">Вернуться на главную</a>
+				<div class="about__social">
+					<p class="about__socialText">Или посетите наши аккаунты:</p>
+					<div class="about__socialList">
+						<a href="#" class="about__socialItem">
+							<img src="img/vk.png" alt="">
+						</a>
+						<a href="#" class="about__socialItem">
+							<img src="img/tg.png" alt="">
+						</a>
+						<a href="#" class="about__socialItem">
+							<img src="img/ig.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<h2 class="vh">Подвал</h2>
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__menu footer__menu--left">
+					<h3 class="footer__title">Меню</h3>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="catalog.html">Каталог продукции</a>
+						</li>
+						<li class="footer__item">
+							<a href="#">Акции</a>
+						</li>
+						<li class="footer__item">
+							<a href="archive.html">Новости</a>
+						</li>
+						<li class="footer__item">
+							<a href="#">Видеогалерея</a>
+						</li>
+						<li class="footer__item">
+							<a href="index.html#start">Как начать свой бизнес</a>
+						</li>
+						<li class="footer__item">
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__menu footer__menu--center">
+					<h3 class="footer__title">О компании</h3>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="about.html">История компании</a>
+						</li>
+						<li class="footer__item">
+							<a href="#">Истории успеха</a>
+						</li>
+						<li class="footer__item">
+							<a href="#">Наши лидеры</a>
+						</li>
+						<li class="footer__item">
+							<a href="#">Награждения партнёров</a>
+						</li>
+						<li class="footer__item">
+							<a href="#">Наши путешествия</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__menu footer__menu--right">
+					<h3 class="footer__title">Контакты</h3>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<address>
+								г. Москва, Сельскохозяйственная ул, 38к1 <br>
+								Метро «Ботанический сад»
+							</address>
+						</li>
+						<li class="footer__item footer__item--phone">
+							<a href="tel:+74952311212">+7 (495) 231-12-12</a>
+						</li>
+						<li class="footer__item">
+							<a href="#">info@famall.ru</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<p class="footer__bottomText">ООО "Greenleaf". Все права защищены.</p>
+		</div>
+	</footer>
+	<script src="js/all.js"></script>
+</body>
+</html>

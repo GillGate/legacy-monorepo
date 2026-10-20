@@ -1,0 +1,25 @@
+.breadcrumbrs {
+	padding: 30px 0;
+
+	.xs-block({
+		padding: 20px 0;
+	});
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+
+		a[href] {
+			color: @grey;
+
+			&::after {
+				content: '/';
+				margin: 0px 6px;
+			}
+		}
+
+		a {
+			color: @red;
+		}
+	}
+}

@@ -1,0 +1,170 @@
+.quick {
+	&--main {
+		margin: 100px 0 100px;
+		padding-top: 60px;
+
+		.md-block({
+			margin-top: 40px;
+		});
+
+		.xs-block({
+			padding-top: 30px;
+		});
+	}
+
+	&--product {
+		display: none;
+
+		.sm-block({
+			display: block;
+		});
+
+		.quick__text {
+			.xs-block({
+				margin-right: 0;
+			});
+		}
+
+		.quick__btn {
+			display: block;
+			margin-top: 20px;
+			text-align: center;
+		}
+	}
+
+	&__caption {
+		margin-top: 16px;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 500;
+
+		.sm-block({
+			font-size: 18px;
+			line-height: 20px;
+		});
+	}
+
+	&__wrapper {
+		margin: 80px auto 0;
+		max-width: 940px;
+
+		.sm-block({
+			margin-top: 50px;
+		});
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+
+		.sm-block({
+			align-items: center;
+		});
+
+		.xs-block({
+			flex-wrap: wrap-reverse;
+			justify-content: center;
+		})
+	}
+
+	&__text {
+		margin-top: 106px;
+		max-width: 540px;
+		font-size: 18px;
+		line-height: 28px;
+		margin-right: 30px;
+		text-align: justify;
+
+		.sm-block({
+			margin-top: 0;
+		});
+
+		strong {
+			font-size: 20px;
+			line-height: 32px;
+
+			.sm-block({
+				font-size: 18px;
+				line-height: 26px;
+			});
+		}
+	}
+
+	&__img {
+		width: 100%;
+		max-width: 300px;
+		flex-shrink: 0;
+		transform: translate(55px, 10px);
+		position: relative;
+		z-index: 1;
+
+		.md-block({
+			transform: none;
+		});
+
+		.sm-block({
+			max-width: 190px;
+		});
+
+		.xs-block({
+			margin-bottom: 20px;
+		});
+
+		img {
+			.md-block({
+				border-radius: 0 50% 50% 0;
+			});
+		}
+	}
+
+	&__options {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		.md-block({
+			justify-content: center;
+			flex-wrap: wrap;
+		});
+	}
+
+	&__option {
+		max-width: 420px;
+		padding: 54px 62px 62px;
+		background-color: #F6F6F6;
+		box-sizing: border-box;
+		text-align: center;
+		line-height: 26px;
+
+		.md-block({
+			margin-top: 30px;
+		});
+
+		.sm-block({
+			padding: 36px 48px 48px;
+			margin-top: 20px;
+		});
+
+		.xs-block({
+			padding: 30px 26px 26px;
+			line-height: 22px;
+		});
+
+		&--second {
+			background-color: #FDF0F1;
+			position: relative;
+			z-index: 2;
+		}
+
+		&Title {
+			font-size: 18px;
+			font-weight: 500;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+
+			.xs-block({
+				font-size: 16px;
+			});
+		}
+	}
+}

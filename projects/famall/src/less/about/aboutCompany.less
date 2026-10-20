@@ -1,0 +1,162 @@
+.aboutCompany {
+	&__title {
+		margin-bottom: 18px;
+		font-size: 20px;
+		line-height: 28px;
+		font-weight: 700;
+		color: #000;
+	}
+
+	&__section {
+		margin-bottom: 130px;
+
+		.sm-block({
+			margin-bottom: 60px;
+		});
+
+		&Title {
+			margin-bottom: 20px;
+			font-size: 24px;
+			line-height: 36px;
+			font-weight: 700;
+			color: @red;
+
+			.sm-block({
+				font-size: 18px;
+				line-height: 26px;
+			});
+		}
+
+		&Text {
+			font-size: 16px;
+			line-height: 21px;
+			color: #5E5E5E;
+
+			p:not(:last-child) {
+				margin-bottom: 22px;
+			}
+		}
+	}
+
+	&__mission {
+		.row-flex();
+		justify-content: space-between;
+		align-items: center;
+
+		&Info {
+			.col();
+			.size(3.5);
+			.size-md(5);
+			.size-sm(12);
+		}
+
+		&List {
+			.col();
+			.size(7);
+			.size-lg(8.5);
+			.size-md(12);
+
+			display: flex;
+			color: @red;
+
+			.md-block({
+				margin-top: 40px;
+			});
+
+			.xs-block({
+				flex-wrap: wrap;
+				justify-content: center;
+			});	
+		}
+
+		&Item {
+			text-align: center;
+			font-weight: 700;
+			padding: 0 30px;
+			box-sizing: border-box;
+
+			.sm-block({
+				padding: 0 3px;
+			});
+
+			.xs-block({
+				.size(6);
+
+				font-size: 13px;
+				margin-bottom: 30px;
+			});
+
+			strong {
+				display: block;
+				font-size: 40px;
+				line-height: 54px;
+				margin-bottom: 8px;
+
+				.sm-block({
+					font-size: 34px;
+					line-height: 46px;
+					margin-bottom: 4px;
+				});
+			}
+		}
+	}
+
+	&__office {
+		.row-flex();
+		justify-content: space-between;
+		align-items: center;
+
+		&Info {
+			.col();
+			.size(3.5);
+			.size-md(5);
+			.size-sm(12);
+		}
+
+		&Img {
+			.col();
+			.size(7.5);
+			.size-md(12);
+
+			.md-block({
+				margin-top: 40px;
+			});
+
+			text-align: right;
+
+			.md-block({
+				text-align: center;
+			});
+
+			.sm-block({
+				height: 230px;
+			});
+
+			img {
+				.sm-block({
+					height: 100%;
+					object-fit: cover;
+					object-position: left;
+				});
+			}
+		}
+	}
+
+	&__become {
+		display: block;
+		text-align: center;
+		margin-top: 30px;
+		text-transform: none;
+	}
+}
+
+.cert {
+	.slick-slide {
+		padding: 0 10px;
+		text-align: center;
+	}
+}
+
+#certs {
+	padding-top: 50px;
+}
