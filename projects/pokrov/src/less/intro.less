@@ -1,0 +1,49 @@
+.intro {
+	padding: 36px 0;
+	background: #766c53 url(../img/intro-bg.jpg) no-repeat center / cover;
+
+	.container {
+		min-height: 556px;
+		height: 78vh;
+		display: flex;
+		align-items: center;
+
+		.sm-block({
+			align-items: flex-end;
+			min-height: 350px;
+		});
+	}
+
+	&__body {
+		width: 100%;
+		max-width: 682px;
+		padding: 50px 70px;
+		box-sizing: border-box;
+		color: @blue;
+		background: linear-gradient(138deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+		backdrop-filter: blur(6.5px);
+		border-radius: @br;
+
+		.sm-block({
+			padding: 26px 22px;
+			border-radius: 20px;
+		});
+	}
+
+	&__caption {
+		margin-top: 20px;
+		max-width: 430px;
+	}
+
+	&__button {
+		width: 100%;
+		max-width: 294px;
+		height: 60px;
+		line-height: 59px;
+		margin-top: 34px;
+
+		.xs-block({
+			max-width: 100%;
+		});
+	}
+}

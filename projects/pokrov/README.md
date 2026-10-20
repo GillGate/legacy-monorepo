@@ -1,0 +1,1 @@
+https://www.figma.com/file/Xp5q39dk8xGfFJGdaQD6y5/Almax-Work-Holding%2C-družstvo?type=design&node-id=0-1&mode=design&t=BNXWRf8RwVGR45RD-0

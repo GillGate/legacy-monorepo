@@ -1,0 +1,36 @@
+.notFound {
+	.container {
+		height: calc(75vh - 150px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__body {
+		text-align: center;
+	}
+
+	&__title {
+		span {
+			display: block;
+			font-size: 126px;
+			line-height: 126px;
+			color: rgba(0, 0, 0, 0.04);
+		}
+	}
+
+	&__caption {
+		margin-top: 16px;
+	}
+
+	&__button {
+		width: 100%;
+		max-width: 294px;
+		margin-top: 32px;
+		text-transform: uppercase;
+		font-weight: 500;
+		height: 64px;
+		line-height: 62px;
+		background-color: @blue-light;
+	}
+}

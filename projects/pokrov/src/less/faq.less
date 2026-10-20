@@ -1,0 +1,82 @@
+.faq {
+	&__title {
+		text-align: center;
+
+		.sm-block({
+			text-align: left;
+		});
+	}
+
+	&__list {
+		margin-top: 64px;
+
+		.sm-block({
+			margin-top: 24px;
+		});
+	}
+
+	&__item {
+		margin-bottom: 30px;
+		padding: 22px 32px;
+		border-radius: 45px;
+		color: @blue;
+		box-shadow: @bs;
+
+		.sm-block({
+			padding: 16px 24px;
+			border-radius: 20px;
+		});
+
+		&Title {
+			padding-right: 36px;
+			font-family: "Montserratt", sans-serif;
+			font-size: 26px;
+			line-height: 38px;
+			font-weight: 700;
+			position: relative;
+			cursor: pointer;
+
+			.sm-block({
+				// font-size: 14px;
+				font-size: 16px;
+				line-height: 24px;
+			});
+
+			&::before, &::after {
+				content: '';
+				width: 21px;
+				height: 2px;
+				background-color: @black;
+				position: absolute;
+				top: 19px;
+				right: 0;
+
+				.sm-block({
+					width: 16px;
+					top: 10px;
+				});
+			}
+
+			&::after {
+				transform: rotate(-90deg);
+				transition: transform .3s ease;
+			}
+
+			&--active {
+				&::after {
+					transform: rotate(0);
+				}
+			}
+		}
+
+		&Text {
+			display: none;
+			margin-top: 14px;
+
+			.sm-block({
+				font-size: 14px;
+				padding-bottom: 8px;
+			});
+		}
+	}
+}

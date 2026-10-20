@@ -1,0 +1,66 @@
+.why {
+	background: linear-gradient(90deg, #698FCA  0%, #93A9CC  40%, #fff 40%, #fff 100%);
+
+	.md-block({
+		background: linear-gradient(90deg, #698FCA 0%, #93A9CC 70%, #fff 70%, #fff 100%);
+	});
+
+	&__title {
+		color: @blue;
+		max-width: 369px;
+
+		.sm-block({
+			max-width: 216px;
+		});
+	}
+
+	&__list {
+		.row-flex();
+		// margin-top: 24px;
+
+		.slick-track {
+			height: 100%;
+			padding: 40px 0;
+			box-sizing: border-box;
+		}
+	}
+
+	&__item {
+		.col();
+		.size(4);
+
+		padding: 32px;
+		box-sizing: border-box;
+		background-color: @white;
+		border-radius: @br;
+		box-shadow: @bs;
+
+		&Title {
+			font-weight: 600;
+			margin: 16px 0;
+		}
+	}
+
+	&__controls {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 24px;
+	}
+
+	&__control {
+		width: 64px;
+		height: 64px;
+		background: none;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			border-radius: 50%;
+		}
+
+		&--next {
+			transform: rotate(180deg);
+		}
+	}
+}

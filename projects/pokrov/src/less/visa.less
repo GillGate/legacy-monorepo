@@ -1,0 +1,131 @@
+.visa {
+	&__title {
+		text-align: center;
+	}
+
+	&__period {
+		display: none;
+
+		.sm-block({
+			margin-top: 24px;
+			display: flex;
+			justify-content: center;
+		});
+
+		&Button {
+			margin: 0 8px;
+			background-color: @white;
+			color: @blue;
+			border-color: @blue;
+
+			&--active {
+				background-color: @blue;
+				color: @white;
+			}
+		}
+	}
+
+	&__options {
+		.row-flex();
+
+		justify-content: center;
+		margin-top: 54px;
+		position: relative;
+		z-index: 20;
+
+		.sm-block({
+			margin-top: 24px;
+		});
+	}
+
+	&__option {
+		.col();
+		.size(5.5);
+		.size-lg(6);
+		.size-md(8);
+		.size-sm(12);
+
+		padding: 48px;
+		border-radius: @br;
+		box-shadow: 3px 4px 40px 0px rgba(0, 0, 0, 0.09);
+
+		.md-block({
+			margin-bottom: 30px;
+		});
+
+		&--hide {
+			.sm-block({
+				display: none;
+			});
+		}
+
+		&Caption {
+			font-size: 12px;
+			line-height: 22px;
+			color: @grey;
+		}
+
+		&Title {
+			margin-top: 16px;
+			font-size: 28px;
+			color: @blue;
+			font-weight: 700;
+		}
+	}
+
+	&__listTitle {
+		margin-top: 24px;
+		font-weight: 600;
+	}
+
+	&__stages {
+		margin-top: 16px;
+
+		li {
+			list-style: disc inside;
+			margin-bottom: 8px;
+		}
+	}
+
+	&__price {
+		margin-top: 24px;
+		color: @black2;
+		font-size: 50px;
+		line-height: 64px;
+		font-weight: 700;
+	}
+
+	&__controls {
+		margin-top: 24px;
+		display: flex;
+		justify-content: space-between;
+
+		.xs-block({
+			flex-wrap: wrap;
+		});
+	}
+
+	&__more {
+		min-width: 182px;
+
+		&:hover {
+			background-color: transparent;
+		}
+
+		.xs-block({
+			flex-grow: 1;
+		});	
+	}
+
+	&__order {
+		margin-left: 24px;
+		flex-grow: 0.5;
+		background: @blue;
+
+		.xs-block({
+			margin-top: 16px;
+			margin-left: 0;
+			flex-grow: 1;
+		});
+	}
+}
