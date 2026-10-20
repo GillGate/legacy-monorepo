@@ -1,0 +1,46 @@
+.popular {
+	padding-top: 60px;
+	padding-bottom: 92px;
+
+	.sm-block({
+		padding: 40px 0;
+	});
+
+	&__header {
+		display: flex;
+
+		&Img {
+			margin-right: 26px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-shrink: 0;
+			width: 76px;
+			height: 76px;
+			border: 2px solid @red;
+			border-radius: 50%;
+
+			.sm-block({
+				display: none;
+			});
+		}
+	}
+
+	&__caption {
+		font-size: 14px;
+		margin-top: 26px;
+		text-align: justify;
+	}
+
+	.project {
+		&:nth-child(3n) {
+			.lg-block({
+				display: none;
+			});
+
+			.md-block({
+				display: block;
+			});
+		}
+	}
+}
