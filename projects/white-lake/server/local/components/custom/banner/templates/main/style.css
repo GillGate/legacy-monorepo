@@ -1,0 +1,493 @@
+.intro__element-shell.slick-initialized.slick-slider,
+.slick-list.draggable,
+.slick-track,
+.intro__image,
+.intro__image > div,
+.booking-container__shell,
+.intro__slider,
+.navigation-container__shell,
+.intro {
+	height: 100% !important;
+}
+
+.intro {
+	margin-top: -210px;
+	box-sizing: border-box;
+	color: #fff;
+	z-index: 1;
+}
+
+.intro__info-text {
+	margin-left: 185px;
+	display: inline-block;
+	position: relative;
+	padding-top: 320px;
+	z-index: 1;
+	margin-bottom: 50px;
+	height: 380px;
+	overflow: hidden;
+}
+
+.intro__image {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.intro__info {
+	position: relative;
+}
+
+.intro__image > div {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.slick-prev,
+.slick-next {
+	position: absolute;
+	top: 62%;
+	display: block;
+	padding: 0;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	outline: none;
+	background: none;
+	z-index: 100;
+	color: #addfff;
+	transition: 0.3s;
+}
+
+.intro__title {
+	max-width: 564px;
+}
+
+.intro__caption {
+	width: 383px;
+	display: block;
+	margin: 20px 0;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.intro__text {
+	width: 350px;
+}
+
+.booking-container__shell,
+.intro__shell,
+.navigation-container__shell {
+	position: relative;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.booking-container,
+.navigation-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+
+.arrow-element {
+	width: 11px;
+	height: 11px;
+	border-top: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	display: inline-block;
+}
+
+.arrow-element.arrow-right {
+	transform: rotate(45deg);
+	margin: 5px 5px 0 0px;
+}
+
+.arrow-element.arrow-left {
+	transform: rotate(-135deg);
+	margin: 5px 0 0 5px;
+}
+
+.slick-prev {
+	left: 65px;
+}
+
+.slick-next {
+	right: 65px;
+}
+
+.intro__slider > .container {
+	padding: 0 !important;
+}
+
+.navigation-container__pagination-block {
+	position: relative;
+	top: 55%;
+	display: none;
+}
+
+.slick-dots > li {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.slick-dots {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.slick-dots > li > button {
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	width: 6px;
+	height: 6px;
+	padding: 5px;
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	outline: none;
+	background: #ffffff;
+	border-radius: 50%;
+}
+
+.slick-active > button {
+	background: #ffffff82 !important;
+}
+
+@media (max-width: 1440px) {
+	.booking-container__shell,
+	.intro__shell,
+	.navigation-container__shell {
+		max-width: 786px;
+	}
+	.slick-prev {
+		left: 0;
+	}
+	.slick-next {
+		right: 0;
+	}
+	.intro__info-text {
+		margin-left: 0px;
+		padding-top: 250px;
+		margin-bottom: 50px;
+		height: 260px;
+	}
+	.booking {
+		float: none !important;
+		margin: 0 auto !important;
+		top: 0 !important;
+	}
+	.booking-container {
+		position: relative;
+		margin-top: -470px;
+		margin-bottom: 64px;
+	}
+	.intro__shell {
+		padding-bottom: 460px;
+	}
+	.intro__caption {
+		margin: 20px auto;
+	}
+	.slick-prev,
+	.slick-next {
+		top: 55%;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.intro__title {
+		font-size: 30px !important;
+		line-height: 34px !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.navigation-container__arrow-block {
+		display: none;
+	}
+	.slick-list.draggable {
+		border-radius: 0px 0px 12px 12px;
+	}
+	.navigation-container__pagination-block {
+		display: block;
+	}
+	.booking-container {
+		position: relative;
+		margin-top: -400px;
+		margin-bottom: 0px;
+	}
+	.booking {
+		width: auto !important;
+	}
+	.intro__shell {
+		padding-bottom: 400px;
+	}
+	.navigation-container__pagination-block {
+		top: 55%;
+	}
+	.intro__element-shell {
+		border-radius: 0px 0px 12px 12px;
+	}
+	.intro__text,
+	.intro__caption,
+	.intro__title {
+		width: auto;
+	}
+	.intro__caption {
+		font-size: 16px !important;
+		line-height: 19p !important;
+		margin-top: 10px !important;
+	}
+	.text.intro__text {
+		font-size: 13px !important;
+		line-height: 150% !important;
+	}
+}
+
+@media (max-width: 437px) {
+	.navigation-container__pagination-block {
+		top: 53.6%;
+	}
+}
+
+/* ==== из style.min.css ==== */
+
+.intro .container {
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+.intro__title {
+	font-size: 66px;
+	line-height: 64px;
+}
+
+.intro .slidernext,
+.intro .sliderprev {
+	background: url(../img/arrow.svg) 10px center/23px no-repeat;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	padding: 0 !important;
+	font-size: 0 !important;
+	top: 50% !important;
+	margin-right: 4%;
+}
+.intro .sliderprev {
+	transform: rotate(180deg);
+	margin-left: 4%;
+}
+
+.slick-slider {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+	transform: translate3d(0, 0, 0);
+}
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+	transform: translate3d(0, 0, 0);
+}
+.slick-track {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: stretch;
+	display: flex;
+}
+.slick-track:after,
+.slick-track:before {
+	display: table;
+	content: "";
+}
+.slick-track:after {
+	clear: both;
+}
+.slick-loading .slick-track {
+	visibility: hidden;
+}
+
+.arrow,
+.slick-arrow {
+	background-color: transparent;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.booking--main {
+	display: block !important;
+	width: 340px;
+	padding: 35px 60px !important;
+	background: rgba(20, 20, 20, 0.65) !important;
+	border-color: transparent;
+	text-align: center;
+	border: none !important;
+}
+.booking--main .booking__form {
+	margin-top: 20px;
+	display: block;
+}
+.booking--main .booking__item {
+	max-width: 100%;
+	margin-bottom: 12px;
+	color: #fff;
+}
+.booking--main .booking__item input:active ~ .booking__icon svg,
+.booking--main .booking__item input:focus ~ .booking__icon svg {
+	fill: #fff;
+}
+.booking--main .booking__icon {
+	transform: translateY(-50%);
+	border: 1px solid #fff;
+}
+.booking--main .booking__btn {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.booking {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1260px;
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+	padding: 40px 35px;
+	border-radius: 12px;
+	box-sizing: border-box;
+	position: relative;
+	margin-right: 185px;
+	float: right;
+	top: 278px;
+}
+.booking ~ footer {
+	margin-top: 35px;
+}
+.booking__title {
+	font-size: 25px;
+	line-height: 32px;
+	margin-bottom: 4px;
+}
+.booking__form {
+	display: flex;
+}
+.booking__form--sub {
+	position: relative;
+}
+.booking__form--sub::after {
+	content: "* - обязательные поля";
+	color: #787878;
+	font-size: 12px;
+	position: absolute;
+	left: 4px;
+	bottom: -26px;
+}
+.booking__item {
+	display: block;
+	width: 100%;
+	max-width: 176px;
+	margin: 0 5px;
+	position: relative;
+}
+.booking__item input {
+	width: 100%;
+	height: 52px;
+	padding: 0 54px 0 18px;
+	box-sizing: border-box;
+	border-radius: 12px;
+	color: inherit;
+	background-color: transparent;
+	border: 1px solid #787878;
+}
+.booking__item input:active ~ .booking__icon svg,
+.booking__item input:focus ~ .booking__icon svg {
+	fill: #b7293b;
+}
+.booking__icon {
+	display: flex;
+	width: 50px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 12px;
+	background: center/20px no-repeat;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-54%);
+	cursor: pointer;
+}
+.booking__btn {
+	margin-left: 10px;
+}
+.slick-slide {
+	display: none;
+	float: left;
+	min-height: 1px;
+}
+[dir="rtl"] .slick-slide {
+	float: right;
+}
+.slick-slide img {
+	display: block;
+}
+.slick-slide.slick-loading img {
+	display: none;
+}
+.slick-slide.dragging img {
+	pointer-events: none;
+}
+.slick-initialized .slick-slide {
+	display: block;
+}
+.slick-loading .slick-slide {
+	visibility: hidden;
+}
+.slick-vertical .slick-slide {
+	display: block;
+	height: auto;
+	border: 1px solid transparent;
+}
+
+/* Исправление некорректного отображения слайдера на определённом экране */
+
+@media (max-width: 1440px) {
+	.intro .slick-list {
+		width: 100%;
+	}
+}

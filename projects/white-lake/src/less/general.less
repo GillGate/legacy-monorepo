@@ -1,0 +1,175 @@
+.reset();
+
+.container {
+	.wrapper();
+
+	box-sizing: border-box;
+}
+
+html {
+	overflow-x: hidden;
+	font-family: "Roboto";
+	font-weight: 400;
+	color: @black;
+}
+
+body {
+	background-color: @gray-section-bg;
+}
+
+a {
+	text-decoration: none;
+	font-family: "Roboto";
+	font-weight: 500;
+	color: @black;
+}
+
+h1, h2, h3 {
+	font-family: "Merriweather", "Times New Roman", serif;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 34px;
+	line-height: 42px;
+
+	.md-block({
+		font-size: 26px;
+		line-height: 32px;
+	});
+
+	.sm-block({
+		font-size: 22px;
+		line-height: 28px;
+	});
+}
+
+h3 {
+	font-size: 25px;
+	line-height: 34px;
+
+	.md-block({
+		font-size: 22px;
+	});
+}
+
+.text {
+	font-size: 16px;
+	line-height: 24px;
+
+	.md-block({
+		font-size: 15px;
+		line-height: 22px;
+	});
+
+	.sm-block({
+		font-size: 14px;
+		line-height: 21px;
+	});
+
+	&--red {
+		color: @red;
+	}
+}
+
+.button {
+	display: inline-block;
+	height: 50px;
+	padding: 0 30px;
+	font-size: 16px;
+	line-height: 50px;
+	font-family: "Roboto";
+	font-weight: 500;
+	border: none;
+	border-radius: 8px;
+	background: @red;
+	box-shadow: 0px 2px 0px 0px @red-dark;
+	color: @white;
+	cursor: pointer;
+	transition: background .5s ease;
+
+	&:hover, &:focus {
+		background-color: @red-light;
+	}
+
+	&:active {
+		background-color: @red-dark;
+	}
+}
+
+.arrow {
+	background-color: transparent;
+	width: 50px;
+	height: 50px;
+	height: 50px;
+	text-align: center;
+	border: 1px solid @white;
+	border-radius: 50%;
+	cursor: pointer;
+
+	&--prev {
+		img {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+table {
+	width: 100%;
+	margin-bottom: 10px;
+
+	.mmd-block({
+		width: 720px;
+		margin: 0 auto 10px;
+	});
+
+	thead {
+		td {
+			padding: 14px 7px;
+			color: @gray;
+		}
+	}
+
+	tbody {
+		background-color: @white;
+		border-radius: 12px;
+
+		td {
+			border: 1px solid @gray-border;
+			padding: 16px 40px;
+
+			.md-block({
+				padding: 12px 18px;
+			});
+
+			strong {
+				font-weight: 700;
+			}
+
+			b {
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+.table {
+	&--center {
+		text-align: center;
+	}
+
+	&--grow {
+		width: 100%;
+	}
+}
+
+.vh {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}

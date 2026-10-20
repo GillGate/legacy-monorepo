@@ -1,0 +1,144 @@
+.intro {
+	background: @gray-section-bg url(../img/main/intro-bg-1.jpg) no-repeat center / cover;
+	min-height: 838px;
+	height: 100vh;
+	margin-top: -204px;
+	max-height: 870px;
+	box-sizing: border-box;
+	color: @white;
+	z-index: 1;
+
+	.md-block({
+		height: 1000px;
+		max-height: 1000px;
+	});
+
+	.sm-block({
+		margin-top: 0;
+		min-height: 400px;
+		height: 700px;
+		max-height: 656px;
+	});
+
+	&__slider {
+		height: 100%;
+		padding-top: 204px;
+		max-height: 700px;
+
+		.md-block({
+			max-height: 800px;
+		});
+
+		.sm-block({
+			padding-top: 30px;
+			height: 760px;
+			max-height: 760px;
+		});
+	}
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		padding: 0 110px;
+		position: relative;
+		z-index: 1;
+
+		.md-block({
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			text-align: center;
+			padding-top: 50px;
+		});
+
+		.sm-block({
+			padding: 0px;
+		});
+	}
+
+	&__info {
+		max-width: 580px;
+
+		.sm-block({
+			padding: 0 30px;
+			// max-width: 260px;
+		});
+	}
+
+	&__title {
+		font-size: 66px;
+		line-height: 64px;
+
+		.md-block({
+			font-size: 60px;
+		});
+
+		.sm-block({
+			font-size: 30px;
+			line-height: 34px;
+		});
+	}
+
+	&__caption {
+		display: block;
+		margin: 20px 0;
+		font-size: 24px;
+		line-height: 28px;
+
+		.md-block({
+			margin: 16px 0;
+		});
+
+		.sm-block({
+			font-size: 16px;
+			line-height: 18px;
+		});
+	}
+
+	&__text {
+		max-width: 360px;
+
+		.md-block({
+			margin: 0 auto;
+		});
+
+		.sm-block({
+			font-size: 13px;
+			line-height: 18px;
+		});
+	}
+
+	.slidernext,
+	.sliderprev {
+		background: transparent url(../img/arrow.svg) no-repeat 10px center / 23px;
+		width: 50px;
+		height: 50px;
+		height: 50px;
+		text-align: center;
+		border: 1px solid @white;
+		border-radius: 50%;
+		padding: 0 !important;
+		font-size: 0 !important;
+		top: 50% !important;
+		margin-right: 4%;
+
+		.md-block({
+			margin-right: 12%;
+		});
+
+		.sm-block({
+			display: none;
+		});
+	}
+
+	.sliderprev {
+		transform: rotate(180deg);
+		margin-left: 4%;
+
+		.md-block({
+			margin-left: 12%;
+		});
+	}
+}

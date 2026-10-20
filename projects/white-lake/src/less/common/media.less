@@ -1,0 +1,58 @@
+.media {
+	display: flex;
+
+	&__socialLink {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 24px;
+		height: 24px;
+		margin: 0 12px;
+		border-radius: 50%;
+		transition: border .5s ease;
+
+		&--vk {
+			&:hover, &:active {
+				border-color: @blue-vk;
+
+				svg {
+					fill: @blue-vk;
+				}
+			}
+		}
+
+		&--fb {
+			&:hover, &:active {
+				border-color: @blue-fb;
+
+				svg {
+					fill: @blue-fb;
+				}
+			}
+		}
+
+		&--in {
+			&:hover, &:active {
+				border-color: @purple-in;
+
+				svg {
+					fill: @purple-in;
+				}
+			}
+		}
+
+		&--yt {
+			&:hover, &:active {
+				border-color: @red-yt;
+
+				svg {
+					fill: @red-yt;
+				}
+			}
+		}
+
+		svg {
+			transition: fill .5s ease;
+		}
+	}
+}

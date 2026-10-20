@@ -1,0 +1,55 @@
+.anketa {
+
+	&__head {
+		max-width: 900px;
+		margin: 0 auto;
+
+		.text {
+			margin-top: 14px;
+		}
+	}
+
+	&__wrapper {
+		.row-flex();
+
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
+
+	&__aside {
+		.col();
+		.size(3);
+
+		.sm-block({
+			display: none;
+		});
+	}
+
+	&__img {
+		margin-bottom: 30px;
+	}
+
+	&__form {
+		.col();
+		.size(9);
+		.size-sm(12);
+
+		padding: 50px 55px;
+		background-color: @white;
+		border: 1px solid @gray-border;
+		border-radius: 12px;
+		text-align: left;
+
+		.md-block({
+			padding: 30px 35px;
+		});
+
+		.xs-block({
+			padding: 10px 15px;
+		});
+
+		.estimate__title {
+			padding-right: 25px;
+		}
+	}
+}

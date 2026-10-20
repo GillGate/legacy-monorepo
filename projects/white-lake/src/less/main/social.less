@@ -1,0 +1,46 @@
+.social {
+	.row-flex();
+	margin-top: 35px;
+	justify-content: center;
+
+	> div {
+		.col();
+		.size(4);
+		.size-md(6);
+	}
+
+	&__item {
+		position: relative;
+		margin-bottom: 30px;
+
+		.md-block({
+			margin-bottom: 20px;
+		});
+
+		.sm-block({
+			margin: 0 5px 10px;
+		});
+
+		img	{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 12px;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		border-radius: 12px;
+		margin-bottom: 4px;
+
+		.sm-block({
+			margin-bottom: 0;
+		});
+
+		svg {
+			margin-right: 10px;
+		}
+	}
+}
