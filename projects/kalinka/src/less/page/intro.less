@@ -1,0 +1,168 @@
+.intro {
+	background: url(../img/intro-bg.jpg) no-repeat right center / 1080px;
+
+	.llg-block({
+		background-position: right top;
+	});
+
+	.md-block({
+		background: none !important;
+	});
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding-bottom: 122px;
+
+		.llg-block({
+			align-items: center;
+		});
+
+		.md-block({
+			flex-direction: column;
+			align-items: center;
+		});
+	}
+
+	&__left {
+		max-width: 500px;
+		text-align: center;
+		background-color: var(--white-bg);
+		padding: 20px;
+		border-radius: 30px;
+	}
+
+	&__right {
+		margin-bottom: -54px;
+
+		.llg-block({
+			margin-bottom: 0;
+		});
+
+		.md-block({
+			margin-top: 34px;
+			align-self: stretch;
+			background: url(../img/intro-bg.jpg) no-repeat center bottom / cover;
+			border-radius: 60px;
+		});
+	}
+
+	&__caption {
+		font-size: 36px;
+		color: var(--red);
+		font-weight: 700;
+
+		.md-block({
+			font-size: 22px;
+		});
+	}
+
+	&__order {
+		margin-top: 92px;
+
+		.md-block({
+			margin-top: 60px;
+		});
+
+		.sm-block({
+			margin-top: 30px;
+		});
+
+		&Btn {
+			display: inline-block;
+			height: 84px;
+			padding: 0 48px;
+			font-size: 32px;
+			line-height: 82px;
+			font-weight: 700;
+			background-color: var(--orange);
+			border-radius: var(--br);
+
+			.md-block({
+				height: 62px;
+				font-size: 24px;
+				line-height: 60px;
+			});
+
+			.sm-block({
+				height: 46px;
+				font-size: 16px;
+				line-height: 46px;
+			});
+		}
+
+		&Caption {
+			margin-top: 14px;
+			font-size: 24px;
+			font-weight: 500;
+
+			.md-block({
+				font-size: 20px;
+			});
+
+			.sm-block({
+				font-size: 14px;
+			});
+		}
+	}
+
+	&__list {
+		display: flex;
+		gap: 16px;
+
+		.llg-block({
+			flex-direction: column;
+			max-width: 340px;
+			margin: 30px auto;
+		});
+
+		.sm-block({
+			padding: 0 10px;
+		});
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		padding: 24px;
+		background-color: var(--white);
+		border-radius: var(--br);
+		border: 1px solid transparent;
+		box-sizing: border-box;
+
+		.llg-block({
+			border-color: var(--grey);
+		});
+
+		.sm-block({
+			padding: 12px;
+		});
+
+		&Img {
+			width: 62px;
+			height: 62px;
+			border-radius: 50%;
+			flex-shrink: 0;
+
+			.xs-block({
+				width: 40px;
+				height: 40px;
+			});
+		}
+
+
+		&Title {
+			font-size: 20px;
+			font-weight: 500;
+			color: var(--grey);
+
+			strong {
+				display: block;
+				font-weight: 700;
+				color: var(--dark-blue);
+			}
+		}
+	}
+}

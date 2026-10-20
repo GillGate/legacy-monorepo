@@ -1,0 +1,144 @@
+.header {
+	display: flex;
+	align-items: center;
+
+	&__logo {
+		.sm-block({
+			max-width: 100px;
+		});
+	}
+
+	&__order {
+		padding: 14px;
+		color: var(--white);
+		background-color: var(--dark-blue);
+		border-radius: var(--br);
+		font-weight: 700;
+
+		.md-block({
+			display: none;
+		});
+	}
+
+	&__menu {
+		margin-left: auto;
+		margin-right: 160px;
+
+		.lg-block({
+			margin-right: auto;
+		});
+
+		.md-block({
+			order: 1;
+			margin-right: 0;
+		});
+	}
+
+	&__nav {
+		.sm-block({
+			display: none;
+		});
+		
+		&--mobile {
+			.sm-block({
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 30px;
+				padding-top: 40px;
+				background-color: var(--white);
+				overflow-x: hidden;
+				overflow-y: auto;
+				position: fixed;
+				top: 90px;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 10;
+			});
+		}
+	}
+
+	&__bar {
+		width: 36px;
+		height: 36px;
+		display: none;
+		position: relative;
+		z-index: 10;
+		background: none;
+		border: none;
+		cursor: pointer;
+
+		.sm-block({
+			display: block;
+			transition: transform 1s ease;
+
+			&--open {
+				span {
+					background: transparent;
+
+					&::before {
+						top: 0px;
+						transform: rotate(-45deg);
+					}
+
+					&::after {
+						transform: rotate(45deg);
+						bottom: 0px;
+					}
+				}
+			}
+		});
+
+		span {
+			display: block;
+			position: absolute;
+			top: 16px;
+			left: 0;
+			right: 0;
+			height: 4px;
+			background: var(--black);
+			border-radius: 5px;
+			transition: background .3s;
+
+			&::before,
+			&::after {
+				content: '';
+				display: block;
+				width: 100%;
+				height: 4px;
+				background-color: var(--black);
+				border-radius: 5px;
+				position: absolute;
+				transition-duration: 0.3s, 0.3s;
+			}
+
+			&::before {
+				transition-property: top, transform;
+				top: -10px;
+			}
+
+			&::after {
+				transition-property: bottom, transform;
+				bottom: -10px;
+			}
+		}
+	}
+}
+
+.nav {
+	&__link {
+		padding: 12px 14px;
+		color: var(--black);
+		font-weight: 500;
+		border-radius: var(--br);
+		border: 1px solid var(--white);
+		background: var(--white-bg);
+		box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.09);
+
+		&:hover {
+			background: var(--white);
+		}
+	}
+}

@@ -1,0 +1,150 @@
+.order {
+	margin: 100px 0 70px;
+
+	&__wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 44px 20px 54px;
+		background-color: var(--dark-blue);
+		color: var(--white);
+		border-radius: 32px;
+		position: relative;
+		z-index: 1;
+
+		.sm-block({
+			padding: 31px 20px 40px;
+		});
+	}
+
+	&__title {
+		font-size: 32px;
+		line-height: 36px;
+		text-align: center;
+
+		.sm-block({
+			font-size: 20px;
+			line-height: 24px;
+		});
+	}
+
+	&__decor {
+		background: no-repeat center / contain;
+		position: absolute;
+		z-index: -1;
+
+		.md-block({
+			display: none;
+		});
+
+		&--lt {
+			background-image: url(../img/form-lt.png);
+			width: 81px;
+			height: 81px;
+			top: 70px;
+			left: 62px;
+		}
+
+		&--lb {
+			background-image: url(../img/form-lb.png);
+			width: 54px;
+			height: 54px;
+			left: 252px;
+			top: 258px;
+		}
+
+		&--ltl {
+			background-image: url(../img/form-ltl.png);
+			width: 36px;
+			height: 36px;
+			top: 119px;
+			left: 250px;
+		}
+
+		&--lbl {
+			background-image: url(../img/form-lbl.png);
+			width: 36px;
+			height: 36px;
+			left: 100px;
+			top: 240px;
+		}
+
+		&--rt {
+			background-image: url(../img/form-rt.png);
+			width: 70px;
+			height: 70px;
+			top: 204px;
+			right: 206px;
+		}
+
+		&--rb {
+			background-image: url(../img/form-rb.png);
+			width: 55px;
+			height: 55px;
+			top: 288px;
+			right: 100px;
+		}
+
+		&--rtl {
+			background-image: url(../img/form-rtl.png);
+			width: 36px;
+			height: 36px;
+			top: 70px;
+			right: 235px;
+		}
+
+		&--rbl {
+			background-image: url(../img/form-rbl.png);
+			width: 36px;
+			height: 36px;
+			top: 145px;
+			right: 82px;
+		}
+
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 344px;
+	margin: 36px auto 0;
+
+	&__label {
+		display: block;
+		width: 100%;
+		margin-bottom: 16px;
+	}
+
+	&__input {
+		display: block;
+		width: inherit;
+		padding: 0 20px;
+		height: 46px;
+		font-size: 18px;
+		border: 1px solid transparent;
+		background-color: rgba(231, 231, 231, 0.40);
+		border-radius: 11px;
+		color: var(--white);
+		box-sizing: border-box;
+
+		&::placeholder {
+			color: #fff;
+		}
+	}
+
+	&__submit {
+		display: block;
+		width: 100%;
+		height: 50px;
+		line-height: 48px;
+		padding: 0;
+		font-size: 20px;
+		color: var(--dark-blue);
+		font-weight: 700;
+		background-color: var(--orange);
+		border: none;
+		border-radius: 11px;
+		cursor: pointer;
+	}
+}
