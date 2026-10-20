@@ -7,8 +7,8 @@ rm -rf _site
 mkdir -p _site/projects
 cp -r public _site/img
 
-# order.md lines are "name | «Title» - description" (CRLF-safe), then any project it doesn't list, so nothing silently disappears
-order=$( { tr -d '\r' < order.md; echo; ls projects; } | awk -F' [|] ' 'NF && !seen[$1]++' )
+# docs/order.md lines are "name | «Title» - description" (CRLF-safe), then any project it doesn't list, so nothing silently disappears
+order=$( { tr -d '\r' < docs/order.md; echo; ls projects; } | awk -F' [|] ' 'NF && !seen[$1]++' )
 
 shopt -u patsub_replacement 2>/dev/null || true # bash 5.2+: keep "&" in titles literal
 card=$(< pages/card.html)
@@ -30,3 +30,4 @@ done <<< "$order"
 
 ITEMS="$items" awk '/<!-- PROJECTS -->/ { printf "%s", ENVIRON["ITEMS"]; next } { print }' pages/index.html > _site/index.html
 grep -q '<li>' _site/index.html || { echo "no projects were published" >&2; exit 1; }
+echo "done: $(grep -c '<li>' _site/index.html) projects built into _site/"

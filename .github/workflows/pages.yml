@@ -7,7 +7,7 @@ on:
       - 'projects/**'
       - 'pages/**'
       - 'public/**'
-      - 'order.md'
+      - 'docs/order.md'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
