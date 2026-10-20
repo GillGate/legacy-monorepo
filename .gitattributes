@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# keep shell scripts runnable on the Linux runner
+*.sh text eol=lf
