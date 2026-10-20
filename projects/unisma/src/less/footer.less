@@ -1,0 +1,48 @@
+.footer {
+	height: 248px;
+	background-color: @main-blue;
+	box-sizing: border-box;
+	
+	.md-block({
+		height: 160px;
+	});
+
+	a {
+		color: @white;
+	}
+
+	&__wrapper {
+		height: inherit;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: inherit;
+
+		.sm-block({
+			flex-direction: column;
+			padding: 25px 0;
+		});
+
+	}
+
+	&__logo {
+		.sm-block({
+			width: 40%;
+		});
+	}
+
+	&__rights {
+		font-size: 14px;
+		color: @white;
+
+		.sm-block({
+			padding: 15px 0;
+		});
+	}
+
+	.contactPhones {
+		.sm-block({
+			text-align: center;
+		});
+	}
+}

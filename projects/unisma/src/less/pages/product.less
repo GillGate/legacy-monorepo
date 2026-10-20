@@ -1,0 +1,170 @@
+.page {
+	.product {
+		.container {
+			max-width: 1170px;
+		}
+
+		&__slider {
+			width: 100%;
+			max-width: 836px;
+			margin: 20px auto 0;
+
+			.md-block({
+				max-width: 600px;
+			});
+
+			.sm-block({
+				max-width: 450px;
+			});
+		}
+
+		&__sliderItem {
+			height: 100%;
+			max-height: 610px;
+
+			.md-block({
+				max-height: 450px;
+			});
+
+			.sm-block({
+				max-height: 380px;
+			});
+
+			.xs-block({
+				max-height: 280px;
+			});
+
+			.xxs-block({
+				max-height: 210px;
+			});
+
+			img {
+				height: inherit;
+			    width: inherit;
+			    object-fit: cover;
+			}
+		}
+
+		&__nav {
+			width: 100%;
+			max-width: 745px;
+			margin: 30px auto;
+			position: relative;
+
+			.md-block({
+				max-width: 550px;
+			});
+
+			.sm-block({
+				max-width: 350px;
+			});
+
+			.xs-block({
+				max-width: 300px;
+			});
+		}
+
+		&__sliderNavItem {
+			height: 150px;
+
+			.xs-block({
+				height: 100px;
+			});
+
+			div {
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				padding: 0 15px;
+				box-sizing: border-box;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+
+		&__arrow {
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			top: 43%;
+			cursor: pointer;
+
+			.sm-block({
+				display: none;
+			});
+
+			&--prev {
+				left: -60px;
+				transform: translateY(-100%);
+			}
+
+			&--next {
+				right: -60px;
+				transform: rotate(180deg) translateY(100%);
+			}
+		}
+
+		&__order {
+			margin-top: 30px;
+			text-align: center;
+			padding-top: 10px;
+			font-size: 1.438rem;
+			line-height: 1.688rem;
+
+			&--current {
+				font-size: 2.375rem;
+				line-height: 2.75rem;
+				font-weight: 700;
+			}
+		}
+
+		&__desc {
+			margin: 100px auto 0;
+
+			.sm-block({
+				margin-top: 50px;
+			});
+
+			&Title {
+				text-align: left;
+				font-size: 1.438rem;
+				line-height: 1.688rem;
+				margin-bottom: 30px;
+			}
+
+			p {
+				// display: inline-block;
+				margin-bottom: 20px;
+			}
+
+			&Img {
+				width: 470px;
+				float: right;
+				margin-left: 30px;
+
+				.md-block({
+					width: 360px;
+				});
+
+				.sm-block({
+					float: none;
+					width: 70%;
+					margin: 0 auto 20px;
+				});
+			}
+		}
+
+		&__video {
+			padding: 0;
+			background-color: @light-grey;
+
+			.container {
+				max-width: 1170px;
+			}
+		}
+	}
+}

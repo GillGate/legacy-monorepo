@@ -1,0 +1,179 @@
+.profile {
+
+	.sm-block({
+		padding-bottom: 0;
+	});
+	
+	h2 {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	&__wrapper {
+		background-color: @light-grey;
+	}
+
+	&__slider {
+		display: flex;
+		justify-content: flex-end;
+		min-height: 685px;
+		background-color: @main-grey;
+
+		.md-block({
+			background-color: @main-blue;
+		});
+
+		.sm-block({
+			flex-wrap: wrap;
+		});
+	}
+
+	&__sliderLeft {
+		width: 100%;
+		max-width: 470px;
+		background-color: @main-blue;
+		color: @white;
+
+		.lg-block({
+			max-width: 350px;
+		});
+
+		.md-block({
+			align-self: center;
+		});
+
+		.sm-block({
+			max-width: 100%;
+		});
+	}
+
+	&__itemWrap {
+		padding: 35px;
+		box-sizing: border-box;
+
+		.sm-block({
+			display: flex;
+			justify-content: center;
+		});
+
+		.xs-block({
+			padding: 15px;
+			flex-wrap: wrap;
+		});
+	}
+
+	&__info {
+		.sm-block({
+			width: 100%;
+		});
+	}
+
+	&__type {
+		color: @red;
+	}
+
+	&__title {
+		// font-size: 34px;
+		// line-height: 40px;
+		font-size: 2.125rem;
+		line-height: 2.5rem;
+		font-weight: 700;
+		margin-top: 6px;
+	}
+
+	&__description {
+		margin-top: 10px;
+		// font-size: 20px;
+		font-size: 1.25rem;
+	}
+
+	&__img {
+		margin-top: 28px;
+
+		.sm-block({
+			margin-top: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-left: 40px;
+			// flex-grow: 1;
+		});
+
+		.xs-block({
+			margin-top: 28px;
+			margin-left: 0;
+			width: 50%;
+		});
+	}
+
+	&__sliderRight {
+		// width: 50%;
+		// height: 685px !important;
+		// height: 100%;
+		width: 100%;
+		// flex-grow: 1;
+		// height: inherit;
+		height: inherit;
+		max-width: 1070px;
+		max-height: 685px;
+		overflow: hidden;
+	}
+
+	&__sliderRightList {
+		height: 100%;
+
+		* {
+			height: 100%;
+		}
+	}
+
+	&__imgAdditional {
+		width: 100%;
+		height: 100%;
+
+		img {
+			width: inherit;
+			height: inherit;
+			// max-height: 685px;
+			min-height: inherit;
+			object-fit: cover;
+		}
+	}
+
+	&__controls {
+		padding: 48px 0 70px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.sm-block({
+			padding: 28px 0 45px;
+		});
+	}
+
+	&__order {
+		padding-top: 10px;
+		// font-size: 23px;
+		// line-height: 27px;
+		font-size: 1.438rem;
+		line-height: 1.688rem;
+
+		&--current {
+			// font-size: 34px;
+			// line-height: 40px;
+			font-size: 2.125rem;
+			line-height: 2.5rem;
+			font-weight: 700;
+		}
+	}
+
+	&__arrow {
+		cursor: pointer;
+		margin: 0px 20px -10px;
+
+		&--next {
+			margin-top: -9px;
+			transform: rotate(180deg);
+		}
+	}
+}

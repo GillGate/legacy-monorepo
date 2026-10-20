@@ -1,0 +1,133 @@
+.popular {
+	padding: 90px 0 50px; 
+	background-color: @light-grey;
+
+	.sm-block({
+		padding: 50px 0;
+	});
+
+
+	.container {
+		text-align: center;
+		position: relative;
+	}
+
+	&__list {
+		width: 90%;
+		margin: 44px auto;
+		text-align: left;
+
+		.lg-block({
+			justify-content: center;
+		});
+		
+		.sm-block({
+			width: 60%;
+
+			.popular__item.slick-current .popular__itemWrap{
+				.popular__button {
+					background-color: @red;
+					color: @white;
+
+					&:hover,
+					&:focus {
+						background-color: @button-hover-red;
+					}
+				}
+			}
+		});
+
+		.xs-block({
+			width: 90%;
+		});
+	}
+
+	&__item {
+		outline: none;
+	}
+
+	&__itemWrap {
+		background-color: @white;
+		margin: 0 15px;
+		position: relative;
+		cursor: pointer;
+		transition: background .3s ease;
+
+		&:hover .popular__button,
+		&:focus .popular__button {
+			background-color: @red;
+			color: @white;
+
+			&:hover,
+			&:focus {
+				background-color: @button-hover-red;
+			}
+		}
+	}
+
+	&__info {
+		box-sizing: border-box;
+		padding: 35px 24px 0;
+	}
+
+	&__type {
+		// font-size: 16px;
+		// line-height: 20px;
+		font-size: 1rem;
+		line-height: 1.25rem;
+	}
+
+	&__name {
+		margin-top: 8px;
+		// font-size: 34px;
+		// line-height: 40px;
+		font-size: 2.125rem;
+		line-height: 2.5rem;
+	}
+
+	&__usage {
+		display: flex;
+		margin-top: 10px;
+
+		div {
+			display: flex;
+			align-items: center;
+			padding: 6px;
+			box-sizing: border-box;
+			// width: 40px;
+			// height: 40px;
+			width: 2.5rem;
+			height: 2.5rem;
+			// margin-right: 14px;
+			margin-right: 0.875rem;
+			background-color: @main-blue;
+		}
+	}
+
+	&__description {
+		// font-size: 20px;
+		font-size: 1.25rem;
+	}
+
+	&__button {
+		width: 100%;
+		margin-top: 35px;
+		text-transform: none;
+		background-color: @light-grey;
+		color: @light-grey;
+	}
+
+	&__arrow {
+		.sm-block({
+			display: none;
+		});
+
+		&--prev {
+			left: 30px !important;
+		}
+
+		&--next {
+			right: 30px !important;
+		}
+	}
+}

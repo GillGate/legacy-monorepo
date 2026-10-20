@@ -1,0 +1,40 @@
+.companies {
+	// padding: 100px 0;
+
+	h2 {
+		text-align: center;
+	}
+
+	&__wrapper {
+		position: relative;
+
+		.lg-block({
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		});
+	}
+
+	&__slider {
+		margin-top: 44px;
+	}
+	
+	&__item {
+		text-align: center;
+	}
+
+	&__arrow {
+
+		.xs-block({
+			display: none !important;
+		});
+
+		&--prev {
+			left: -50px !important;
+		}
+
+		&--next {
+			right: -50px !important;
+		}
+	}
+}
