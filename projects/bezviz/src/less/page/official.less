@@ -1,0 +1,64 @@
+.official {
+	padding: 80px 0;
+	background-color: var(--blue-light);
+
+	.sm-block({
+		padding: 40px 0;
+	});
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		gap: 60px;
+
+		.md-block({
+			flex-wrap: wrap;
+		});
+
+		.sm-block({
+			gap: 20px;
+		});
+	}
+
+	&__info {
+		max-width: 490px;
+	}
+
+	&__text {
+		margin-top: 30px;
+
+		.sm-block({
+			margin-top: 14px;
+		});
+	}
+
+	&__docs {
+		display: flex;
+		gap: 30px;
+
+		.md-block({
+			margin: 0 auto;
+			justify-content: center;
+		});
+
+		.sm-block({
+			gap: 10px;
+		});
+	}
+
+	&__doc {
+		max-width: 250px;
+		text-align: center;
+
+		.md-block({
+			max-width: 370px;
+		});
+
+		&Title {
+			margin-top: 20px;
+			font-size: 16px;
+			line-height: 20px;
+			font-weight: 500;
+		}
+	}
+}

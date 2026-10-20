@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BezViz</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__mobile">
+				<button type="button" class="header__bar" aria-label="Меню"><span></span></button>
+				<button type="button" class="button header__mobileOrder" data-fancybox data-src="#popup">Заказать звонок</button>
+			</div>
+			<div class="header__menu">
+				<div class="header__wrapper">
+					<div class="header__top">
+						<div class="header__logo">
+							<img src="img/logo.svg" alt="BezViz">
+						</div>
+						<h1 class="header__title">Агенство помощи туристам в Таиланде</h1>
+					</div>
+					<nav class="nav header__nav">
+						<a href="#about" class="nav__link">О нас</a>
+						<a href="#help" class="nav__link">Как получить</a>
+						<div href="#services" class="nav__link nav__link--nested" tabindex="0">
+							<span>Все услуги</span>
+							<div class="nav__nested">
+								<a href="#services" class="nav__link">Загран паспорт на 5 лет</a>
+								<a href="#services" class="nav__link">Загран паспорт на 5 лет</a>
+								<a href="#services" class="nav__link">Загран паспорт на 5 лет</a>
+								<a href="#services" class="nav__link">Загран паспорт на 5 лет</a>
+								<a href="#services" class="nav__link">Загран паспорт на 5 лет</a>
+							</div>
+						</div>
+						<a href="#reviews" class="nav__link">Отзывы</a>
+						<a href="#contacts" class="nav__link">Контакты</a>
+					</nav>
+					<div class="header__order">
+						<button type="button" class="button header__button" data-fancybox data-src="#popup">Заказать звонок</button>
+						<a href="tel:+6612321312323" class="header__phone">+66 (123) 2131 23 23</a>
+					</div>
+					<div class="socialMedia header__social">
+						<p class="socialMedia__title">Или напишите нам:</p>
+						<div class="socialMedia__list">
+							<a href="#">
+								<img src="img/icon-social-message.svg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/icon-social-wa.svg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/icon-social-tg.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="intro">
+		<div class="container">
+			<div class="intro__wrapper">
+				<div class="intro__info">
+					<h2 class="h1 intro__title">Водительские права (кат. A и B)</h2>
+					<p class="intro__caption">С нуля или конвертиция, <strong>в Таиланде, о. Пхукет</strong></p>
+					<p class="intro__text">от <strong>6 000 Бат</strong></p>
+					<ul class="intro__features">
+						<li><p>от <b>2 дней</b></p></li>
+						<li><p><b>быстро</b> и <b>официально</b></p></li>
+						<li><p><b>118</b> прав выдано</p></li>
+					</ul>
+					<button type="button" data-fancybox data-src="#popup" class="button intro__button">Заказать звонок</button>
+					<div class="socialMedia intro__social">
+						<p class="socialMedia__title">Или напишите нам:</p>
+						<div class="socialMedia__list">
+							<a href="#">
+								<img src="img/icon-social-message.svg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/icon-social-wa.svg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/icon-social-tg.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="features">
+		<h2 class="vh">Основные преимущества</h2>
+		<div class="container">
+			<ul class="features__list">
+				<li><p>98% положительных <a href="#reviews">отзывов</a></p></li>
+				<li><p>Более 1000 клиентов</p></li>
+				<li><p>Гарантия результата</p></li>
+				<li><p>Сопровождение<br> под ключ</p></li>
+			</ul>
+		</div>
+	</section>
+	<section class="help" id="help">
+		<div class="container">
+			<h2 class="h1 help__title">Помощь в получении водительских прав с нуля или конвертации водительских прав</h2>
+			<div class="help__wrapper">
+				<div class="help__content">
+					<div class="help__text">
+						<p>
+							Мы предлагаем полный комплекс услуг по получению водительских прав с нуля, а также помощь в конвертации имеющихся прав согласно требованиям Таиландского законодательства. Наша команда экспертов обеспечит вас всей необходимой информацией, подготовит документы и сопроводит на каждом этапе. Благодаря BezViz процесс становится простым, быстрым и без головной боли. 
+						</p>
+					</div>
+					<button type="button" data-fancybox data-src="#popup" class="button help__button">Подать заявку</button>
+				</div>
+				<div class="help__info">
+					<p class="help__question"><strong>А какой штраф за вождение без прав?</strong></p>
+					<div class="help__answer">
+						<p>
+							<b>До 1000 бат</b> или до <b>3 месяцев тюрьмы</b>, плюс <b>конфискация ТС</b> с транспортировкой на штраф. стоянку, откуда ТС заберет арендодатель и также потребует штраф от 2000 бат. Помимо этого это <b>снизит шансы прохода пограничного контроля</b> при повторном прибытии в Таиланд.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="help__steps">
+				<h3 class="h2">Всего 5 шагов:</h3>
+				<ol class="help__stepsList">
+					<li data-help-step="1">Подайте заявку и оплатите услугу</li>
+					<li data-help-step="2">Подайте заявку и оплатите услугу</li>
+					<li data-help-step="3">Подайте заявку и оплатите услугу</li>
+					<li data-help-step="4">Подайте заявку и оплатите услугу</li>
+					<li data-help-step="5">Подайте заявку и оплатите услугу</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+	<section class="official">
+		<div class="container">
+			<div class="official__wrapper">
+				<div class="official__info">
+					<h2 class="h2 official__title">Работаем официально!</h2>
+					<div class="official__text">
+						<p>BezViz – это ваш надежный партнер в Таиланде, официально работающий и имеющий все необходимые разрешения для оказания услуг на территории этой страны. В отличие от многих других, мы гарантируем законность и прозрачность нашей деятельности. Наш опыт позволяет сделать процесс подачи документов быстрым и без препятствий, исключая риски длительного ожидания и нежелательных отказов.</p>
+					</div>
+				</div>
+				<div class="official__docs">
+					<div class="official__doc">
+						<a href="img/sc_en-bg.jpg" data-fancybox class="official__docImg">
+							<img src="img/sc_en-bg.jpg" alt="">
+						</a>
+						<h3 class="official__docTitle">Сертификат регистрации компании, англ.</h3>
+					</div>
+					<div class="official__doc">
+						<a href="img/sc_th-bg.jpg" data-fancybox class="official__docImg">
+							<img src="img/sc_th-bg.jpg" alt="">
+						</a>
+						<h3 class="official__docTitle">Сертификат регистрации компании, таи.</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="reviews" id="reviews">
+		<div class="container">
+			<div class="reviews__wrapper">
+				<div class="reviews__header">
+					<h2 class="h2 reviews__title">Отзывы клиентов</h2>
+					<div class="controls reviews__controls">
+						<button class="controls__item reviews__control reviews__control--prev" aria-label="Предыдущий отзыв">
+							<img src="img/icon-arrow-left.svg" alt="">
+						</button>
+						<button class="controls__item reviews__control reviews__control--next" aria-label="Следующий отзыв">
+							<img src="img/icon-arrow-right.svg" alt="">
+						</button>
+					</div>
+				</div>
+				<div class="reviews__slider">
+					<div class="reviews__item review">
+						<h3 class="review__title">TR Visa, 22.11.23</h3>
+						<div class="review__picture">
+							<img src="img/review.jpg" alt="">
+						</div>
+					</div>
+					<div class="reviews__item review">
+						<h3 class="review__title">TR Visa, 22.11.23</h3>
+						<div class="review__picture">
+							<img src="img/review.jpg" alt="">
+						</div>
+					</div>
+					<div class="reviews__item review">
+						<h3 class="review__title">TR Visa, 22.11.23</h3>
+						<div class="review__picture">
+							<img src="img/review.jpg" alt="">
+						</div>
+					</div>
+			<!-- 		<div class="reviews__item review">
+						<h3 class="review__title">TR Visa, 22.11.23</h3>
+						<div class="review__picture">
+							<img src="img/review.jpg" alt="">
+						</div>
+					</div>
+					<div class="reviews__item review">
+						<h3 class="review__title">TR Visa, 22.11.23</h3>
+						<div class="review__picture">
+							<img src="img/review.jpg" alt="">
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="why">
+		<div class="container">
+			<h2 class="h2 why__title">Почему BEZVIZ</h2>
+			<ul class="why__list">
+				<li class="why__item">
+					<div class="why__img">
+						<img src="img/why-1.svg" alt="">
+					</div>
+					<h3 class="why__itemTitle">Скорость — наша отличительная черта!</h3>
+					<div class="why__text">
+						<p>Вам больше не придется терять драгоценные дни на бесконечные очереди и ожидание: мы сделаем всё быстро и по ключ!</p>
+					</div>
+				</li>
+				<li class="why__item">
+					<div class="why__img">
+						<img src="img/why-2.svg" alt="">
+					</div>
+					<h3 class="why__itemTitle">Экономия ваших сил и нервов</h3>
+					<div class="why__text">
+						<p>Мы берем на себя всю бюрократическую ношу: от подготовки документов до прохождения очередей!</p>
+					</div>
+				</li>
+				<li class="why__item">
+					<div class="why__img">
+						<img src="img/why-3.svg" alt="">
+					</div>
+					<h3 class="why__itemTitle">Профессиональный подход к клиенту</h3>
+					<div class="why__text">
+						<p>Мы гарантируем качественное и четкое выполнение всех процедур и готовы провести для вас персональную консультацию.</p>
+					</div>
+				</li>
+			</ul>
+			<div class="why__bottom">
+				<div class="why__get">
+					<h3 class="h2 why__getTitle">Получите бесплатную профессиональную консультацию</h3>
+					<button type="button" data-fancybox data-src="#popup" class="button why__getOrder">Заказать звонок</button>
+				</div>
+				<div class="socialMedia why__social">
+					<p class="socialMedia__title">Или спросите онлайн:</p>
+					<div class="socialMedia__list">
+						<a href="#">
+							<img src="img/icon-social-message.svg" alt="">
+						</a>
+						<a href="#">
+							<img src="img/icon-social-wa.svg" alt="">
+						</a>
+						<a href="#">
+							<img src="img/icon-social-tg.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="services" id="services">
+		<div class="container">
+			<h2 class="h2 services__title">Другие услуги BEZVIZ</h2>
+			<div class="services__list">
+				<div class="services__item service">
+					<h3 class="service__title">Загран паспорт на 5 лет</h3>
+					<div class="service__text">
+						<p>Помощь в оформлении документов на загран паспорт не покидая территории к. Таиланд</p>
+					</div>
+					<p class="service__price">от 15 000 Бат</p>
+				</div>
+				<div class="services__item service">
+					<h3 class="service__title">Загран паспорт на 5 лет</h3>
+					<div class="service__text">
+						<p>Помощь в оформлении документов на загран паспорт не покидая территории к. Таиланд</p>
+					</div>
+					<p class="service__price">от 15 000 Бат</p>
+				</div>
+				<div class="services__item service">
+					<h3 class="service__title">Загран паспорт на 5 лет</h3>
+					<div class="service__text">
+						<p>Помощь в оформлении документов на загран паспорт не покидая территории к. Таиланд</p>
+						<p>Помощь в оформлении документов на загран паспорт не покидая территории к. Таиланд</p>
+					</div>
+					<p class="service__price">от 15 000 Бат</p>
+				</div>
+				<div class="services__item service">
+					<h3 class="service__title">Загран паспорт на 5 лет</h3>
+					<div class="service__text">
+						<p>Помощь в оформлении документов на загран паспорт не покидая территории к. Таиланд</p>
+					</div>
+					<p class="service__price">от 15 000 Бат</p>
+				</div>
+			</div>
+			<div class="services__more">
+				<a href="#" class="button services__moreLink">Смотреть больше услуг</a>
+			</div>
+		</div>
+	</section>
+	<section class="team">
+		<div class="container">
+			<div class="team__wrapper">
+				<div class="team__header">
+					<h2 class="h2 team__title">Наша команда</h2>
+					<div class="controls team__controls">
+						<button class="controls__item team__control team__control--prev">
+							<img src="img/icon-arrow-left.svg" alt="">
+						</button>
+						<button class="controls__item team__control team__control--next">
+							<img src="img/icon-arrow-right.svg" alt="">
+						</button>
+					</div>
+				</div>
+				<div class="team__slider">
+					<div class="team__person">
+						<div class="team__personImg">
+							<img src="img/team.jpg" alt="">
+						</div>
+						<h3 class="h3 team__personTitle">Kate</h3>
+						<p class="team__personPosition">Офис-менеджер</p>
+						<div class="team__personDesc">
+							<p>Эксперт по оформлению документов, специализируется на оказании широкого спектра услуг, связанного с оформлением официальны доментов в Таиланде</p>
+						</div>
+					</div>
+					<div class="team__person">
+						<div class="team__personImg">
+							<img src="img/team.jpg" alt="">
+						</div>
+						<h3 class="h3 team__personTitle">Kate</h3>
+						<p class="team__personPosition">Офис-менеджер</p>
+						<div class="team__personDesc">
+							<p>Эксперт по оформлению документов, специализируется на оказании широкого спектра услуг, связанного с оформлением официальны доментов в Таиланде</p>
+						</div>
+					</div>
+					<div class="team__person">
+						<div class="team__personImg">
+							<img src="img/team.jpg" alt="">
+						</div>
+						<h3 class="h3 team__personTitle">Kate</h3>
+						<p class="team__personPosition">Офис-менеджер</p>
+						<div class="team__personDesc">
+							<p>Эксперт по оформлению документов, специализируется на оказании широкого спектра услуг, связанного с оформлением официальны доментов в Таиланде</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="agency" id="about">
+		<div class="container">
+			<div class="agency__wrapper">
+				<div class="agency__header">
+					<h2 class="h2 agency__title">Агенство помощи туристам в Таиланде</h2>
+					<div class="agency__info">
+						<div class="agency__logo">
+							<img src="img/logo.svg" width="171" height="94" alt="">
+						</div>
+						<div class="address agency__address">
+							Адрес: <address>BezViz, ооо, 123123 123123, 123123 123</address>
+						</div>
+					</div>
+				</div>
+				<div class="agency__text">
+					<p><strong>BezViz специализируется</strong> на оказании услуг по обновлению паспортов, получению виз, консульских и нотариальных услуг для жителей СНГ в Таиланде. Они облегчают процесс подготовки документов, помогая избежать многомесячных .BezViz специализируется на оказании услуг по обновлению паспортов, получению виз, консульских и нотариальных услуг для жителей СНГ в Таиланде.</p>
+				</div>
+				<div class="agency__img">
+					<img src="img/agency.jpg" width="500" height="345" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="social" id="contacts">
+		<div class="container">
+			<h2 class="h2 social__title">Мы в Instagram</h2>
+			<div class="social__info">
+				<ul class="social__stats">
+					<li><span>112</span> постов</li>
+					<li><span>1243</span> подписчиков</li>
+					<li><span>21</span> подписок</li>
+				</ul>
+				<a href="#" class="button social__sub">Подписаться</a>
+			</div>
+			<div class="social__gallery">
+				<div class="social__galleryItem">
+					<img src="img/gallery.jpg" alt="">
+				</div>
+				<div class="social__galleryItem">
+					<img src="img/gallery.jpg" alt="">
+				</div>
+				<div class="social__galleryItem">
+					<img src="img/gallery.jpg" alt="">
+				</div>
+				<div class="social__galleryItem">
+					<img src="img/gallery.jpg" alt="">
+				</div>
+			</div>
+			<div class="social__list">
+				<a href="#" class="h3 social__item social__item--inst">instagram</a>
+				<a href="#" class="h3 social__item social__item--fb">facebook</a>
+				<a href="#" class="h3 social__item social__item--tg">telegram</a>
+				<a href="#" class="h3 social__item social__item--tt">tik tok</a>
+				<a href="#" class="h3 social__item social__item--yt">youtube</a>
+			</div>
+		</div>
+	</section>
+	<div class="popup" id="popup">
+		<div class="popup__wrapper">
+			<form class="form popup__form">
+				<label class="form__label form__label--input">
+					<span class="form__title">Укажите своё имя:</span>
+					<input class="form__input" name="order-name" type="text" placeholder="Имя">
+				</label>
+				<label class="form__label form__label--input">
+					<span class="form__title">Укажите свой телефон:</span>
+					<input class="form__input form__input--error" name="order-phone" type="tel" placeholder="Телефон">
+				</label>
+				<div class="form__date">
+					<span class="form__title">Укажите время для связи:</span>
+					<label class="form__label form__radio">
+						<input type="radio" name="order-time" value="Как можно скорее" checked>
+						Как можно скорее
+					</label>
+					<label class="form__label form__radio">
+						<input type="radio" name="order-time" value="Конкретное время">
+						Конкретное время
+					</label>
+					<input class="form__input form__datetime" type="datetime-local" name="order-date" disabled>
+				</div>
+				<button class="button form__submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__map">
+					<div class="footer__mapFrame">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.1804412475212!2d98.28958158528832!3d7.980292571533549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305039e93027c431%3A0x50a53fc84224cf4e!2zNSBUaGFub24gU2kgU3VudGhvbiwgVGFtYm9uIENob2VuZyBUaGFsZSwgQW1waG9lIFRoYWxhbmcsIENoYW5nIFdhdCBQaHVrZXQgODMxMTAsINCi0LDQuNC70LDQvdC0!5e0!3m2!1sru!2suk!4v1699957902978!5m2!1sru!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<a href="#" class="footer__icon footer__icon--location footer__mapLink">Показать на Google maps</a>
+				</div>
+				<div class="footer__info">
+					<h2 class="h2 footer__title">Агенство помощи туристам в Таиланде</h2>
+					<div class="footer__order">
+						<a href="tel:+6612321312323" class="footer__icon footer__icon--phone footer__phone">+66 (123) 2131 23 23</a>
+						<button type="button" data-fancybox data-src="#popup" class="button footer__orderBtn">Заказать звонок</button>
+					</div>
+					<div class="footer__address">
+						<div class="address footer__icon footer__icon--location footer__addressItem">
+							Адрес: <address>BezViz, ооо, 123123 123123, 123123 123</address>
+						</div>
+						<div class="address footer__icon footer__icon--location footer__addressItem">
+							Адрес: <address>BezViz, ооо, 123123 123123, 123123 123</address>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__logo">
+					<img src="img/logo-white.svg" width="108" alt="">
+				</div>
+				<nav class="footer__nav">
+					<a href="#about" class="footer__link">О нас</a>
+					<a href="#help" class="footer__link">Как получить</a>
+					<a href="#services" class="footer__link">Все услуги</a>
+					<a href="#reviews" class="footer__link">Отзывы</a>
+					<a href="#contacts" class="footer__link">Контакты</a>
+				</nav>
+			</div>
+		</div>
+	</footer>
+	<script src="js/main.min.js"></script>
+	<script async defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+</body>
+</html>

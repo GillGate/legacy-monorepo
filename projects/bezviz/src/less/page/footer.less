@@ -1,0 +1,152 @@
+.footer {
+	padding: 80px 0 40px;
+	color: var(--white);
+	background-color: var(--blue);
+
+	.sm-block({
+		padding: 40px 0;
+	});
+
+	.xs-block({
+		padding: 14px 0 30px;
+	});
+
+	&__wrapper {
+		display: flex;
+		gap: 20px;
+
+		.sm-block({
+			flex-wrap: wrap;
+		});
+	}
+
+	&__map {
+		flex-grow: 1;
+
+		&Frame {
+			border-radius: 10px;
+		}
+
+		&Link {
+			margin-top: 14px;
+			font-size: 18px;
+			font-weight: 700;
+			text-decoration: underline;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 1;
+		max-width: 384px;
+	}
+
+	&__title {
+		.xs-block({
+			font-size: 30px;
+			line-height: 32px;
+		});
+	}
+
+	&__order {
+		margin: 34px 0 10px;
+
+		&Btn {
+			height: 52px;
+			line-height: 50px;
+
+			.xs-block({
+				display: block;
+				text-align: center;
+			});
+		}
+	}
+
+	&__phone {
+		font-size: 24px;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+
+	&__address {
+		margin-top: auto;
+		margin-bottom: 38px;
+
+		.sm-block({
+			display: flex;
+			flex-direction: column;
+			gap: 14px;
+			margin-top: 30px;
+			margin-bottom: 0;
+		});
+	}
+
+	&__icon {
+		&::before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 8px;
+			width: 20px;
+			height: 20px;
+			background: no-repeat center / contain;
+		}
+
+		&--location {
+			&::before {
+				background-image: url(../img/icon-location.svg);
+			}
+		}
+
+		&--phone {
+			&::before {
+				width: 26px;
+				height: 26px;
+				background-image: url(../img/icon-phone.svg);
+			}
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 40px;
+
+		.sm-block({
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 20px;
+		});
+
+		.xs-block({
+			flex-direction: column;
+			align-items: flex-start;
+		});
+	}
+
+	&__nav {
+		display: flex;
+		gap: 45px;
+		margin-left: 30px;
+		font-weight: 700;
+		font-size: 18px;
+
+		.md-block({
+			gap: 30px;
+		});
+
+		.sm-block({
+			max-width: 430px;
+			margin-left: 0;
+			justify-content: center;
+			flex-wrap: wrap;
+		});
+
+		.xs-block({
+			flex-direction: column;
+			justify-content: flex-start;
+		});
+	}
+}
