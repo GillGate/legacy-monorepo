@@ -1,0 +1,58 @@
+<?php 
+	register_taxonomy( 'type', [ 'article' ], [
+		'label'                 => 'Тема', 
+		'labels'                => [
+			'name'              => 'Тип статьи',
+			'singular_name'     => 'Тип статьи',
+			'search_items'      => 'Поиск',
+			'all_items'         => 'Все типы',
+			'view_item '        => 'Смотреть типы',
+			'parent_item'       => 'Родительский тип',
+			'parent_item_colon' => 'Родительский тип:',
+			'edit_item'         => 'Редактировать тип',
+			'update_item'       => 'Обновить тип',
+			'add_new_item'      => 'Добавить тип',
+			'new_item_name'     => 'Имя нового типа',
+			'menu_name'         => 'Добавить тип',
+			'back_to_items'     => '← Назад',
+		],
+		'description'           => 'Категория определяющая тип статьи',
+		'public'                => true,
+		'hierarchical'          => true,
+		'rewrite'               => true,
+		//'query_var'             => $taxonomy, // название параметра запроса
+		'capabilities'          => array(),
+		'meta_box_cb'           => null,
+		'show_admin_column'     => false,
+		'show_in_rest'          => null,
+		'rest_base'             => null,
+	]);
+
+	register_taxonomy( 'topic', [ 'article' ], [
+		'label'                 => 'Тема', 
+		'labels'                => [
+			'name'              => 'Тема',
+			'singular_name'     => 'Тема',
+			'search_items'      => 'Поиск',
+			'all_items'         => 'Все темы',
+			'view_item '        => 'Смотреть темы',
+			'parent_item'       => 'Родительская тема',
+			'parent_item_colon' => 'Родительская тема:',
+			'edit_item'         => 'Редактировать тему',
+			'update_item'       => 'Обновить тему',
+			'add_new_item'      => 'Добавить тему',
+			'new_item_name'     => 'Имя новой темы',
+			'menu_name'         => 'Добавить тему',
+			'back_to_items'     => '← Назад',
+		],
+		'description'           => 'Категория определяющая тему статьи',
+		'public'                => true,
+		'hierarchical'          => true,
+		'rewrite'               => true,
+		//'query_var'             => $taxonomy, // название параметра запроса
+		'capabilities'          => array(),
+		'meta_box_cb'           => null,
+		'show_admin_column'     => false,
+		'show_in_rest'          => null,
+		'rest_base'             => null,
+	]);

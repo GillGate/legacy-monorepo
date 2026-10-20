@@ -1,0 +1,51 @@
+.article {
+	&__img {
+		height: 160px;
+		max-height: 100%;
+		border-radius: 15px;
+
+		.xs-block({
+			height: 190px;
+		});
+
+		img {
+			width: 100% !important;
+			height: 100% !important;
+			max-height: 160px;
+			object-fit: cover;
+			border: 1px solid var(--grey);
+			border-radius: inherit;
+
+			.xs-block({
+				max-height: 190px !important;
+			});
+		}
+	}
+
+	&__date {
+		margin: 10px 0;
+	}
+
+	&__title {
+		font-size: 18px;
+		line-height: normal;
+		font-weight: 600;
+		margin-bottom: 16px;
+	}
+
+	&__text {
+		margin-bottom: 16px;
+		font-size: 18px;
+		line-height: 23px;
+	}
+
+	&__link {
+		display: inline-block;
+		margin-top: auto;
+		text-decoration: none;
+
+		&:hover, &:focus {
+			color: darken(@blue, 10%);
+		}
+	}
+}
