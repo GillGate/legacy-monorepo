@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Česká evropská agentura</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<div class="popup popup--consultation">
+		<div class="popup__wrapper">
+			<button class="popup__close"><img src="img/close.svg" alt="Закрыть" width="30" height="30"></button>
+			<h2 class="popup__title">Получить <span>бесплатную</span> консультацию</h2>
+			<p class="popup__caption">
+				Оставьте заявку, и в ближайшее время мы свяжемся с Вами.
+				<span>Наши операторы бесплатно проконсультируют Вас по сбору необходимых документов, вопросам касательно перезда, работы и жизни в Чехии.
+				</span>
+			</p>
+			<form class="form popup__form">
+				<label class="form__input"><input type="text" placeholder="Имя"></label>
+				<label class="form__input"><input type="tel" placeholder="Номер телефона"></label>
+				<label class="form__input form__input--textarea"><textarea placeholder="Комментарий"></textarea></label>
+				<button class="button form__button">Оставить заявку</button>
+			</form>
+		</div>
+	</div>
+	<header class="header header--main">
+		<div class="header__wrapper">
+			<div class="header__head">
+				<a class="header__logo">
+					<picture>
+						<source media="(max-width:768px)" srcset="img/logo.jpg">
+						<img src="img/logo-white.png" alt="Česká evropská agentura">
+					</picture>
+				</a>
+				<div class="nav header__nav">
+					<div class="nav__bar"><img src="img/nav-bar.svg" alt="Open menu" width="30" height="30"></div>
+					<div class="nav__openHeader">
+						<div class="header__phone">
+							<a href="tel:+420775265842">+420 775 265 842</a>
+							<span>Viber, WhatsApp, Telegram</span>
+						</div>
+						<div class="nav__close"><img src="img/close.svg" alt="Закрыть" width="34" height="34"></div>
+					</div>
+					<nav class="nav__body">
+						<a class="nav__link" href="#about">О Нас</a>
+						<a class="nav__link" href="#vakancies">Вакансии</a>
+						<a class="nav__link" href="#start">Как начать?</a>
+						<a class="nav__link" href="#faq">FAQ</a>
+						<a class="nav__link" href="#reviews">Отзывы</a>
+						<a class="nav__link" href="#contacts">Контакты</a>
+					</nav>
+				</div>
+				<div class="header__lang">
+					<a href="#" class="header__lang--current">RU</a>
+					<a href="#">UA</a>
+					<a href="#">CZ</a>
+				</div>
+				<div class="header__phone">
+					<a href="tel:+420775265842">+420 775 265 842</a>
+					<span>Viber, WhatsApp, Telegram</span>
+				</div>
+			</div>
+			<div class="header__body">
+				<div class="header__bodyWrapper">
+					<h1 class="header__title">Легальная работа в Чeхии без посредников</h1>
+					<p class="header__text">
+						Наши операторы бесплатно проконсультируют по сбору необходимых документов, вопросам переезда, а также любым другим вопросам связанным с работой в Чехии.
+					</p>
+					<button class="button header__button getConsultation">Получить консультацию</button>
+				</div>
+			</div>
+			<a href="tel:+420775265842" class="header__call">
+				<img src="img/header-call.svg" alt="Call" width="50" height="50">
+			</a>
+		</div>
+	</header>
+	<section class="about" id="about">
+		<div class="about__wrapper">
+			<div class="about__item">
+				<div class="about__col">
+					<div class="about__info about__info--first">
+						<h2 class="about__title">О Нас<span>.</span></h2>
+						<p class="about__text">
+							ČEA – международная кадровая агентура, которая была основана в Праге в 2016 году, занимающаяся проблемами недостатка рабочей cилы в промышленности и других областях.
+						</p>
+						<p class="about__text">
+							Агентура действует по всей территории Чешской Республики, а также, в других государствах ЕС.
+						</p>
+					</div>
+				</div>
+				<div class="about__col">
+					<div class="about__img">
+						<img src="img/about-1.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="about__item">
+				<div class="about__col">
+					<div class="about__info">
+						<p class="about__text">
+							Мы являемся обладателем всех необходимых разрешений ГУМТ Чешской Республики, в полном объёме и без ограничений.
+						</p>
+						<p class="about__text">
+							Česká Europská Agentura отвечает всем легислативным требованиям, в первую очередь залог и страхование
+						</p>
+					</div>
+				</div>
+				<div class="about__col">
+					<div class="about__img">
+						<img src="img/about-2.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="about__item about__item--last">
+				<div class="about__col">
+					<div class="about__info about__info--last">
+						<p class="about__text">
+							В настоящее время ČEA трудоустраивает порядка более тысячи работников и долгосрочно сотрудничает с более чем 60 партнерами. 
+						</p>
+					</div>
+				</div>
+				<div class="about__col">
+					<div class="about__img">
+						<img src="img/about-3.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="founder">
+		<div class="container founder__wrapper">
+			<div class="founder__person">
+				<div class="founder__img">
+					<img src="img/founder.jpg" alt="Ishtvan Syuch photo">
+				</div>
+				<h3 class="founder__name">Ishtvan Syuch</h3>
+				<span class="founder__caption">Основатель</span>
+			</div>
+			<p class="founder__quote">
+				Мы подбираем для Вас самый оптимальный вариант на основе личных предпочтений о работе и гарантируем абсолютную прозрачность  процесса трудоустройства.  
+			</p>
+		</div>
+	</section>
+	<section class="why">
+		<div class="container why__container">
+			<h2 class="why__title">Почему ČEA<span>.</span></h2>
+			<p class="why__text">
+				Коротко о нас<br>
+				в цифрах
+			</p>
+			<ul class="why__list">
+				<li class="why__item why__item--middle">
+					<p class="why__digit">50+</p>
+					<p class="why__caption">доступных вакансий</p>
+				</li>
+				<li class="why__item why__item--large">
+					<p class="why__digit">5000+</p>
+					<p class="why__caption">довольных сотрудников</p>
+				</li>
+				<li class="why__item why__item--small">
+					<p class="why__digit">5+</p>
+					<p class="why__caption">лет на рынке</p>
+				</li>
+			</ul>
+			<div class="why__partners">
+				<div class="why__img">
+					<img src="img/partners.png" alt="Локация партнёров">
+				</div>
+				<div class="why__item why__item--partners">
+					<p class="why__digit">60+</p>
+					<p class="why__caption">
+						надежных партнеров по всей Чехии</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="advice">
+		<div class="container advice__wrapper">
+			<button class="button advice__button getConsultation">Получить консультацию</button>
+			<div class="advice__info">
+				<h2 class="advice__title">
+					Получите бесплатную<br>
+					консультацию уже сегодня
+				</h2>
+				<p class="advice__caption">
+					Оставьте заявку, и в ближайшее время наш менеджер свяжется с вами. 
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="vakancy vakancy--main" id="vakancies">
+		<div class="container">
+			<h2>Актуальные вакансии</h2>
+			<ul class="vakancy__list vakancy__list--main">
+				<li class="vakancy__item vakancy__item--special" data-special="СПЕЦИАЛЬНЫЕ УСЛОВИЯ: оформление документов за счет работодателя" data-special-mobile="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+					<div class="vakancy__head">
+						<div class="vakancy__info">
+							<div class="vakancy__img">
+								<img src="img/job-1.jpg" alt="">
+							</div>
+							<div class="vakancy__name">
+								<span class="vakancy__location">Plána nad Lužnicí</span>
+								<h3 class="vakancy__title">
+									Работник завода по изготовлению автомобильных деталей
+								</h3>
+							</div>
+						</div>
+						<div class="vakancy__price">
+							Заработная плата:
+							<span>105 Kč/час</span>
+						</div>
+					</div>
+					<div class="vakancy__desc">
+						<p>
+							Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+						</p>
+					</div>
+					<div class="vakancy__body">
+						<ul class="vakancy__conditions">
+							<li>для женщин и мужчин</li>
+							<li>с проживанием</li>
+						</ul>
+						<p class="vakancy__shifts">
+							Смены: <br>
+							<span class="vakancy__shift">18:00 - 6:00</span>
+							<span class="vakancy__shift">6:00 - 18:00</span>
+						</p>
+						<button class="button vakancy__button">
+							<span>Подробнее</span>
+							<span class="vakancy__button--mobile">Забронировать вакансию</span>
+						</button>
+					</div>
+					<div class="popup vakancy__popup">
+						<div class="popup__wrapper">
+							<button class="popup__close"><img src="img/close.svg" alt="Закрыть" width="30" height="30"></button>
+							<div class="vakancy__head">
+								<ul class="vakancy__categoryList">
+									<li class="categories"><a href="#">Завод</a></li>
+								</ul>
+								<div class="vakancy__price">
+									Заработная плата:
+									<span>105 Kč/час</span>
+								</div>
+							</div>
+							<div class="vakancy__info" data-special-popup="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+								<div class="vakancy__img">
+									<img src="img/job-1.jpg" alt="">
+								</div>
+								<div class="vakancy__name">
+									<span class="vakancy__location">Plána nad Lužnicí</span>
+									<h3 class="vakancy__title">
+										Работник завода по изготовлению автомобильных деталей
+									</h3>
+								</div>
+							</div>
+							<div class="vakancy__desc">
+								<p>
+									Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+								</p>
+								<p class="vakancy__desc--special">
+									<span>Специальные условия :</span> оформление документов за счет работодателя
+								</p>
+							</div>
+							<div class="vakancy__price vakancy__price--mobile">
+								Заработная плата:
+								<span>105 Kč/час</span>
+							</div>
+							<div class="vakancy__body">
+								<ul class="vakancy__conditions">
+									<li>для женщин и мужчин</li>
+									<li>с проживанием</li>
+								</ul>
+								<p class="vakancy__shifts">
+									Смены: <br>
+									<span class="vakancy__shift">18:00 - 6:00</span>
+									<span class="vakancy__shift">6:00 - 18:00</span>
+								</p>
+							</div>
+							<div class="vakancy__formWrapper">
+								<h3 class="vakancy__formTitle">
+									Это то, что Вы искали?
+								</h3>
+								<p class="vakancy__formCaption">
+									Оставьте заявку, и в ближайшее время наш менеджер свяжется с вами.
+								</p>
+								<form class="popup__form vakancy__form">
+									<label class="form__input"><input type="text" placeholder="Имя"></label>
+									<label class="form__input"><input type="tel" placeholder="Номер телефона"></label>
+									<button class="button form__button">Забронировать вакансию</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="vakancy__item" data-special="СПЕЦИАЛЬНЫЕ УСЛОВИЯ: оформление документов за счет работодателя" data-special-mobile="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+					<div class="vakancy__head">
+						<div class="vakancy__info">
+							<div class="vakancy__img">
+								<img src="img/job-2.jpg" alt="">
+							</div>
+							<div class="vakancy__name">
+								<span class="vakancy__location">Plána nad Lužnicí</span>
+								<h3 class="vakancy__title">
+									Работник завода по изготовлению автомобильных деталей
+								</h3>
+							</div>
+						</div>
+						<div class="vakancy__price">
+							Заработная плата:
+							<span>105 Kč/час</span>
+						</div>
+					</div>
+					<div class="vakancy__desc">
+						<p>
+							Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+						</p>
+					</div>
+					<div class="vakancy__body">
+						<ul class="vakancy__conditions">
+							<li>для женщин и мужчин</li>
+							<li>с проживанием</li>
+						</ul>
+						<p class="vakancy__shifts">
+							Смены: <br>
+							<span class="vakancy__shift">18:00 - 6:00</span>
+							<span class="vakancy__shift">6:00 - 18:00</span>
+						</p>
+						<button class="button vakancy__button">
+							<span>Подробнее</span>
+							<span class="vakancy__button--mobile">Забронировать вакансию</span>
+						</button>
+					</div>
+					<div class="popup vakancy__popup">
+						<div class="popup__wrapper">
+							<button class="popup__close"><img src="img/close.svg" alt="Закрыть" width="30" height="30"></button>
+							<div class="vakancy__head">
+								<ul class="vakancy__categoryList">
+									<li class="categories"><a href="#">Завод</a></li>
+								</ul>
+								<div class="vakancy__price">
+									Заработная плата:
+									<span>105 Kč/час</span>
+								</div>
+							</div>
+							<div class="vakancy__info" data-special-popup="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+								<div class="vakancy__img">
+									<img src="img/job-2.jpg" alt="">
+								</div>
+								<div class="vakancy__name">
+									<span class="vakancy__location">Plána nad Lužnicí</span>
+									<h3 class="vakancy__title">
+										Работник завода по изготовлению автомобильных деталей
+									</h3>
+								</div>
+							</div>
+							<div class="vakancy__desc">
+								<p>
+									Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+								</p>
+								<p class="vakancy__desc--special">
+									<span>Специальные условия :</span> оформление документов за счет работодателя
+								</p>
+							</div>
+							<div class="vakancy__price vakancy__price--mobile">
+								Заработная плата:
+								<span>105 Kč/час</span>
+							</div>
+							<div class="vakancy__body">
+								<ul class="vakancy__conditions">
+									<li>для женщин и мужчин</li>
+									<li>с проживанием</li>
+								</ul>
+								<p class="vakancy__shifts">
+									Смены: <br>
+									<span class="vakancy__shift">18:00 - 6:00</span>
+									<span class="vakancy__shift">6:00 - 18:00</span>
+								</p>
+							</div>
+							<div class="vakancy__formWrapper">
+								<h3 class="vakancy__formTitle">
+									Это то, что Вы искали?
+								</h3>
+								<p class="vakancy__formCaption">
+									Оставьте заявку, и в ближайшее время наш менеджер свяжется с вами.
+								</p>
+								<form class="popup__form vakancy__form">
+									<label class="form__input"><input type="text" placeholder="Имя"></label>
+									<label class="form__input"><input type="tel" placeholder="Номер телефона"></label>
+									<button class="button form__button">Забронировать вакансию</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="vakancy__item vakancy__item--special" data-special="СПЕЦИАЛЬНЫЕ УСЛОВИЯ: оформление документов за счет работодателя" data-special-mobile="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+					<div class="vakancy__head">
+						<div class="vakancy__info">
+							<div class="vakancy__img">
+								<img src="img/job-3.jpg" alt="">
+							</div>
+							<div class="vakancy__name">
+								<span class="vakancy__location">Plána nad Lužnicí</span>
+								<h3 class="vakancy__title">
+									Работник завода по изготовлению автомобильных деталей
+								</h3>
+							</div>
+						</div>
+						<div class="vakancy__price">
+							Заработная плата:
+							<span>105 Kč/час</span>
+						</div>
+					</div>
+					<div class="vakancy__desc">
+						<p>
+							Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+						</p>
+					</div>
+					<div class="vakancy__body">
+						<ul class="vakancy__conditions">
+							<li>для женщин и мужчин</li>
+							<li>с проживанием</li>
+						</ul>
+						<p class="vakancy__shifts">
+							Смены: <br>
+							<span class="vakancy__shift">18:00 - 6:00</span>
+							<span class="vakancy__shift">6:00 - 18:00</span>
+						</p>
+						<button class="button vakancy__button">
+							<span>Подробнее</span>
+							<span class="vakancy__button--mobile">Забронировать вакансию</span>
+						</button>
+					</div>
+					<div class="popup vakancy__popup">
+						<div class="popup__wrapper">
+							<button class="popup__close"><img src="img/close.svg" alt="Закрыть" width="30" height="30"></button>
+							<div class="vakancy__head">
+								<ul class="vakancy__categoryList">
+									<li class="categories"><a href="#">Завод</a></li>
+								</ul>
+								<div class="vakancy__price">
+									Заработная плата:
+									<span>105 Kč/час</span>
+								</div>
+							</div>
+							<div class="vakancy__info" data-special-popup="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+								<div class="vakancy__img">
+									<img src="img/job-3.jpg" alt="">
+								</div>
+								<div class="vakancy__name">
+									<span class="vakancy__location">Plána nad Lužnicí</span>
+									<h3 class="vakancy__title">
+										Работник завода по изготовлению автомобильных деталей
+									</h3>
+								</div>
+							</div>
+							<div class="vakancy__desc">
+								<p>
+									Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+								</p>
+								<p class="vakancy__desc--special">
+									<span>Специальные условия :</span> оформление документов за счет работодателя
+								</p>
+							</div>
+							<div class="vakancy__price vakancy__price--mobile">
+								Заработная плата:
+								<span>105 Kč/час</span>
+							</div>
+							<div class="vakancy__body">
+								<ul class="vakancy__conditions">
+									<li>для женщин и мужчин</li>
+									<li>с проживанием</li>
+								</ul>
+								<p class="vakancy__shifts">
+									Смены: <br>
+									<span class="vakancy__shift">18:00 - 6:00</span>
+									<span class="vakancy__shift">6:00 - 18:00</span>
+								</p>
+							</div>
+							<div class="vakancy__formWrapper">
+								<h3 class="vakancy__formTitle">
+									Это то, что Вы искали?
+								</h3>
+								<p class="vakancy__formCaption">
+									Оставьте заявку, и в ближайшее время наш менеджер свяжется с вами.
+								</p>
+								<form class="popup__form vakancy__form">
+									<label class="form__input"><input type="text" placeholder="Имя"></label>
+									<label class="form__input"><input type="tel" placeholder="Номер телефона"></label>
+									<button class="button form__button">Забронировать вакансию</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="vakancy__item" data-special="СПЕЦИАЛЬНЫЕ УСЛОВИЯ: оформление документов за счет работодателя" data-special-mobile="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+					<div class="vakancy__head">
+						<div class="vakancy__info">
+							<div class="vakancy__img">
+								<img src="img/job-4.jpg" alt="">
+							</div>
+							<div class="vakancy__name">
+								<span class="vakancy__location">Plána nad Lužnicí</span>
+								<h3 class="vakancy__title">
+									Работник завода по изготовлению автомобильных деталей
+								</h3>
+							</div>
+						</div>
+						<div class="vakancy__price">
+							Заработная плата:
+							<span>105 Kč/час</span>
+						</div>
+					</div>
+					<div class="vakancy__desc">
+						<p>
+							Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+						</p>
+					</div>
+					<div class="vakancy__body">
+						<ul class="vakancy__conditions">
+							<li>для женщин и мужчин</li>
+							<li>с проживанием</li>
+						</ul>
+						<p class="vakancy__shifts">
+							Смены: <br>
+							<span class="vakancy__shift">18:00 - 6:00</span>
+							<span class="vakancy__shift">6:00 - 18:00</span>
+						</p>
+						<button class="button vakancy__button">
+							<span>Подробнее</span>
+							<span class="vakancy__button--mobile">Забронировать вакансию</span>
+						</button>
+					</div>
+					<div class="popup vakancy__popup">
+						<div class="popup__wrapper">
+							<button class="popup__close"><img src="img/close.svg" alt="Закрыть" width="30" height="30"></button>
+							<div class="vakancy__head">
+								<ul class="vakancy__categoryList">
+									<li class="categories"><a href="#">Завод</a></li>
+								</ul>
+								<div class="vakancy__price">
+									Заработная плата:
+									<span>105 Kč/час</span>
+								</div>
+							</div>
+							<div class="vakancy__info" data-special-popup="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+								<div class="vakancy__img">
+									<img src="img/job-4.jpg" alt="">
+								</div>
+								<div class="vakancy__name">
+									<span class="vakancy__location">Plána nad Lužnicí</span>
+									<h3 class="vakancy__title">
+										Работник завода по изготовлению автомобильных деталей
+									</h3>
+								</div>
+							</div>
+							<div class="vakancy__desc">
+								<p>
+									Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+								</p>
+								<p class="vakancy__desc--special">
+									<span>Специальные условия :</span> оформление документов за счет работодателя
+								</p>
+							</div>
+							<div class="vakancy__price vakancy__price--mobile">
+								Заработная плата:
+								<span>105 Kč/час</span>
+							</div>
+							<div class="vakancy__body">
+								<ul class="vakancy__conditions">
+									<li>для женщин и мужчин</li>
+									<li>с проживанием</li>
+								</ul>
+								<p class="vakancy__shifts">
+									Смены: <br>
+									<span class="vakancy__shift">18:00 - 6:00</span>
+									<span class="vakancy__shift">6:00 - 18:00</span>
+								</p>
+							</div>
+							<div class="vakancy__formWrapper">
+								<h3 class="vakancy__formTitle">
+									Это то, что Вы искали?
+								</h3>
+								<p class="vakancy__formCaption">
+									Оставьте заявку, и в ближайшее время наш менеджер свяжется с вами.
+								</p>
+								<form class="popup__form vakancy__form">
+									<label class="form__input"><input type="text" placeholder="Имя"></label>
+									<label class="form__input"><input type="tel" placeholder="Номер телефона"></label>
+									<button class="button form__button">Забронировать вакансию</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<a href="/vakancies.html" class="button vakancy__more">Больше вакансий</a>
+			<a href="/vakancies.html" class="all vakancy__all">Больше вакансий</a>
+		</div>
+	</section>
+	<section class="start" id="start">
+		<div class="container">
+			<h2>Как начать<span>?</span></h2>
+			<ol class="start__list">
+				<li class="start__item start__item--1">
+					<h3 class="start__title" data-step="1">
+						Оставить<br>
+						заявку
+					</h3>
+					<p class="start__text">
+						На этом этапе мы дадим  Вам консультацию по всем вопросам оформления визы и трудоустройства 
+					</p>
+				</li>
+				<li class="start__item start__item--2">
+					<h3 class="start__title" data-step="2">
+						Получить<br>
+						визу
+					</h3>
+					<p class="start__text">
+						На этом этапе мы дадим  Вам консультацию по всем вопросам оформления визы и трудоустройства 
+					</p>
+				</li>
+				<li class="start__item start__item--3">
+					<h3 class="start__title" data-step="3">
+						Приступить<br>
+						к работе
+					</h3>
+					<p class="start__text">
+						На этом этапе мы дадим  Вам консультацию по всем вопросам оформления визы и трудоустройства 
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="quick">
+		<div class="container">
+			<h2 class="quick__title">
+				Быстрое оформление документов и хорошие условия для работы.
+			</h2>
+			<div class="quick__text">
+				<p>
+					ČEA предлагает легальную работу в Чехии <span>напрямую от проверенных работодателей</span> по чешской 3-х месячной или 2-х годичной рабочей визе. 
+				</p>
+				<p>
+					Мы устраиваем граждан Украины и других стран СНГ на работу в Чехию <span>по контракту</span> с работодателем с возможностью получить “<span>зеленую карту</span>”.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="garanty">
+		<div class="container">
+			<h2 class="garanty__title">
+				Мы гарантируем<span>.</span>
+			</h2>
+			<ul class="garanty__list">
+				<li class="garanty__item">
+					<span>Реальное описание</span> вакансии: ставка нетто <br> (с вычетом налога), стоимость и условия проживания, характер и часы работы. 
+				</li>
+				<li class="garanty__item garanty__item--circled">
+					<span>Полную поддержку</span> в процессе трудоустройства: от подбора вакансии до подписания трудового договора с работодателем
+				</li>
+				<li class="garanty__item garanty__item--circled">
+					<span>Консультационное сопровождение</span> и сбор пакета документов для чешской визы.
+				</li>
+				<li class="garanty__item">
+					<span>Полностью легальную</span> работу за рубежом - мы берем социальную защиту на себя. 
+				</li>
+				<li class="garanty__item garanty__item--circled">
+					<span>Персонального менеджера,</span> который полностью сопровождает каждого клиента, помогая с рабочими, бытовыми и другими вопросами. 
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="advice advice--second">
+		<div class="container advice__wrapper">
+			<div class="advice__info">
+				<h2 class="advice__title">
+					НЕОбходима помощь в подборе вакансии? 
+				</h2>
+				<p class="advice__caption">
+					Оставьте заявку, и в ближайшее время наш менеджер свяжется с вами.
+				</p>
+			</div>
+			<button class="button advice__button getConsultation">Получить консультацию</button>
+		</div>
+	</section>
+	<section class="faq" id="faq">
+		<div class="container">
+			<h2 class="faq__title">Вопросы <span>&</span> Ответы </h2>
+			<ul class="faq__list">
+				<li class="faq__item">
+					<h3>Сколько времени занимает оформление документов?</h3>
+					<p>
+						В зависимости от вакансии от 21 до 45 дней.
+					</p>
+				</li>
+				<li class="faq__item">
+					<h3>Как производиться оплата за изготовление документов?</h3>
+					<p>
+						Оплата производится на карту ПриватБанка, с помощью электронного перевода Western Union, либо при личной встрече с куратором в Вашем городе. Также, существует возможность отправить половину суммы перед началом процесса оформления документов, а остальную часть по их готовности.
+					</p>
+				</li>
+				<li class="faq__item">
+					<h3>Как и когда выплачиваются заработная плата?</h3>
+					<p>
+						Деньги выплачиваются наличными, каждый месяц с 15 по 20 число за предыдущий месяц. Каждую неделю по потребности выдается аванс 1000-2000 крон. По окончанию работы - полный расчёт
+					</p>
+				</li>
+				<li class="faq__item">
+					<h3>По приезде в Чехию нужно ли проходить карантин?</h3>
+					<p>
+						Нет. По приезду в Чехию вы обязаны пройти тест на COVID-19 в медицинской лаборатории. По его негативном результате можете приступать к работе. Время ожидания до 24 часов. Оплата взимается с заработной платы 1750 крон.
+					</p>
+				</li>
+				<li class="faq__item">
+					<h3>Какие вакансии вы предоставляете?</h3>
+					<p>
+						Актуальные вакансии всегда можно найти на нашем сайте. В основном - это логистические центры, автомобильные заводы, типография, колбасный цех, завод по изготовлению полиэтиленовых пакетов.
+					</p>
+				</li>
+				<li class="faq__item">
+					<h3>По приезду нас кто-то встретит?</h3>
+					<p>
+						Во время процесса изготовления документов за Вами будет закреплен наш менеджер. Непосредственно перед вашим выездом вам предоставят контакт на координатора, который встретит Вас и будет курировать все время вашего пребывания в Чехии.
+					</p>
+				</li>
+				<li class="faq__item">
+					<h3>
+						Предоставляется ли жилье на время работы?<br>
+						Какая стоимость?
+					</h3>
+					<p>
+						В зависимости от места Вашей работы мы предоставляем проживание бесплатное, либо на некоторых вакансиях взимается денежная сумма в размере от 3000 до 4500 крон.<br>
+						Семейные пары имеют возможность проживать вместе.
+					</p>
+				</li>
+				<li class="faq__item">
+					<h3>Какие расходы нас ожидают ежемесячно в Чехии?</h3>
+					<p>
+						Питание: стоимость продуктов в Чехии не сильно отличается от стоимости продуктов в странах СНГ. В зависимости от ваших потребностей это сумма от 2000-5000 тысяч крон.<br>
+						Все остальные затраты это исключительно личное дело каждого человека, но как таковых обязательных затрат не предвидится.
+					</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="review" id="reviews">
+		<div class="container">
+			<h2 class="review__title">Отзывы наших клиентов</h2>
+			<ul class="review__list">
+				<li class="review__item">
+					<img src="img/review-1.jpg" alt="">
+					<div class="review__body">
+						<a href="#" class="review__play"></a>
+						<div class="review__info">
+							<h3 class="review__name">Андрей Гаврилюк</h3>
+							<span class="review__caption">переехал 2 года назад</span>
+						</div>
+					</div>
+				</li>
+				<li class="review__item">
+					<img src="img/review-2.jpg" alt="">
+					<div class="review__body">
+						<a href="#" class="review__play"></a>
+						<div class="review__info">
+							<h3 class="review__name">Нина Оноприенко</h3>
+							<span class="review__caption">переехала 3 месяца назад</span>
+						</div>
+					</div>
+				</li>
+				<li class="review__item">
+					<img src="img/review-3.jpg" alt="">
+					<div class="review__body">
+						<a href="#" class="review__play"></a>
+						<div class="review__info">
+							<h3 class="review__name">Виктор Курганенко</h3>
+							<span class="review__caption">переехал 1 год назад</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<a href="#" class="all review__all">Смотреть все отзывы</a>
+		</div>
+	</section>
+	<section class="partner">
+		<div class="container">
+			<ul class="partner__list">
+				<li><img src="img/partner-1.jpg" alt=""></li>
+				<li><img src="img/partner-2.jpg" alt=""></li>
+				<li><img src="img/partner-3.jpg" alt=""></li>
+				<li><img src="img/partner-4.jpg" alt=""></li>
+				<li><img src="img/partner-5.jpg" alt=""></li>
+				<li><img src="img/partner-6.jpg" alt=""></li>
+			</ul>
+		</div>
+	</section>
+	<section class="contact" id="contacts">
+		<div class="address">
+			<h2 class="visually-hidden">Конктакты</h2>
+			<div class="address__wrapper">
+				<div class="address__header">
+					<div class="address__img">
+						<img src="img/logo.jpg" alt="">
+					</div>
+					<div class="address__headerInfo">
+						<h3 class="address__title">Česko Evropská Agentura s.r.o.</h3>
+						<p class="address__info">
+							IČO: 05226511<br>
+							DIČ: CZ05226511
+						</p>
+					</div>
+				</div>
+				<ul class="address__list">
+					<li class="address__item address__item--location">
+						<h3 class="address__title">Adresa</h3>
+						<div class="address__info">
+							<address>
+								Politických vězňů 1272/21 <br>
+								110 00 Praha 1
+							</address>
+						</div>
+					</li>
+					<li class="address__item address__item--phone">
+						<h3 class="address__title">Telefon</h3>
+						<div class="address__info">
+							<a href="tel:+420775265842">+420 775 265 842</a>
+						</div>
+					</li>
+				</ul>
+				<div class="address__footer">
+					<div class="address__social">
+						<h3 class="address__title">
+							Свяжитесь<br>
+							с нами!
+						</h3>
+						<div class="address__socialWrapper">
+							<a href="#"><img src="img/social-whatsapp.svg" alt="" width="31" height="31"></a>
+							<a href="#"><img src="img/social-tg.svg" alt="" width="31" height="31"></a>
+							<a href="#"><img src="img/social-viber.svg" alt="" width="31" height="31"></a>
+						</div>
+					</div>
+					<div class="address__mediaWrapper">
+						<a href="#" class="address__media address__media--fb">Facebook</a>
+						<a href="#" class="address__media address__media--yt">YouTube</a>
+						<a href="#" class="address__media address__media--inst">Instagram</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contact__wrapper">
+			<h2 class="contact__title">Получить консультацию</h2>
+			<p class="contact__caption">
+				Оставьте заявку, и в ближайшее время наш менеджер свяжется с вами. 
+			</p>
+			<form class="contact__form form">
+				<label class="form__input"><input type="text" placeholder="Имя"></label>
+				<label class="form__input"><input type="tel" placeholder="Номер телефона"></label>
+				<label class="form__input"><textarea placeholder="Комментарий"></textarea></label>
+				<button class="button form__button">Оставить заявку</button>
+			</form>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container footer__wrapper">
+			<div class="footer__nav">
+				<a>Главная</a>
+				<a class="footer__link" href="#about">О Нас</a>
+				<a class="footer__link" href="#vakancies">Вакансии</a>
+				<a class="footer__link" href="#start">Как начать?</a>
+				<a class="footer__link" href="#faq">FAQ</a>
+				<a class="footer__link" href="#reviews">Отзывы</a>
+			</div>
+			<p class="footer__text">
+				© Copyright 2021. Все права защищены.
+			</p>
+		</div>
+	</footer>
+	<script src="js/all.js"></script>
+</body>
+</html>

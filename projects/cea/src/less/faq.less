@@ -1,0 +1,135 @@
+.faq {
+	padding: 138px 0 118px;
+
+	.md-block({
+		padding: 90px 0 45px;
+	});
+
+	.sm-block({
+		padding-top: 45px;
+	});
+
+	.container {
+		.xs-block({
+			padding: 0 20px;
+		});	
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__list {
+		margin-top: 80px;
+
+		.md-block({
+			margin-top: 34px;
+		});
+	}
+
+	&__item {
+		padding: 32px 50px;
+		box-sizing: border-box;
+		border-bottom: 1px solid #999;
+		cursor: pointer;
+		position: relative;
+
+		.md-block({
+			padding: 18px 45px;
+		});
+
+		.sm-block({
+			padding: 18px 60px 18px 0;
+		});
+
+		&:first-child {
+			border-top: 1px solid #999;
+		}
+
+		&::before {
+			content: '';
+			display: block;
+			width: 32px;
+			height: 32px;
+			background-color: @blue;
+			border-radius: 50%;
+			position: absolute;
+			top: 32px;
+			right: 50px;
+			transition: background-color .3s ease;
+
+			.md-block({
+				width: 18px;
+				height: 18px;
+				top: 19px;
+				right: 28px;
+			});
+
+			.xs-block({
+				width: 20px;
+				height: 20px;
+				top: 26px;
+			});
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			width: 12px;
+			height: 7px;
+			background: url(../img/qa-arrow.svg) no-repeat center / contain;
+			position: absolute;
+			right: 60px;
+			top: 44px;
+			transition: transform .3s ease;
+
+			.md-block({
+				width: 7px;
+				height: 4px;
+				top: 26px;
+				right: 33px;
+			});
+
+			.xs-block({
+				top: 34px;
+   				right: 34px;
+			});
+		}
+
+		&:hover {
+			&::before {
+				background-color: @red;
+			}
+		}
+
+		h3 {
+			.xs-block({
+				max-width: 240px;
+			});
+		}
+
+		p {
+			display: none;
+			max-width: 740px;
+			margin-top: 28px;
+			cursor: text;
+
+			.md-block({
+				max-width: 430px;
+				margin-top: 6px;
+				font-size: 12px;
+				line-height: 16px;
+			});
+		}
+
+		&--active {
+			&::before {
+				background-color: @red;
+			}
+
+			&::after {
+				transform: rotate(180deg);
+			}
+		}
+	}
+}

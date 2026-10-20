@@ -1,0 +1,79 @@
+.contact {
+	background-color: @gray-bg;
+	display: flex;
+
+	.sm-block({
+		flex-wrap: wrap;
+		background-color: @white;
+	});
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding-top: 106px;
+		padding-left: 106px;
+		padding-bottom: 106px;
+		max-width: 350px;
+
+		.md-block({
+			max-width: 212px;
+			padding-top: 62px;
+			padding-left: 62px;
+			padding-bottom: 62px;
+		});
+
+		.sm-block({
+			display: block;
+			max-width: 320px;
+			padding: 0 30px 145px;
+			margin: 0 auto;
+		});
+	}
+
+	&__title {
+		text-transform: none;
+		font-size: 24px;
+		line-height: 32px;
+
+		.md-block({
+			font-size: 16px;
+			line-height: 18px;
+		});
+
+		.sm-block({
+			font-size: 24px;
+			line-height: 32px;
+		});
+	}
+
+	&__caption {
+		margin-top: 6px;
+		font-size: 14px;
+		line-height: 21px;
+
+		.md-block({
+			font-size: 10px;
+			line-height: 12px;
+		});
+
+		.sm-block({
+			font-size: 14px;
+			line-height: 21px;
+		});
+	}
+
+	&__form {
+		margin-top: 30px;
+		max-height: 380px;
+
+		.md-block({
+			margin-top: 18px;
+			max-width: 212px;
+		});
+
+		.sm-block({
+			max-width: 320px;
+		});
+	}
+}

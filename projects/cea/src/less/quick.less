@@ -1,0 +1,107 @@
+.quick {
+	padding-top: 220px;
+	padding-bottom: 120px;
+
+	.md-block({
+		padding-top: 100px;
+		padding-bottom: 70px;
+	});
+
+	.sm-block({
+		position: relative;
+		padding-top: 50px;
+		padding-bottom: 140px;
+	});
+
+	&__title {
+		max-width: 740px;
+		font-size: 52px;
+		line-height: 75px;
+		position: relative;
+		padding-left: 100px;
+
+		.md-block({
+			padding-left: 0px;
+			font-size: 32px;
+			line-height: 48px;
+			max-width: 476px;
+		});
+
+		.sm-block({
+			font-size: 25px;
+			line-height: 40px;
+			position: static;
+			max-width: 350px;
+		});
+
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 168px;
+			height: 168px;
+			background: url(../img/registration.jpg) center no-repeat / cover;
+			position: absolute;
+			top: 0;
+			right: 0;
+			transform: translate(100%, -50%);
+
+			.lg-block({
+				transform: translate(50%, -50%);
+			});
+
+			.md-block({
+				width: 100px;
+				height: 100px;
+				transform: translate(100%, -50%);
+			});
+
+			.sm-block({
+				width: 120px;
+				height: 120px;
+				transform: none;
+				top: auto;
+				right: 30px;
+				bottom: 30px;
+			});
+		}
+	}
+
+	&__text {
+		display: flex;
+		margin-top: 56px;
+		font-size: 20px;
+		line-height: 32px;
+		padding-left: 100px;
+
+		.md-block({
+			font-size: 13px;
+			line-height: 19px;
+			padding-left: 0;
+			margin-top: 28px;
+		});
+
+		.sm-block({
+			flex-wrap: wrap;
+			margin-top: 0;
+		});
+		
+		p {
+			width: 348px;
+			margin-right: 48px;
+
+			.md-block({
+				width: 218px;
+				margin-right: 40px;
+			});
+
+			.sm-block({
+				margin-top: 20px;
+			});
+		}
+
+		span {
+			color: @red;
+			font-weight: 600;
+		}
+	}
+}

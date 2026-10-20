@@ -1,0 +1,157 @@
+.start {
+	margin-top: -90px;
+	padding-top: 90px;
+	
+	.sm-block({
+		margin-top: 50px;
+		padding-top: 55px;
+		background-color: @gray-bg;
+	});
+
+	h2 {
+		text-align: center;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 120px;
+		padding: 0;
+
+		.md-block({
+			margin-top: 44px;
+		});
+
+		.sm-block({
+			max-width: 400px;
+			margin: 44px auto 0;
+			flex-wrap: wrap;
+		});
+	}
+
+	&__item {
+		list-style: none;
+		width: 310px;
+		height: 310px;
+		margin: 0 15px;
+		background: center no-repeat / cover;
+		position: relative;
+
+		.lg-block({
+			width: 250px;
+			height: 250px;
+		});
+
+		.md-block({
+			width: 184px;
+			height: 184px;
+		});
+
+		.sm-block({
+			max-width: 160px;
+			background: none;
+			margin-right: 25%;
+		});
+
+		&--1 {
+			background-image: url(../img/step-1.jpg);
+		}
+
+		&--2 {
+			background-image: url(../img/step-2.jpg);
+		}
+
+		&--3 {
+			background-image: url(../img/step-3.jpg);
+		}
+
+		.sm-block({
+			&:nth-child(even) {
+				margin-right: 0;
+				margin-left: auto;
+			}
+		});
+	}
+
+	&__title {
+		display: inline-block;
+		width: 100%;
+		height: 100px;
+		padding: 26px 0px 26px 100px;
+		font-size: 20px;
+		line-height: 24px;
+		background-color: #f6f6f6;
+		position: absolute;
+		bottom: 0px;
+		box-sizing: border-box;
+
+		.md-block({
+			height: 50px;
+			font-size: 12px;
+			line-height: 16px;
+			padding: 10px 0 10px 70px;
+		});
+
+		.sm-block({
+			font-size: 16px;
+			line-height: 19px;
+			color: @blue;
+			position: static;
+			background-color: transparent;
+		});
+
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 5px;
+			height: 50px;
+			background-color: @red;
+			position: absolute;
+			left: 74px;
+			margin-top: -2px;
+
+			.md-block({
+				width: 3px;
+				height: 30px;
+				left: 50px;
+				margin-top: 0;
+			});
+
+			.sm-block({
+				height: 36px;
+			});
+		}
+
+		&::after {
+			content: attr(data-step);
+			font-weight: 700;
+			font-size: 50px;
+			position: absolute;
+			left: 30px;
+			top: 50%;
+			transform: translateY(-50%);
+			margin-top: -2px;
+
+			.md-block({
+				left: 16px;
+				font-size: 34px;
+				margin-top: 0;
+			});
+
+			.sm-block({
+				top: 28px;
+			});
+		}
+	}
+
+	&__text {
+		display: none;
+
+		.sm-block({
+			display: block;
+			margin-top: 15px;
+			font-size: 13px;
+			line-height: 17px;
+		});
+	}
+}

@@ -1,0 +1,97 @@
+.form {
+	width: 100%;
+	max-width: 350px;
+
+	&__input {
+		display: block;
+		margin-bottom: 10px;
+		font-size: 16px;
+
+		.md-block({
+			font-size: 8px;
+			margin-bottom: 6px;
+		});
+
+		.sm-block({
+			font-size: 16px;
+			line-height: 28px;
+			margin-bottom: 10px;
+		});
+
+		input {
+			padding: 0 20px;
+			width: 100%;
+			height: 56px;
+			background-color: @gray-form-bg;
+			border: none;
+			color: @black;
+			box-sizing: border-box;
+
+			.md-block({
+				padding: 0 16px;
+				height: 30px;
+			});
+
+			.sm-block({
+				height: 56px;
+				padding: 0 20px;
+			});
+			
+			&::placeholder {
+				color: @gray-text;
+			}
+		}
+
+		textarea {
+			resize: none;
+			padding: 20px;
+			width: 100%;
+			height: 150px;
+			background-color: @gray-form-bg;
+			border: none;
+			color: @black;
+			box-sizing: border-box;
+
+			.md-block({
+				padding: 10px 16px;
+				height: 80px;
+			});
+
+			.sm-block({
+				height: 150px;
+				padding: 20px;
+			});
+			
+			&::placeholder {
+				color: @gray-text;
+			}
+		}
+	}
+
+	&__button {
+		max-width: 350px;
+		width: 100%;
+		margin-top: 20px;
+		background-color: @red;
+		font-weight: 700;
+
+		.md-block({
+			max-width: 212px;
+			height: 35px;
+			font-size: 12px;
+			line-height: 30px;
+			margin-top: 13px;
+			border-radius: 3px;
+		});
+
+		.sm-block({
+			width: 100%;
+			max-width: 320px;
+			height: 58px;
+			margin-top: 0px;
+			font-size: 16px;
+			line-height: 54px;
+		});
+	}
+	
+}

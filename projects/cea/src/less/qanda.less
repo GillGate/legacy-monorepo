@@ -1,0 +1,74 @@
+.qanda {
+	padding: 138px 0 118px;
+
+	&__title {
+		text-align: center;
+	}
+
+	&__list {
+		margin-top: 80px;
+	}
+
+	&__item {
+		padding: 32px 50px;
+		box-sizing: border-box;
+		border-bottom: 1px solid #999;
+		cursor: pointer;
+		position: relative;
+
+		&:first-child {
+			border-top: 1px solid #999;
+		}
+
+		&::before {
+			content: '';
+			display: block;
+			width: 32px;
+			height: 32px;
+			background-color: @blue;
+			border-radius: 50%;
+			position: absolute;
+			top: 32px;
+			right: 50px;
+			transition: background-color .3s ease;
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			width: 12px;
+			height: 7px;
+			background: url(../img/qa-arrow.svg) no-repeat center / contain;
+			position: absolute;
+			right: 60px;
+			top: 44px;
+		}
+
+		&:hover {
+			&::before {
+				background-color: @red;
+			}
+		}
+
+
+		p {
+			display: none;
+			margin-top: 28px;
+			cursor: text;
+		}
+
+		&--active {
+			&::before {
+				background-color: @red;
+			}
+
+			&::after {
+				transform: rotate(180deg);
+			}
+
+			p {
+				display: block;
+			}
+		}
+	}
+}

@@ -1,0 +1,116 @@
+.founder {
+	background-color: @gray-bg;
+	padding: 90px 0;
+
+	.md-block({
+		padding: 20px 0;
+	});
+
+	.sm-block({
+		display: none;
+	});
+
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__person {
+		min-width: 170px;
+		width: 100%;
+		max-width: 234px;
+		text-align: center;
+
+		.md-block({
+			max-width: 180px;
+		});
+	}
+
+	&__img {
+		margin-bottom: 22px;
+
+		.md-block({
+			margin-bottom: 6px;
+		});
+
+		img {
+			border-radius: 50%;
+		}
+	}
+
+	&__name {
+		display: inline-block;
+		margin-bottom: 6px;
+
+		.md-block({
+			font-size: 14px;
+			line-height: 26px;
+		});
+	}
+
+	&__caption {
+		display: block;
+
+		.md-block({
+			font-size: 12px;
+			line-height: 16px;
+		});
+	}
+
+	&__quote {
+		max-width: 480px;
+		margin-left: 126px;
+		font-weight: 300;
+		font-size: 21px;
+		line-height: 30px;
+		position: relative;
+
+		.md-block({
+			margin-left: 30px;
+			max-width: 284px;
+			font-size: 13px;
+			line-height: 21px;
+		});
+
+		&::before, &::after {
+			content: '';
+			display: block;
+			background: url(../img/quote.svg) left center repeat-x / contain;
+			position: absolute;
+		}
+
+		&::before {
+			width: 124px;
+			height: 114px;
+			top: -46px;
+			left: 0;
+			transform: translate(-100%, -100%);
+
+			.md-block({
+				width: 76px;
+				height: 70px;
+				top: -10px;
+				left: 60px;
+			});
+		}
+
+		&::after {
+			width: 206px;
+			height: 190px;
+			bottom: -46px;
+			right: 0;
+			transform: translate(50%, 100%) rotate(180deg);
+
+			.lg-block({
+				transform: translate(25%, 100%) rotate(180deg);
+			});
+
+			.md-block({
+				width: 124px;
+				height: 114px;
+				bottom: -20px;
+			});
+		}
+	}
+}

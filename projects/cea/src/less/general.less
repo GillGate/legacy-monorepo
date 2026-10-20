@@ -1,0 +1,140 @@
+.reset();
+
+.container {
+	.wrapper();
+}
+
+body {
+	font-family: "Open Sans";
+	color: @black;
+	overflow-x: hidden;
+	position: relative;
+}
+h1, h2 {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 33px;
+	line-height: 45px;
+
+	.sm-block({
+		font-size: 24px;
+		line-height: 32px;
+	});
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 42px;
+
+	.md-block({
+		font-size: 20px;
+		line-height: 32px;
+	});
+
+	.sm-block({
+		font-size: 24px;
+		line-height: 32px;
+	});
+
+	.xs-block({
+		font-size: 19px;
+		line-height: 28px;
+	});
+
+	span {
+		color: @red;
+	}
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 700;
+
+	.md-block({
+		font-size: 15px;
+		line-height: 19px;
+	});
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.button {
+	display: inline-block;
+	width: 310px;
+	height: 66px;
+	line-height: 60px;
+	font-size: 18px;
+	font-weight: 600;
+	color: @white;
+	text-decoration: none;
+	background-color: @red;
+	border: 2px solid @red;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background .3s linear, color .3s linear, border .3s linear;
+
+	.md-block({
+		width: 220px;
+		height: 45px;
+		font-size: 12px;
+		line-height: 40px;
+	});
+
+	&:hover, &:focus {
+		background-color: @white;
+		color: @red;
+	}
+
+	&:active {
+		color: darken(@red, 15%);
+		background-color: darken(@white, 5%);
+	}
+}
+
+.all {
+	font-size: 16px;
+	line-height: 24px;
+	text-decoration: none;
+	font-weight: 600;
+	color: @blue;
+
+	.md-block({
+		font-size: 12px;
+		line-height: 18px;
+	});
+
+	&::after {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 10px;
+		width: 15px;
+		height: 15px;
+		background: url(../img/review-all-after.svg) no-repeat center / contain;
+
+		.md-block({
+			width: 10px;
+			height: 10px;
+			margin-left: 5px;
+		});
+
+		.sm-block({
+			width: 15px;
+			height: 15px;
+			vertical-align: sub;
+		});
+	}
+}

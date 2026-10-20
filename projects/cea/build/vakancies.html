@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Česká evropská agentura | Вакансии</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header class="header header--vakancy">
+		<div class="header__wrapper">
+			<div class="header__head">
+				<a class="header__logo">
+					<picture>
+						<source media="(max-width:768px)" srcset="img/logo.jpg">
+						<img src="img/logo-white.png" alt="Česká evropská agentura">
+					</picture>
+				</a>
+				<div class="nav header__nav">
+					<div class="nav__bar"><img src="img/nav-bar.svg" alt="Open menu" width="30" height="30"></div>
+					<div class="nav__openHeader">
+						<div class="header__phone">
+							<a href="tel:+420775265842">+420 775 265 842</a>
+							<span>Viber, WhatsApp, Telegram</span>
+						</div>
+						<div class="nav__close"><img src="img/close.svg" alt="Закрыть" width="34" height="34"></div>
+					</div>
+					<nav class="nav__body">
+						<a class="nav__link" href="/#about">О Нас</a>
+						<a class="nav__link" href="/#vakancies">Вакансии</a>
+						<a class="nav__link" href="/#start">Как начать?</a>
+						<a class="nav__link" href="/#faq">FAQ</a>
+						<a class="nav__link" href="/#reviews">Отзывы</a>
+						<a class="nav__link" href="#contacts">Контакты</a>
+					</nav>
+				</div>
+				<div class="header__lang">
+					<a href="#" class="header__lang--current">RU</a>
+					<a href="#">UA</a>
+					<a href="#">CZ</a>
+				</div>
+				<div class="header__phone">
+					<a href="tel:+420775265842">+420 775 265 842</a>
+					<span>Viber, WhatsApp, Telegram</span>
+				</div>
+			</div>
+			<div class="header__body">
+				<div class="header__bodyWrapper">
+					<h1 class="header__title">Вакансии в Чехии</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="vakancy" id="vakancies">
+		<div class="container">
+			<ul class="vakancy__categoryList">
+				<li class="categories"><a href="#">Водитель</a></li>
+				<li class="categories"><a href="#">Склад</a></li>
+				<li class="categories"><a href="#">Токарь</a></li>
+				<li class="categories current-cat"><a href="#">Завод</a></li>
+			</ul>
+			<p class="vakancy__total">
+				<span>12</span> вакансий
+			</p>
+			<ul class="vakancy__list">
+				<li class="vakancy__item vakancy__item--special" data-special="СПЕЦИАЛЬНЫЕ УСЛОВИЯ: оформление документов за счет работодателя" data-special-mobile="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+					<div class="vakancy__head">
+						<div class="vakancy__info">
+							<div class="vakancy__img">
+								<img src="img/job-1.jpg" alt="">
+							</div>
+							<div class="vakancy__name">
+								<span class="vakancy__location">Plána nad Lužnicí</span>
+								<h3 class="vakancy__title">
+									Работник завода по изготовлению автомобильных деталей
+								</h3>
+							</div>
+						</div>
+						<div class="vakancy__price">
+							Заработная плата:
+							<span>105 Kč/час</span>
+						</div>
+					</div>
+					<div class="vakancy__desc">
+						<p>
+							Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+						</p>
+					</div>
+					<div class="vakancy__body">
+						<ul class="vakancy__conditions">
+							<li>для женщин и мужчин</li>
+							<li>с проживанием</li>
+						</ul>
+						<p class="vakancy__shifts">
+							Смены: <br>
+							<span class="vakancy__shift">18:00 - 6:00</span>
+							<span class="vakancy__shift">6:00 - 18:00</span>
+						</p>
+						<button class="button vakancy__button">
+							<span>Подробнее</span>
+							<span class="vakancy__button--mobile">Забронировать вакансию</span>
+						</button>
+					</div>
+					<div class="popup vakancy__popup">
+						<div class="popup__wrapper">
+							<button class="popup__close"><img src="img/close.svg" alt="Закрыть" width="30" height="30"></button>
+							<div class="vakancy__head">
+								<ul class="vakancy__categoryList">
+									<li class="categories"><a href="#">Завод</a></li>
+								</ul>
+								<div class="vakancy__price">
+									Заработная плата:
+									<span>105 Kč/час</span>
+								</div>
+							</div>
+							<div class="vakancy__info" data-special-popup="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+								<div class="vakancy__img">
+									<img src="img/job-1.jpg" alt="">
+								</div>
+								<div class="vakancy__name">
+									<span class="vakancy__location">Plána nad Lužnicí</span>
+									<h3 class="vakancy__title">
+										Работник завода по изготовлению автомобильных деталей
+									</h3>
+								</div>
+							</div>
+							<div class="vakancy__desc">
+								<p>
+									Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+								</p>
+								<p class="vakancy__desc--special">
+									<span>Специальные условия :</span> оформление документов за счет работодателя
+								</p>
+							</div>
+							<div class="vakancy__price vakancy__price--mobile">
+								Заработная плата:
+								<span>105 Kč/час</span>
+							</div>
+							<div class="vakancy__body">
+								<ul class="vakancy__conditions">
+									<li>для женщин и мужчин</li>
+									<li>с проживанием</li>
+								</ul>
+								<p class="vakancy__shifts">
+									Смены: <br>
+									<span class="vakancy__shift">18:00 - 6:00</span>
+									<span class="vakancy__shift">6:00 - 18:00</span>
+								</p>
+							</div>
+							<div class="vakancy__formWrapper">
+								<h3 class="vakancy__formTitle">
+									Это то, что Вы искали?
+								</h3>
+								<p class="vakancy__formCaption">
+									Оставьте заявку, и в ближайшее время наш менеджер свяжется с вами.
+								</p>
+								<form class="popup__form vakancy__form">
+									<label class="form__input"><input type="text" placeholder="Имя"></label>
+									<label class="form__input"><input type="tel" placeholder="Номер телефона"></label>
+									<button class="button form__button">Забронировать вакансию</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="vakancy__item" data-special="СПЕЦИАЛЬНЫЕ УСЛОВИЯ: оформление документов за счет работодателя" data-special-mobile="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+					<div class="vakancy__head">
+						<div class="vakancy__info">
+							<div class="vakancy__img">
+								<img src="img/job-2.jpg" alt="">
+							</div>
+							<div class="vakancy__name">
+								<span class="vakancy__location">Plána nad Lužnicí</span>
+								<h3 class="vakancy__title">
+									Работник завода по изготовлению автомобильных деталей
+								</h3>
+							</div>
+						</div>
+						<div class="vakancy__price">
+							Заработная плата:
+							<span>105 Kč/час</span>
+						</div>
+					</div>
+					<div class="vakancy__desc">
+						<p>
+							Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+						</p>
+					</div>
+					<div class="vakancy__body">
+						<ul class="vakancy__conditions">
+							<li>для женщин и мужчин</li>
+							<li>с проживанием</li>
+						</ul>
+						<p class="vakancy__shifts">
+							Смены: <br>
+							<span class="vakancy__shift">18:00 - 6:00</span>
+							<span class="vakancy__shift">6:00 - 18:00</span>
+						</p>
+						<button class="button vakancy__button">
+							<span>Подробнее</span>
+							<span class="vakancy__button--mobile">Забронировать вакансию</span>
+						</button>
+					</div>
+					<div class="popup vakancy__popup">
+						<div class="popup__wrapper">
+							<button class="popup__close"><img src="img/close.svg" alt="Закрыть" width="30" height="30"></button>
+							<div class="vakancy__head">
+								<ul class="vakancy__categoryList">
+									<li class="categories"><a href="#">Завод</a></li>
+								</ul>
+								<div class="vakancy__price">
+									Заработная плата:
+									<span>105 Kč/час</span>
+								</div>
+							</div>
+							<div class="vakancy__info" data-special-popup="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+								<div class="vakancy__img">
+									<img src="img/job-2.jpg" alt="">
+								</div>
+								<div class="vakancy__name">
+									<span class="vakancy__location">Plána nad Lužnicí</span>
+									<h3 class="vakancy__title">
+										Работник завода по изготовлению автомобильных деталей
+									</h3>
+								</div>
+							</div>
+							<div class="vakancy__desc">
+								<p>
+									Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+								</p>
+								<p class="vakancy__desc--special">
+									<span>Специальные условия :</span> оформление документов за счет работодателя
+								</p>
+							</div>
+							<div class="vakancy__price vakancy__price--mobile">
+								Заработная плата:
+								<span>105 Kč/час</span>
+							</div>
+							<div class="vakancy__body">
+								<ul class="vakancy__conditions">
+									<li>для женщин и мужчин</li>
+									<li>с проживанием</li>
+								</ul>
+								<p class="vakancy__shifts">
+									Смены: <br>
+									<span class="vakancy__shift">18:00 - 6:00</span>
+									<span class="vakancy__shift">6:00 - 18:00</span>
+								</p>
+							</div>
+							<div class="vakancy__formWrapper">
+								<h3 class="vakancy__formTitle">
+									Это то, что Вы искали?
+								</h3>
+								<p class="vakancy__formCaption">
+									Оставьте заявку, и в ближайшее время наш менеджер свяжется с вами.
+								</p>
+								<form class="popup__form vakancy__form">
+									<label class="form__input"><input type="text" placeholder="Имя"></label>
+									<label class="form__input"><input type="tel" placeholder="Номер телефона"></label>
+									<button class="button form__button">Забронировать вакансию</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="vakancy__item vakancy__item--special" data-special="СПЕЦИАЛЬНЫЕ УСЛОВИЯ: оформление документов за счет работодателя" data-special-mobile="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+					<div class="vakancy__head">
+						<div class="vakancy__info">
+							<div class="vakancy__img">
+								<img src="img/job-3.jpg" alt="">
+							</div>
+							<div class="vakancy__name">
+								<span class="vakancy__location">Plána nad Lužnicí</span>
+								<h3 class="vakancy__title">
+									Работник завода по изготовлению автомобильных деталей
+								</h3>
+							</div>
+						</div>
+						<div class="vakancy__price">
+							Заработная плата:
+							<span>105 Kč/час</span>
+						</div>
+					</div>
+					<div class="vakancy__desc">
+						<p>
+							Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+						</p>
+					</div>
+					<div class="vakancy__body">
+						<ul class="vakancy__conditions">
+							<li>для женщин и мужчин</li>
+							<li>с проживанием</li>
+						</ul>
+						<p class="vakancy__shifts">
+							Смены: <br>
+							<span class="vakancy__shift">18:00 - 6:00</span>
+							<span class="vakancy__shift">6:00 - 18:00</span>
+						</p>
+						<button class="button vakancy__button">
+							<span>Подробнее</span>
+							<span class="vakancy__button--mobile">Забронировать вакансию</span>
+						</button>
+					</div>
+					<div class="popup vakancy__popup">
+						<div class="popup__wrapper">
+							<button class="popup__close"><img src="img/close.svg" alt="Закрыть" width="30" height="30"></button>
+							<div class="vakancy__head">
+								<ul class="vakancy__categoryList">
+									<li class="categories"><a href="#">Завод</a></li>
+								</ul>
+								<div class="vakancy__price">
+									Заработная плата:
+									<span>105 Kč/час</span>
+								</div>
+							</div>
+							<div class="vakancy__info" data-special-popup="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+								<div class="vakancy__img">
+									<img src="img/job-3.jpg" alt="">
+								</div>
+								<div class="vakancy__name">
+									<span class="vakancy__location">Plána nad Lužnicí</span>
+									<h3 class="vakancy__title">
+										Работник завода по изготовлению автомобильных деталей
+									</h3>
+								</div>
+							</div>
+							<div class="vakancy__desc">
+								<p>
+									Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+								</p>
+								<p class="vakancy__desc--special">
+									<span>Специальные условия :</span> оформление документов за счет работодателя
+								</p>
+							</div>
+							<div class="vakancy__price vakancy__price--mobile">
+								Заработная плата:
+								<span>105 Kč/час</span>
+							</div>
+							<div class="vakancy__body">
+								<ul class="vakancy__conditions">
+									<li>для женщин и мужчин</li>
+									<li>с проживанием</li>
+								</ul>
+								<p class="vakancy__shifts">
+									Смены: <br>
+									<span class="vakancy__shift">18:00 - 6:00</span>
+									<span class="vakancy__shift">6:00 - 18:00</span>
+								</p>
+							</div>
+							<div class="vakancy__formWrapper">
+								<h3 class="vakancy__formTitle">
+									Это то, что Вы искали?
+								</h3>
+								<p class="vakancy__formCaption">
+									Оставьте заявку, и в ближайшее время наш менеджер свяжется с вами.
+								</p>
+								<form class="popup__form vakancy__form">
+									<label class="form__input"><input type="text" placeholder="Имя"></label>
+									<label class="form__input"><input type="tel" placeholder="Номер телефона"></label>
+									<button class="button form__button">Забронировать вакансию</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="vakancy__item" data-special="СПЕЦИАЛЬНЫЕ УСЛОВИЯ: оформление документов за счет работодателя" data-special-mobile="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+					<div class="vakancy__head">
+						<div class="vakancy__info">
+							<div class="vakancy__img">
+								<img src="img/job-4.jpg" alt="">
+							</div>
+							<div class="vakancy__name">
+								<span class="vakancy__location">Plána nad Lužnicí</span>
+								<h3 class="vakancy__title">
+									Работник завода по изготовлению автомобильных деталей
+								</h3>
+							</div>
+						</div>
+						<div class="vakancy__price">
+							Заработная плата:
+							<span>105 Kč/час</span>
+						</div>
+					</div>
+					<div class="vakancy__desc">
+						<p>
+							Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+						</p>
+					</div>
+					<div class="vakancy__body">
+						<ul class="vakancy__conditions">
+							<li>для женщин и мужчин</li>
+							<li>с проживанием</li>
+						</ul>
+						<p class="vakancy__shifts">
+							Смены: <br>
+							<span class="vakancy__shift">18:00 - 6:00</span>
+							<span class="vakancy__shift">6:00 - 18:00</span>
+						</p>
+						<button class="button vakancy__button">
+							<span>Подробнее</span>
+							<span class="vakancy__button--mobile">Забронировать вакансию</span>
+						</button>
+					</div>
+					<div class="popup vakancy__popup">
+						<div class="popup__wrapper">
+							<button class="popup__close"><img src="img/close.svg" alt="Закрыть" width="30" height="30"></button>
+							<div class="vakancy__head">
+								<ul class="vakancy__categoryList">
+									<li class="categories"><a href="#">Завод</a></li>
+								</ul>
+								<div class="vakancy__price">
+									Заработная плата:
+									<span>105 Kč/час</span>
+								</div>
+							</div>
+							<div class="vakancy__info" data-special-popup="СПЕЦИАЛЬНЫЕ УСЛОВИЯ">
+								<div class="vakancy__img">
+									<img src="img/job-4.jpg" alt="">
+								</div>
+								<div class="vakancy__name">
+									<span class="vakancy__location">Plána nad Lužnicí</span>
+									<h3 class="vakancy__title">
+										Работник завода по изготовлению автомобильных деталей
+									</h3>
+								</div>
+							</div>
+							<div class="vakancy__desc">
+								<p>
+									Работодатель предоставляет жилье. 3000 крон / месяц (вычитается из заработной платы). Описание вакансии: изготовление, мойка, сушка и контроль качества деталей.
+								</p>
+								<p class="vakancy__desc--special">
+									<span>Специальные условия :</span> оформление документов за счет работодателя
+								</p>
+							</div>
+							<div class="vakancy__price vakancy__price--mobile">
+								Заработная плата:
+								<span>105 Kč/час</span>
+							</div>
+							<div class="vakancy__body">
+								<ul class="vakancy__conditions">
+									<li>для женщин и мужчин</li>
+									<li>с проживанием</li>
+								</ul>
+								<p class="vakancy__shifts">
+									Смены: <br>
+									<span class="vakancy__shift">18:00 - 6:00</span>
+									<span class="vakancy__shift">6:00 - 18:00</span>
+								</p>
+							</div>
+							<div class="vakancy__formWrapper">
+								<h3 class="vakancy__formTitle">
+									Это то, что Вы искали?
+								</h3>
+								<p class="vakancy__formCaption">
+									Оставьте заявку, и в ближайшее время наш менеджер свяжется с вами.
+								</p>
+								<form class="popup__form vakancy__form">
+									<label class="form__input"><input type="text" placeholder="Имя"></label>
+									<label class="form__input"><input type="tel" placeholder="Номер телефона"></label>
+									<button class="button form__button">Забронировать вакансию</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- <a href="#" class="button vakancy__more">Больше вакансий</a> -->
+		</div>
+	</section>
+	<section class="advice advice--second">
+		<div class="container advice__wrapper">
+			<div class="advice__info">
+				<h2 class="advice__title">
+					НЕОбходима помощь в подборе вакансии? 
+				</h2>
+				<p class="advice__caption">
+					Оставьте заявку, и в ближайшее время наш менеджер свяжется с вами.
+				</p>
+			</div>
+			<button class="button advice__button">Получить консультацию</button>
+		</div>
+	</section>
+	<section class="partner">
+		<div class="container">
+			<ul class="partner__list">
+				<li><img src="img/partner-1.jpg" alt=""></li>
+				<li><img src="img/partner-2.jpg" alt=""></li>
+				<li><img src="img/partner-3.jpg" alt=""></li>
+				<li><img src="img/partner-4.jpg" alt=""></li>
+				<li><img src="img/partner-5.jpg" alt=""></li>
+				<li><img src="img/partner-6.jpg" alt=""></li>
+			</ul>
+		</div>
+	</section>
+	<section class="contact" id="contacts">
+		<div class="address">
+			<h2 class="visually-hidden">Конктакты</h2>
+			<div class="address__wrapper">
+				<div class="address__header">
+					<div class="address__img">
+						<img src="img/logo.jpg" alt="">
+					</div>
+					<div class="address__headerInfo">
+						<h3 class="address__title">Česko Evropská Agentura s.r.o.</h3>
+						<p class="address__info">
+							IČO: 05226511<br>
+							DIČ: CZ05226511
+						</p>
+					</div>
+				</div>
+				<ul class="address__list">
+					<li class="address__item address__item--location">
+						<h3 class="address__title">Adresa</h3>
+						<div class="address__info">
+							<address>
+								Politických vězňů 1272/21 <br>
+								110 00 Praha 1
+							</address>
+						</div>
+					</li>
+					<li class="address__item address__item--phone">
+						<h3 class="address__title">Telefon</h3>
+						<div class="address__info">
+							<a href="tel:+420775265842">+420 775 265 842</a>
+						</div>
+					</li>
+				</ul>
+				<div class="address__footer">
+					<div class="address__social">
+						<h3 class="address__title">
+							Свяжитесь<br>
+							с нами!
+						</h3>
+						<div class="address__socialWrapper">
+							<a href="#"><img src="img/social-whatsapp.svg" alt=""></a>
+							<a href="#"><img src="img/social-tg.svg" alt=""></a>
+							<a href="#"><img src="img/social-viber.svg" alt=""></a>
+						</div>
+					</div>
+					<div class="address__mediaWrapper">
+						<a href="#" class="address__media address__media--fb">Facebook</a>
+						<a href="#" class="address__media address__media--inst">Instagram</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="contact__wrapper">
+			<h2 class="contact__title">Получить консультацию</h2>
+			<p class="contact__caption">
+				Оставьте заявку, и в ближайшее время наш менеджер свяжется с вами. 
+			</p>
+			<form class="contact__form form">
+				<label class="form__input"><input type="text" placeholder="Имя"></label>
+				<label class="form__input"><input type="tel" placeholder="Номер телефона"></label>
+				<label class="form__input"><textarea placeholder="Комментарий"></textarea></label>
+				<button class="button form__button">Получить консультацию</button>
+			</form>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container footer__wrapper">
+			<div class="footer__nav">
+				<a class="footer__link" href="/">Главная</a>
+				<a class="footer__link" href="/#about">О Нас</a>
+				<a class="footer__link" href="#vakancies">Вакансии</a>
+				<a class="footer__link" href="/#start">Как начать?</a>
+				<a class="footer__link" href="/#faq">FAQ</a>
+				<a class="footer__link" href="/#reviews">Отзывы</a>
+			</div>
+			<p class="footer__text">
+				© Copyright 2021. Все права защищены.
+			</p>
+		</div>
+	</footer>
+	<script src="js/all.js"></script>
+</body>
+</html>
