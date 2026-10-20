@@ -1,0 +1,89 @@
+.labor {
+	padding: 120px 0 114px;
+
+	.md-block({
+		padding: 100px 0;
+	});
+
+	.sm-block({
+		padding: 80px 0;
+	});
+
+	&__title {
+		text-transform: uppercase;
+	}
+
+	&__content {
+		.row-flex();
+
+		margin-top: 54px;
+
+		.md-block({
+			margin-top: 14px;
+		});
+	}
+
+	&__left {
+		.col();
+		.size(8);
+		.size-md(12);
+	}
+
+	&__text {
+		margin-bottom: 40px;
+
+		.sm-block({
+			margin-bottom: 14px;
+			font-size: 16px;
+			line-height: 21px;
+		});
+	}
+
+	&__right {
+		.col();
+		.size(4);
+		.size-md(12);
+
+		.md-block({
+			margin-top: 32px;
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+		});
+
+		.sm-block({
+			margin-top: 14px;
+			flex-direction: row;
+			flex-wrap: wrap-reverse;
+		});
+
+		.labor__caption {
+			.md-block({
+				.size(4.5);
+
+				margin-top: 0;
+			});
+
+			.sm-block({
+				.size(12);
+
+				margin-bottom: 14px;
+			});
+		}
+
+		.labor__img {
+			.md-block({
+				.size(8.5);
+				text-align: right;
+			});
+
+			.sm-block({
+				.size(10);
+			});
+		}
+	}
+
+	&__caption {
+		margin-top: 28px;
+	}
+}

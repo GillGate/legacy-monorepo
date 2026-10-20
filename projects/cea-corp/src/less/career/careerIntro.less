@@ -1,0 +1,42 @@
+.careerIntro {
+	background: @grey url(../img/career-bg.jpg) no-repeat center / cover;
+
+	&__wrapper {
+		max-width: 660px;
+		margin: 0 auto;
+		padding: 158px 0;
+		color: @white;
+	}
+
+	&__title {
+		font-weight: 600;
+
+		.sm-block({
+			font-size: 42px;
+			line-height: 57px;
+		});
+	}
+
+	&__text {
+		.sm-block({
+			display: none;
+		});
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 10px;
+		font-size: 18px;
+
+		a {
+			color: inherit;
+			font-size: inherit;
+
+			.sm-block({
+				font-weight: 400;
+				margin-left: auto;
+			});
+		}
+	}
+}

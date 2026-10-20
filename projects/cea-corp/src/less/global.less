@@ -1,0 +1,183 @@
+.reset();
+
+body {
+	font-family: "Open Sans";
+	color: @black;
+	overflow-x: hidden;
+	padding-bottom: 600px;
+
+	.sm-block({
+
+	});
+}
+
+a {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 600;
+	text-decoration: none;
+	color: @black;
+}
+
+.container {
+	.wrapper();
+
+	box-sizing: border-box;
+}
+
+.caption {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.text {
+	font-size: 22px;
+	line-height: 29px;
+
+	.sm-block({
+		font-size: 16px;
+		line-height: 22px;
+	});
+}
+
+.text--big {
+	font-size: 32px;
+	line-height: 43px;
+
+	.sm-block({
+		font-size: 16px;
+		line-height: 22px;
+	});
+}
+
+.text--bl {
+	position: relative;
+
+	&::after {
+		content: '';
+		width: 63px;
+		height: 2px;
+		display: block;
+		background: @red;
+		margin-top: 23px;
+	}
+}
+
+.link--arrow {
+	font-size: 22px;
+	line-height: 30px;
+	color: @blue;
+	font-weight: 400;
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	&::after {
+		content: '';
+		width: 22px;
+		height: 22px;
+		display: inline-block;
+		background: url(../img/arrow-link-blue.svg) no-repeat center / contain;
+		margin-left: 14px;
+	}
+}
+
+.link--arrowWhite {
+	&::after {
+		background: url(../img/arrow-link-white.svg) no-repeat center / contain;
+	}
+}
+
+.link--arrowFW {
+	justify-content: space-between;
+
+	&::after {
+		right: 0;
+	}
+}
+
+.title {
+	color: @blue;
+}
+
+.title--black {
+	color: @black;
+}
+
+.title--big {
+	font-size: 48px;
+	line-height: 65px;
+
+	.sm-block({
+		font-size: 32px;
+		line-height: 43px;
+	});
+}
+
+.title--medium {
+	font-size: 42px;
+	line-height: 57px;
+
+	.sm-block({
+		font-size: 32px;
+		line-height: 43px;
+	});
+}
+
+.title--small {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.list {
+	font-size: 18px;
+	line-height: 24px;
+	padding-left: 28px;
+
+	li {		
+		margin-bottom: 25px;
+		position: relative;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			width: 8px;
+			height: 8px;
+			background-color: @red;
+			border-radius: 50%;
+			position: absolute;
+			top: 8px;
+			left: -28px;
+		}
+	}
+}
+
+.slider__btn {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+
+	&[disabled] {
+		svg {
+			fill: @grey;
+		}
+
+		cursor: not-allowed;
+	}
+		
+	&--prev {
+		margin-right: 22px;
+	}
+}
+
+.vh {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}

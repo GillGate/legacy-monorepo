@@ -1,0 +1,57 @@
+.cooperation {
+
+	.container {
+		display: flex;
+
+		.lg-block({
+			flex-wrap: wrap;
+		});
+	}
+
+	&__title {
+		max-width: 370px;
+		margin-right: 40px;
+	}	
+
+	&__formWrapper {
+		background-color: @blue;
+		color: @white;
+		padding: 64px;
+		box-sizing: border-box;
+
+		.lg-block({
+			margin: 60px auto 0;
+		});
+
+		.sm-block({
+			margin: 40px auto 0;
+			padding: 30px 16px;
+		});
+	}
+
+	&__formTitle {
+		text-align: center;
+		margin-bottom: 42px;
+
+		.md-block({
+			text-align: left;
+		});
+
+		.sm-block({
+			margin-right: 20px;
+			margin-bottom: 20px;
+		});
+	}
+
+	&--partner {
+		padding: 150px 0;
+
+		.sm-block({
+			padding: 80px 0;
+		});
+
+		.cooperation__formTitle {
+			text-align: left;
+		}
+	}
+}

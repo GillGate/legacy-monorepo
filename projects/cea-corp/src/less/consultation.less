@@ -1,0 +1,63 @@
+.consultation {
+	padding: 214px 0;
+
+	.container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__title {
+		margin-bottom: 24px;
+	}
+
+	&__caption {
+		font-size: 20px;
+		line-height: 27px;
+	}
+
+	&__link {
+		display: inline-block;
+		padding: 12px 34px;
+		margin-top: 46px;
+		background-color: @blue;
+		color: @white;
+	}
+
+	&__newJob {
+		max-width: 680px;
+		padding: 64px;
+		box-sizing: border-box;
+		background-color: @light-grey;
+	}
+
+	&__aside {
+		margin-left: 100px;
+	}
+
+	&__asideHead {
+		margin-bottom: 25px;
+		padding-left: 100px;
+		position: relative;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 64px;
+			height: 64px;
+			background: url(../img/consultation.svg) no-repeat center / contain;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	&__asideTitle {
+		font-size: 36px;
+		line-height: 49px;
+	}
+
+	&__text {
+		font-size: 24px;
+		line-height: 32px;
+	}
+}

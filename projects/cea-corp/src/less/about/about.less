@@ -1,0 +1,152 @@
+.about {
+	padding: 120px 0;
+
+	.md-block({
+		padding: 90px 0;
+	});
+
+	.sm-block({
+		padding: 40px 0;
+	});
+
+	&__head {
+		.col();
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__list {
+		display: flex;
+
+		&--desktop {
+			.md-block({
+				display: none;
+			});
+		}
+
+		&--tablet {
+			display: none;
+
+			.md-block({
+				.size(7);
+
+				margin-top: 30px;
+				margin-left: auto;
+				display: flex;
+				justify-content: space-between;
+			});
+
+			.sm-block({
+				.size(12);
+				margin-right: auto;
+			});
+		}
+
+		li {
+			max-width: 115px;
+			margin: 0 10px;
+			text-align: center;
+
+			.sm-block({
+				font-size: 14px;
+			});
+
+			span {
+				display: block;
+				width: 63px;
+				margin: 0 auto 12px;
+				font-size: 24px;
+				line-height: 63px;
+				border: 1px solid @blue;
+				border-radius: 50%;
+
+				.sm-block({
+					width: 50px;
+					font-size: 18px;
+					line-height: 50px;
+				});
+			}
+		}
+	}
+
+	&__text {
+		.sm-block({
+			font-size: 16px;
+			line-height: 22px;
+		});
+	}
+
+	&__content {
+		&--left {
+			.col();
+			.size(8);
+			.size-md(12);
+
+			margin-top: 100px;
+			margin-bottom: 40px;
+
+			.md-block({
+				margin-top: 34px;
+				margin-bottom: 30px;
+			});
+
+			.sm-block({
+				margin-top: 14px;
+			});
+
+			.about__text {
+				margin-bottom: 40px;
+
+				.sm-block({
+					margin-bottom: 14px;
+				});
+			}
+		}
+
+		&--right {
+			.row-flex();
+
+			.md-block({
+				flex-direction: row-reverse;
+			});
+
+			.sm-block({
+				flex-direction: row;
+				flex-wrap: wrap-reverse;
+				padding: 0 10px;
+			});
+
+			.about__img {
+				.col();
+				.size(4);
+				.size-md(6.5);
+				.size-sm(9);
+
+				margin-left: auto;
+				transform: translateX(-7px);
+
+				.sm-block({
+					transform: none;
+				});
+			}
+
+			.about__textWrapper {
+				.col();
+				.size(4);
+				.size-md(5.5);
+				.size-sm(12);
+
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			.about__text {
+				.md-block({
+					font-size: 16px;
+					margin-bottom: 20px;
+				});
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.intro {
+	padding-top: 120px;
+
+	.lg-block({
+		padding-top: 100px;
+	});
+
+	.sm-block({
+		padding-top: 40px;
+	});
+	
+	&__text {
+		margin-bottom: 20px;
+	}
+
+	&__titleWrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	&__title {
+		text-transform: uppercase;
+	}
+
+	&__caption {
+		.sm-block({
+			margin-left: auto;
+			margin-top: 6px;
+		});
+	}
+
+	&__img {
+		margin-top: 45px;
+
+		.sm-block({
+			margin-top: 20px;
+		});
+
+		img {
+			width: 100%;
+		}
+	}
+}

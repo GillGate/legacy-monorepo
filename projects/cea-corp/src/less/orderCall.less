@@ -1,0 +1,92 @@
+.orderCall {
+	padding-bottom: 200px;
+
+	.md-block({
+		padding-bottom: 150px;
+	});
+
+	.sm-block({
+		padding-bottom: 80px;
+	});
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+
+		.lg-block({
+			padding: 65px 60px;
+		});
+
+		.md-block({
+			background-color: @light-grey;
+		});
+
+		.sm-block({
+			padding: 30px 18px;
+		});
+	}
+
+	&__title {
+		margin-right: 100px;
+
+		.sm-block({
+			margin-right: 0;
+			font-size: 24px;
+			line-height: 32px;
+		});
+
+		&--mobile {
+			display: none;
+
+			.sm-block({
+				display: block;
+				margin-bottom: 25px;
+				font-size: 32px;
+				line-height: 43px;
+			});
+		}
+	}
+
+	&__formWrapper {
+		width: 100%;
+		max-width: 620px;
+
+		.lg-block({
+			margin: 50px auto 0;
+		});
+
+		.sm-block({
+			margin-top: 20px;
+		});
+	}
+
+	&--contacts {
+		.orderCall__wrapper {
+			padding: 0 60px;
+
+			.lg-block({
+				padding: 65px 60px;
+			});
+
+			.sm-block({
+				padding: 30px 18px;
+			});	
+		}
+
+		.orderCall__title {
+			margin-right: 0;
+		}
+
+		.orderCall__formWrapper {
+			margin-top: 150px;
+
+			.lg-block({
+				margin-top: 50px;
+			});
+
+			.sm-block({
+				margin-top: 24px;
+			});
+		}
+	}
+}

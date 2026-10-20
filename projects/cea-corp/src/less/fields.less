@@ -1,0 +1,166 @@
+.fields {
+
+	padding: 225px 0;
+
+	.lg-block({
+		padding: 150px 0 100px;
+	});
+
+	.sm-block({
+		padding: 100px 0 50px;
+	});
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+
+		.sm-block({
+			flex-wrap: nowrap;
+			overflow-x: scroll;
+			position: relative;
+		});
+	}
+
+	&__item {
+		.col();
+		.size(4);
+		.size-lg(6);
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-bottom: 40px;
+		padding: 50px;
+		height: 374px;
+		box-sizing: border-box;
+		background: @light-grey url(../img/field-bg.jpg) center / cover;
+		transition: background .6s ease;
+
+		.md-block({
+			padding: 38px;
+			height: auto;
+		});
+
+		.sm-block({
+			min-width: 304px;
+			margin-bottom: 10px;
+			margin: 0 20px 10px 0;
+		});
+
+		&:hover {
+			cursor: pointer;
+			background-repeat: no-repeat;
+			justify-content: start;
+
+			.fields__title {
+				color: @white;
+				font-size: 26px;
+				line-height: 35px;
+				padding-right: 40px;
+				margin-bottom: 15px;
+			}
+
+			.fields__text {
+				opacity: 1;
+			}
+
+			.fields__img {
+				opacity: 0;
+			}
+		}
+
+		&--title {
+			padding: 0;
+			background: none;
+
+			.lg-block({
+				.shift-right(4);
+
+				height: 150px;
+			});
+
+			.md-block({
+				.shift-right(4);
+
+				height: 150px;
+				padding: 0;
+			});
+
+			.sm-block({
+				display: none;
+			});
+
+			&:hover {
+				cursor: default;
+			}
+		}
+
+		&--industry {
+			&:hover {
+				background-image: url(../img/field-industry.jpg);
+			}
+		}
+
+		&--textile {
+			&:hover {
+				background-image: url(../img/field-textile.jpg);
+			}
+		}
+
+		&--retail {
+			&:hover {
+				background-image: url(../img/field-retail.jpg);
+			}
+		}
+
+		&--hotels {
+			&:hover {
+				background-image: url(../img/field-hotels.jpg);
+			}
+		}
+
+		&--travel {
+			&:hover {
+				background-image: url(../img/field-travel.jpg);
+			}
+		}
+	}
+
+	&__mainTitle {
+		text-transform: none;
+
+		&--mobile {
+			display: none;
+
+			.sm-block({
+				display: block;
+				margin-bottom: 24px;
+			});
+		}
+
+		.md-block({
+			font-size: 42px;
+		});
+	}
+
+	&__title {
+		font-size: 32px;
+		line-height: 43px;
+		transition: color .6s ease;
+
+		.md-block({
+			font-size: 28px;
+		});
+	}
+
+	&__text {
+		opacity: 0;
+		color: @white;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	&__img {
+		margin-top: -10px;
+	}
+}

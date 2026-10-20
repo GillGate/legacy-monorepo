@@ -1,0 +1,148 @@
+.form {
+	&__label {
+		display: block;
+		width: 100%;
+		max-width: 700px;
+	}
+
+	&__title {
+		padding: 12px 20px;
+
+		.sm-block({
+			font-size: 12px;
+		});
+	}
+
+	&__input {
+		width: inherit;
+		padding: 12px 20px;
+		margin-bottom: 16px;
+		box-sizing: border-box;
+		color: inherit;
+		background-color: inherit;
+		border: none;
+		border-bottom: 1px solid @white;
+
+		.sm-block({
+			font-size: 12px;
+		});
+
+		&--file {
+			border: 1px dashed @white;
+		}
+
+		&::placeholder {
+			color: inherit;
+		}
+	}
+
+	&__foot {
+		margin-top: 40px;
+		display: flex;
+		flex-wrap: wrap;
+
+		.sm-block({
+			margin-top: 20px;
+		});
+	}
+
+	&__agree {
+		.sm-block({
+			font-size: 11px;
+		});
+
+		a {
+			color: inherit;
+			text-decoration: underline;
+			font-size: inherit;
+		}
+
+		span {
+			color: @red;
+		}
+	}
+
+	&__agreeLabel {
+		padding-left: 40px;
+		position: relative;
+
+		.sm-block({
+			padding-left: 30px;
+		});
+
+		&::before, &::after {
+			content: '';
+			display: inline-block;
+			border-radius: 4px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		&::before {
+			width: 20px;
+			height: 20px;
+			border: 1px solid @white;
+
+			.sm-block({
+				width: 15px;
+				height: 15px;
+			});
+		}
+	}
+
+	#form_agree:checked + .form__agreeLabel {
+		&::before {
+			background: @white;
+		}
+
+		&::after {
+			width: 14px;
+			height: 10px;
+			top: 6px;
+			left: 4px;
+			background: url(../img/agree-blue.svg) no-repeat center / contain;
+
+			.sm-block({
+				top: 4px;
+				left: 2px;
+			});
+		}
+	}
+
+	&__btn {
+		background: none;
+		border: none;
+		color: inherit;
+		cursor: pointer;
+		margin-left: auto;
+
+		&::after {
+			.sm-block({
+				width: 15px;
+				height: 15px;
+			});
+		}
+
+		.md-block({
+			margin-top: 50px;
+		});
+
+		.sm-block({
+			margin-top: 25px;
+			font-size: 16px;
+		});
+	}
+
+	&--white {
+		.form__input {
+			border-color: @grey;
+		}
+
+		.form__agreeLabel {
+			&::before {
+				border-color: @blue;
+			}
+		}
+	}
+}

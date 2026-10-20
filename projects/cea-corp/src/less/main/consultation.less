@@ -1,0 +1,137 @@
+.consultation {
+	padding: 214px 0;
+	overflow-x: hidden;
+
+	.lg-block({
+		padding: 150px 0 0;
+	});
+
+	.sm-block({
+		padding-top: 100px;
+	});
+
+	.container {
+		display: flex;
+		align-items: center;
+
+		.lg-block({
+			flex-wrap: wrap;
+		});
+	}
+
+	&__title {
+		margin-bottom: 24px;
+	}
+
+	&__caption {
+		font-size: 20px;
+		line-height: 27px;
+
+		.sm-block({
+			font-size: 16px;
+			line-height: 21px;
+		});
+	}
+
+	&__link {
+		display: inline-block;
+		padding: 12px 34px;
+		margin-top: 46px;
+		background-color: @blue;
+		color: @white;
+
+		.lg-block({
+			margin-top: 40px;
+		});
+	}
+
+	&__newJob {
+		max-width: 680px;
+		padding: 64px;
+		box-sizing: border-box;
+		background-color: @light-grey;
+
+		.lg-block({
+			margin-bottom: 150px;
+			padding: 0 60px;
+			background-color: transparent;
+		});
+
+		.sm-block({
+			display: none;
+		});
+	}
+
+	&__aside {
+		margin-left: 100px;
+
+		.lg-block({
+			background-color: @light-grey;
+			margin: 0 auto;
+		});
+	}
+
+	&__asideHead {
+		margin-bottom: 25px;
+		padding-left: 100px;
+		position: relative;
+		z-index: 1;
+
+		.lg-block({
+			margin-bottom: 0;
+			padding: 32px 100px;
+		});
+
+		.sm-block({
+			padding-left: 32px;
+			padding-right: 0;
+		});
+
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 64px;
+			height: 64px;
+			background: url(../img/consultation.svg) no-repeat center / contain;
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			.sm-block({
+				left: -40px;
+			});
+		}
+
+		.lg-block({
+			&::before {
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			&::after {
+				content: '';
+				height: 100%;
+				width: 300%;
+				background-color: @light-grey;
+				position: absolute;
+				top: 0;
+				left: -100%;
+				z-index: -1;
+			}
+		});
+	}
+
+	&__asideTitle {
+		font-size: 36px;
+		line-height: 49px;
+	}
+
+	&__text {
+		font-size: 24px;
+		line-height: 32px;
+
+		.lg-block({
+			display: none;
+		});
+	}
+}

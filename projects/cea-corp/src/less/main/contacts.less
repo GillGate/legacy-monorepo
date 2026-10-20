@@ -1,0 +1,54 @@
+.contacts {
+	padding: 125px 0;
+	background: @light-grey url(../img/map.jpg) no-repeat right / cover;
+
+	.lg-block({
+		background-image: url(../img/map-tablet.jpg);
+	});
+
+	.md-block({
+		padding: 52px 0;
+	});
+
+	.sm-block({
+		display: none;
+	});
+
+	&__wrapper {
+		margin-left: 100px;
+		max-width: 374px;
+		padding: 54px 64px;
+		box-sizing: border-box;
+		background-color: @white;
+
+		.md-block({
+			margin-left: 0;
+		});
+	}
+
+	&__title {
+		margin-bottom: 24px;
+	}
+
+	&__info {
+		margin-top: 24px;
+
+		span {
+			font-weight: 600;
+		}
+
+		p {
+			margin-top: 16px;
+		}
+	}
+
+	&__list {
+		margin-top: 30px;
+		
+		a {
+			width: 32px;
+			height: 32px;
+			margin-right: 13px;
+		}
+	}
+}
