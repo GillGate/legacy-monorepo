@@ -44,7 +44,7 @@
 
 	function wpcf7_mail_sent_function( $contact_form ) {
 		$title = $contact_form->title;
-		$queryUrl = 'https://rekonstroygroup.bitrix24.ru/rest/1/REMOVED/crm.lead.add.json';
+		$queryUrl = BITRIX_LEAD_URL; // задаётся в wp-config.php, не в репозитории
 		if ('Контактная форма' == $title ) { 
 			$name = $_POST['order-name']; 
 			$phone = $_POST['order-phone']; 
